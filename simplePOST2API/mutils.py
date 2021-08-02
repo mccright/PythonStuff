@@ -37,7 +37,7 @@ def do_timer(timeevent):
     from datetime import time, datetime
     from dateutil import parser, tz
 
-    if timeevent == 'start' or timeevent == 'end':
+    if timeevent == 'start' or timeevent == 'end' or timeevent == 'next':
         timer_str = datetime.now(tz=tz.tzlocal())
         return timer_str
     else:
