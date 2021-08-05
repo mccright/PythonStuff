@@ -8,6 +8,9 @@
 # It is not something that you can just download and use without customization. 
 # It is a harness for you to use your regex's against a bunch of files. 
 #
+# Install:
+# binaryornot, DateTime
+#
 # Test your regex's with: https://regex101.com/
 #
 # I started trying to use the utilities below, but ended up using their ideas & some code here.
