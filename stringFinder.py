@@ -30,6 +30,7 @@
 # https://pymotw.com/2/re/
 # https://github.com/dxa4481/truffleHog/blob/dev/scripts/searchOrg.py
 # https://thispointer.com/python-how-to-get-list-of-files-in-directory-and-sub-directories/
+# https://msticpy.readthedocs.io/en/latest/data_analysis/IoCExtract.html#predefined-regex-patterns
 # Use the [re.I] 'ignore case' flag.
 # re.findall( '[0-9a-fA-F]{40}', theString, re.I )
 #
