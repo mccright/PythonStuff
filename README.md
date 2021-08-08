@@ -45,7 +45,8 @@ optional arguments:
 
 
 ### getSomeIPInfo  
-* This is just a reminder for me: about navigating simple json  
+* [getSomeIPInfo](https://github.com/mccright/PythonStuff/blob/main/getSomeIPInfo.py) is just a reminder for me about navigating simple json.  First using hard-coded references, and then iterating through every key/value pair.  Both approaches have their place.  There is another example used in [getGHtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHtree.py) and [getGHorgtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHorgtree.py).  
+
 
 ## Python conventions
 
