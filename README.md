@@ -44,6 +44,9 @@ optional arguments:
   * [getGHorgtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHorgtree.py) is a model for extracting a list of files in tree format from non-public organization repositories.  
 
 
+### getSomeIPInfo  
+* This is just a reminder for me: about navigating simple json  
+
 ## Python conventions
 
 * Put a space before a comment: `# This is a comment`  
