@@ -66,3 +66,6 @@ optional arguments:
 * Write a snippet of documentation at the top of your file to help you remember what the file does.  
 * Write inputs and outputs to functions in a comment in the function body.  
 (The original *conventions* in this list are from a readme by https://github.com/georgeberry.  Thank you George Berry.)  
+
+## External References  
+* Simple file upload using Flask: [https://roytuts.com/python-flask-file-upload-example/](https://roytuts.com/python-flask-file-upload-example/) and consider enhancing it with [Flask ReUploaded](https://flask-reuploaded.readthedocs.io/en/latest/).  
