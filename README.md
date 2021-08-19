@@ -51,6 +51,11 @@ optional arguments:
 ### useRandomUserAgent  
 * [useRandomUserAgent](https://github.com/mccright/PythonStuff/blob/main/useRandomUserAgent.py) is just a reminder for me about rotating my user_agent strings.
 
+
+### checkResponseCodes  
+* [checkResponseCodes](https://github.com/mccright/PythonStuff/blob/main/checkResponseCodes.py) is a list of all the http Codes from the IANA Hypertext Transfer Protocol (HTTP) Status Code Registry in the form of a long 'case statement.'  I wanted it around so that I could copy ot the subset that I needed at any given time.  It is not meant to be used as is.
+
+
 ## Python conventions
 
 * Put a space before a comment: `# This is a comment`  
