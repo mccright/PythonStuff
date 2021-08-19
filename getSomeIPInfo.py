@@ -46,5 +46,7 @@ def main_iterate():
 if __name__ == "__main__":
     print("First, hard code specific key/value pairs.")
     main()
+    # Hard-coding above works for some use cases, but other
+    # times just exploring the json data (below) is more appropriate
     print("Now, iterate through every key/value pair.")
     main_iterate()
