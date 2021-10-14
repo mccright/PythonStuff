@@ -73,7 +73,8 @@ optional arguments:
 * When importing modules, don't import specific functions. Import the whole module, and use the module name and function together. Right: `import time; time.sleep(1)`. Wrong: `from time import sleep; sleep(1)`.  (Are there exceptions to this *rule*?)  
 * When you find yourself checking if items are in a `list`, use a `set`  
 * Write a snippet of documentation at the top of your file to help you remember what the file does.  
-* Write inputs and outputs to functions in a comment in the function body.  
+* Write inputs and outputs to functions in a comment in the function body. 
+* Debugging has its place, but [don't hesitate to use *print()* statements](https://adamj.eu/tech/2021/10/08/tips-for-debugging-with-print/). 
 (The original *conventions* in this list are from a readme by https://github.com/georgeberry.  Thank you George Berry.)  
 
 ## External References  
