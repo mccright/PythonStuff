@@ -27,6 +27,15 @@ python3 -m virtualenv --python="$(command -v python3)" .env &&
 |complex|  |
 |boolean|  |
 
+### Notes on Python Object Types  
+|Type   |  Description  |
+|-------|---------------|
+|list| A mutable sequence, in square brackets [] |
+|tuple | An imutable sequence, in parentheses () |
+|dict  | A 'key, value' storage, in curly braces {} |
+|set| A collection of unordered unique elements without duplicates |
+|str| An immutable sequence of characters |
+|unicode| An immutable sequence of Unicode encoded characters |
 
 ### Notes on the Python Standard Library resources  
 
