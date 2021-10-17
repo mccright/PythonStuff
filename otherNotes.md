@@ -16,3 +16,17 @@ python3 -m virtualenv --python="$(command -v python3)" .env &&
   python3 -m pip install --upgrade setuptools wheel && 
   python3 -m pip install -r requirements.txt 
 ```
+
+
+### Notes on Python Types  
+|Type   |  Description  |
+|-------|---------------|
+|int    |  |
+|long   |  |
+|float  |  |
+|complex|  |
+|boolean|  |
+
+
+### Notes on the Python Standard Library resources  
+
