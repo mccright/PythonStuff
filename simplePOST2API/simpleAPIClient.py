@@ -168,6 +168,9 @@ if __name__ == '__main__':
         TIME_FORMAT = "%a, %b %d, %Y at %H:%M:%S %p %Z"
         print("Started at: {0}".format(start.strftime(TIME_FORMAT)))
     # define a params dict for the parameters to be sent to the API
+    # There are many common headers that might be relevant, 'Authorization' 
+    # might be common for you:.  See a longer list at:
+    # https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields
     HEADER_PARAMS = {'Accept': 'application/json',
                      'Content-Type': 'application/json',
                      'User-Agent': 'mccrightSample1APIcaller'}
