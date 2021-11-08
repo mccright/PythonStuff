@@ -40,6 +40,20 @@ For example, we can explore requests urllib3 & exceptions:
 |complex|  |
 |boolean|  |
 
+### Notes on Python Conditionals  
+|Keyword      |  Description  |
+|-------------|---------------|
+| if (exp):   | Only execute if True  |
+| else:       | Next step when 'if' is False |
+| elif:       | Test multiple conditions |
+| while (exp):| Loop while an exp. if True |
+| for n in o: |  |
+| break       | Escape a loop |
+| continue    | Escape current eteration of a loop, begin another |
+| try:        | Begin code block that will catch exceptions |
+| except (exception):| Check a given exception type, handle exception |
+| finally     | Executed upon success or failure |
+
 ### Notes on Python Object Types  
 |Type   |  Description  |
 |-------|---------------|
