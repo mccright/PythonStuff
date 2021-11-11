@@ -60,6 +60,11 @@ optional arguments:
 * [createRandomStrings](https://github.com/mccright/PythonStuff/blob/main/createRandomStrings.py) is some unfinished experimenting with different ways to create 'unique' strings, a common requirement...  
 
 
+## AWS Lambdas  
+* Starter project [https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint](https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint)  
+* 25 model projects [https://github.com/serverless/examples](https://github.com/serverless/examples)  
+
+
 ## Python conventions
 
 * Put a space before a comment: `# This is a comment`  
