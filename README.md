@@ -65,7 +65,15 @@ optional arguments:
 * 25 model projects [https://github.com/serverless/examples](https://github.com/serverless/examples)  
 
 
-## Python conventions
+## Python and Visual Studio Code (VSCode)  
+See: "Python Development in Visual Studio Code." by Jon Fincher  
+[https://realpython.com/python-development-visual-studio-code/](https://realpython.com/python-development-visual-studio-code/)  
+and
+"Advanced Visual Studio Code for Python Developers." by Anthony Shaw  
+[https://realpython.com/advanced-visual-studio-code-python/](https://realpython.com/advanced-visual-studio-code-python/)  
+
+
+## Python conventions  
 
 * Put a space before a comment: `# This is a comment`  
 * Don't make lines longer than ~80 characters  
