@@ -30,6 +30,14 @@ For example, we can explore requests urllib3 & exceptions:
 ['BaseHTTPError', 'ChunkedEncodingError', 'ConnectTimeout', 'ConnectionError', 'ContentDecodingError', 'FileModeWarning', 'HTTPError', 'InvalidHeader', 'InvalidProxyURL', 'InvalidSchema', 'InvalidURL', 'MissingSchema', 'ProxyError', 'ReadTimeout', 'RequestException', 'RequestsDependencyWarning', 'RequestsWarning', 'RetryError', 'SSLError', 'StreamConsumedError', 'Timeout', 'TooManyRedirects', 'URLRequired', 'UnrewindableBodyError', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
 ```
 
+### Graph on the terminal when investigating and exploring  
+* asciichart (simplistic) [https://github.com/cashlo/asciichart](https://github.com/cashlo/asciichart)  
+* livechart (maybe) [https://github.com/greyltc-org/livechart](https://github.com/greyltc-org/livechart)  
+* plotext [https://github.com/piccolomo/plotext](https://github.com/piccolomo/plotext)  
+* plotille [https://github.com/tammoippen/plotille](https://github.com/tammoippen/plotille)  
+* terminal-plot (for csv) [https://github.com/soraxas/terminal-plot](https://github.com/soraxas/terminal-plot)  
+* termplotlib (works for me) [https://github.com/nschloe/termplotlib](https://github.com/nschloe/termplotlib)  
+
 
 ### Notes on Python Types  
 |Type   |  Description  |
@@ -66,3 +74,7 @@ For example, we can explore requests urllib3 & exceptions:
 
 ### Notes on the Python Standard Library resources  
 
+
+
+### Notes on home cluster project  
+See starter: [https://github.com/orenzp/gitops](https://github.com/orenzp/gitops)  
