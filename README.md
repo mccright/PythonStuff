@@ -1,6 +1,18 @@
 # PythonStuff:  
 ## Some Python code that I tend to copy & morph  
 
+### New environment?  Install Python:  
+Debian-based Linux, for example, Ubuntu or one of its variants:  
+```bash
+sudo apt-get update
+sudo apt-get install python3 python3-venv python3-pip
+```
+RedHat/Fedora-based Linux:  
+```bash
+sudo dnf install python3
+```
+
+
 ### minpyver  
 * '[minpyver.py](https://github.com/mccright/PythonStuff/blob/main/minpyver.py)' - In some situations it is important to use a very specific Python version.  
   Yes, it might be better to just add:  
