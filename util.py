@@ -9,6 +9,10 @@ import time
 from multiprocessing.dummy import Pool as ThreadPool
 import urllib
 
+# https://github.com/daveoncode/python-string-utils
+# Installation
+# pip install python-string-utils
+import string_utils
 
 # TODO: Build this out into a 'safe' utility function.
 # Add input/output sanity checking and error handling
