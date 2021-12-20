@@ -81,6 +81,9 @@ For example, we can explore requests urllib3 & exceptions:
 * Python utilities for AWS: [https://github.com/hseera/aws-python-utilities](https://github.com/hseera/aws-python-utilities)  
 * Python utility scripts to help automate mundane/repetitive/specific performance testing tasks: [https://github.com/hseera/python-utilities](https://github.com/hseera/python-utilities)  
 * Get detail about the OS: [https://github.com/hseera/get-System-Information](https://github.com/hseera/get-System-Information)  
+* Broad set of examples [https://github.com/yennanliu/utility_Python/](https://github.com/yennanliu/utility_Python/)  
+* Another useful collection of examples: [https://github.com/cherkavi/python-utilities](https://github.com/cherkavi/python-utilities)  
+* Reminder to self - Look at these utilities: [https://github.com/karldoenitz/PythonUtils](https://github.com/karldoenitz/PythonUtils)  
   
   
 ### Notes on home cluster project  
