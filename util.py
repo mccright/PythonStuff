@@ -11,6 +11,13 @@ from multiprocessing.dummy import Pool as ThreadPool
 import urllib
 
 
+# Review later:
+# https://github.com/anilmuppalla/python-unix-utils/blob/master/grep.py
+# https://github.com/yennanliu/web_scraping
+# https://github.com/yennanliu/CS_basics
+# See about converting this for use in virtual environments:
+#    https://github.com/LonamiWebs/Py-Utils/blob/master/misc/pipu
+
 
 # Ref: https://github.com/shpala/pybuild_utils/blob/master/base/system_info.py
 # TODO: Figure out how to identify if in WLS and implement in code
