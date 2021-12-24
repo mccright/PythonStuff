@@ -67,7 +67,19 @@ def linux_get_dist():
     raise NotImplemented("Unknown platform '%s'" % dist_name)
 
 
-
+# Work on a cross-OS safe directory/file test and create function
+# This is still only the most spare skeleton
+def create_dir(dir_full_path):
+    # TODO: sanity check the input - safe for directory?
+    # Safe location? Safe characters?
+    # TODO: set the OS-specific path construction
+    # TODO: wrap each step in a try / catch
+    if os.path.isdir(dir_full_path):
+        return ("%s already exists" % dir_full_path)
+    else:
+        os.mkdir(dir_full_path)
+        # ?? os.chdir(dir_full_path)
+    return dir_full_path
 
 
 # Ref: https://github.com/vered1986/PythonUtils/blob/master/academic_tools/references/common.py
