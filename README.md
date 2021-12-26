@@ -70,7 +70,7 @@ optional arguments:
 
 ### http-response-codes  
 * [http-response-codes](https://github.com/mccright/PythonStuff/blob/main/http-response-codes.py) is a CLI script that emits a list of all the http Codes from your current http module plus their short description & long description.  
-I usually pipe its output through grep for the code I am trying to understand.  
+I usually pipe its output through grep for the code I am trying to understand.  I found that when troubleshooting people's cloud-hosted lambdas & functions I run into more *obscure* response codes and need to check their meaning.  
 
 
 ### createRandomStrings.py  
