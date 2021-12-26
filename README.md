@@ -61,11 +61,16 @@ optional arguments:
 
 
 ### useRandomUserAgent  
-* [useRandomUserAgent](https://github.com/mccright/PythonStuff/blob/main/useRandomUserAgent.py) is just a reminder for me about rotating my user_agent strings.
+* [useRandomUserAgent](https://github.com/mccright/PythonStuff/blob/main/useRandomUserAgent.py) is just a reminder for me about rotating my user_agent strings.  
 
 
 ### checkResponseCodes  
-* [checkResponseCodes](https://github.com/mccright/PythonStuff/blob/main/checkResponseCodes.py) is a list of all the http Codes from the IANA Hypertext Transfer Protocol (HTTP) Status Code Registry in the form of a long 'case statement.'  I wanted it around so that I could copy ot the subset that I needed at any given time.  It is not meant to be used as is.
+* [checkResponseCodes](https://github.com/mccright/PythonStuff/blob/main/checkResponseCodes.py) is a list of all the http Codes from the IANA Hypertext Transfer Protocol (HTTP) Status Code Registry in the form of a long 'case statement.'  I wanted it around so that I could copy ot the subset that I needed at any given time.  It is not meant to be used as is.  
+
+
+### http-response-codes  
+* [http-response-codes](https://github.com/mccright/PythonStuff/blob/main/http-response-codes.py) is a CLI script that emits a list of all the http Codes from your current http module plus their short description & long description.  
+I usually pipe its output through grep for the code I am trying to understand.  
 
 
 ### createRandomStrings.py  
