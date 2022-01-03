@@ -23,15 +23,18 @@ def do_the_thing():
         "first_placeholder": FIRST_VARIABLE, 
         "second_placeholder": SECOND_VARIABLE 
     }
-
-    response = requests.post('https://targetHost.targetDomain.dom/the/api', 
+    try:
+        response = requests.post('https://targetHost.targetDomain.dom/the/api', 
                             data=json.dumps(payload),
                             headers=header)
-	
+    except Exception as e:
+        # use "e" for now, clean up, add safety later
+        print(e)
     if response.json()["status"] == "success":
         print('Something relevant ')
     else:
-        print(response.text) # print message if unsuccessful, might need to ASCIIfy it first
+        print(response.text) # print message if unsuccessful, might 
+                             # need to safely ASCIIfy it first
 
 if __name__ == '__main__':
     do_the_thing()
