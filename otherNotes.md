@@ -30,6 +30,42 @@ For example, we can explore requests urllib3 & exceptions:
 ['BaseHTTPError', 'ChunkedEncodingError', 'ConnectTimeout', 'ConnectionError', 'ContentDecodingError', 'FileModeWarning', 'HTTPError', 'InvalidHeader', 'InvalidProxyURL', 'InvalidSchema', 'InvalidURL', 'MissingSchema', 'ProxyError', 'ReadTimeout', 'RequestException', 'RequestsDependencyWarning', 'RequestsWarning', 'RetryError', 'SSLError', 'StreamConsumedError', 'Timeout', 'TooManyRedirects', 'URLRequired', 'UnrewindableBodyError', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
 ```
 
+### Compare Two Lists  
+Identify which strings in list two are not already in list one:  
+```python
+def compare_lists(list_one_str_file_name, list_two_str_file_name):
+    list_one_str_file = list_one_str_file_name
+    list_one_str_list = []
+    listonestrings = open(list_one_str_file, "r")
+    list_one_str_list = listonestrings.readlines()
+    print(f"There are {len(list_one_str_list)} strings in List One")
+
+    list_two_str_file = list_two_str_file_name
+    list_two_str_list = []
+    otherusers = open(list_two_str_file, "r")
+    list_two_str_list = otherusers.readlines()
+    print(f"There are {len(list_two_str_list)} strings in List Two\n")
+
+    for i in list_two_str_list:
+        if i not in list_one_str_list:
+            print(f"{i}")
+            # The rest of this code requires additional 
+            # logging & reporting functions
+            logging.info(f"{i}")
+            try:
+                reportFile.write(f"{i}")
+            except IOError as e:
+                logging.critical('I/O error on write to file: ' + repr(e))
+                logging.critical('Report file name: ' + repr(reportName))
+                print('I/O error on write to file: ' + repr(e))
+            except Exception:
+                logging.critical('Unexpected error on write to file: ' + repr(e))
+                logging.critical('Report file name: ' + repr(reportName))
+                print("Unexpected error on write to file \'{0}\': {2}".format(reportName,sys.exc_info()[0]))
+                raise
+    print(f"{report_file_topic} Report Filename: {reportName}")
+```
+
 ### Graph on the terminal when investigating and exploring  
 * asciichart (simplistic) [https://github.com/cashlo/asciichart](https://github.com/cashlo/asciichart)  
 * livechart (maybe) [https://github.com/greyltc-org/livechart](https://github.com/greyltc-org/livechart)  
