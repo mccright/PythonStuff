@@ -73,6 +73,7 @@ def compare_lists(list_one_str_file_name, list_two_str_file_name):
 * plotille [https://github.com/tammoippen/plotille](https://github.com/tammoippen/plotille)  
 * terminal-plot (for csv) [https://github.com/soraxas/terminal-plot](https://github.com/soraxas/terminal-plot)  
 * termplotlib (works for me) [https://github.com/nschloe/termplotlib](https://github.com/nschloe/termplotlib)  
+* tplot for creating text-based graphs -- for visualizing data to the terminal or log files. [https://github.com/JeroenDelcour/tplot](https://github.com/JeroenDelcour/tplot)  
 
 
 ### Notes on Python Types  
