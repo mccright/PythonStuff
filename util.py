@@ -129,7 +129,7 @@ def read_file_line_by_line_to_set(file) -> set:
 
 
 # Ref: https://github.com/shpala/pybuild_utils/blob/master/base/utils.py
-# TODO: Work on thie download_file() function - make it more general & support proxies
+# TODO: Work on this download_file() function - make it more general & support proxies
 from urllib.request import urlopen
 # class for special err handling
 class DownloadError(Exception):
@@ -183,8 +183,8 @@ def download_file(url, current_dir):
 # pip install python-string-utils
 import string_utils
 
-# TODO: Build this out into a 'safe' utility function.
-# Also use this as an example of how terse you can be in a hurry.
+# TODO: Build this out into a 'safer' utility function.
+# Also use this as a reminder of how terse you can be in a hurry.
 # Add input/output sanity checking and error handling
 # See 'download_file()' above.
 def get_content_via_http(url):
@@ -196,13 +196,13 @@ def get_content_via_http(url):
 # Add input/output sanity checking and error handling
 def url_encode_parms(url, *kwargs):
     the_parameters = {"name": "nameString大", "age": 30}
-    print '&'.join('%s=%s' % (k, v) for k, v in d_para.iteritems())
+    print '&'.join('%s=%s' % (k, v) for k, v in the_parameters.iteritems())
     # age=30&name=nameString大
-    print '&'.join('%s=%s' % (k, urllib.quote(str(v))) for k, v in d_para.iteritems())
+    print '&'.join('%s=%s' % (k, urllib.quote(str(v))) for k, v in the_parameters.iteritems())
     # age=30&name=nameString%A4%A7
 
     base_url = 'null.net/'
-    url = 'http://%s?%s' % (base_url, '&'.join('%s=%s' % (k, urllib.quote(str(v))) for k, v in d_para.iteritems()))
+    url = 'http://%s?%s' % (base_url, '&'.join('%s=%s' % (k, urllib.quote(str(v))) for k, v in the_parameters.iteritems()))
     print url
     # http://null.net/?age=30&name=nameString%A4%A7
 
@@ -228,13 +228,14 @@ def multi_process_stress_test(url1, url2):
     pool.join()
     print ('Test duration: %s' % (time.time() - start))
 
+
 # FROM: 
 # https://github.com/oVirt/ovirt-hosted-engine-ha/blob/master/ovirt_hosted_engine_ha/lib/util.py
 def to_bool(string):
-    first = str(string).lower()[:1]
-    if first in ('t', 'y', '1'):
+    bool_var = str(string).lower()[:1]
+    if bool_var in ('t', 'y', '1'):
         return True
-    elif first in ('f', 'n', '0'):
+    elif bool_var in ('f', 'n', '0'):
         return False
     else:
         raise ValueError("Invalid value for boolean: {0}".format(string))
@@ -245,7 +246,6 @@ def to_bool(string):
 def __log_debug(logger, *args, **kwargs):
     if logger:
         logger.debug(*args, **kwargs)
-
 
 
 # FROM: 
@@ -259,7 +259,7 @@ def mkdir_recursive(path):
 
 
 # FROM:
-https://github.com/oVirt/ovirt-hosted-engine-ha/blob/master/ovirt_hosted_engine_ha/env/path.py
+# https://github.com/oVirt/ovirt-hosted-engine-ha/blob/master/ovirt_hosted_engine_ha/env/path.py
 def escape_remote_path(path):
     return path.replace("_", "__").replace("/", "_")
 
