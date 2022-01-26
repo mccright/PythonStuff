@@ -30,6 +30,25 @@ For example, we can explore requests urllib3 & exceptions:
 ['BaseHTTPError', 'ChunkedEncodingError', 'ConnectTimeout', 'ConnectionError', 'ContentDecodingError', 'FileModeWarning', 'HTTPError', 'InvalidHeader', 'InvalidProxyURL', 'InvalidSchema', 'InvalidURL', 'MissingSchema', 'ProxyError', 'ReadTimeout', 'RequestException', 'RequestsDependencyWarning', 'RequestsWarning', 'RetryError', 'SSLError', 'StreamConsumedError', 'Timeout', 'TooManyRedirects', 'URLRequired', 'UnrewindableBodyError', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
 ```
 
+
+### Simple File Read-File Write Functions  
+This approach is only a quick hack for problem-solving:  
+```python
+#!/usr/bin/env python3
+import os, re, sys
+
+
+def readFile(filename):
+    with open(filename, "rb") as f:
+        return f.read().decode("utf-8")
+
+
+def writeFile(filename, data):
+    with open(filename, "wb") as f:
+        f.write(data.encode("utf-8"))
+```
+
+
 ### Compare Two Lists  
 Identify which strings in list two are not already in list one:  
 ```python
