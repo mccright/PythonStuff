@@ -31,11 +31,16 @@ For example, we can explore requests urllib3 & exceptions:
 ```
 
 
-### Simple File Read-File Write Functions  
+### Simple File Read-File Write-File and Patch-File Functions  
 This approach is only a quick hack for problem-solving:  
 ```python
 #!/usr/bin/env python3
-import os, re, sys
+# This is a fragment used in larger scripts to 
+# change the contents of configuration files.
+# From: https://github.com/adamrehn/ue4-docker/tree/master/ue4docker/dockerfiles/ue4-source/windows
+import os
+import re
+import sys
 
 
 def readFile(filename):
@@ -46,8 +51,24 @@ def readFile(filename):
 def writeFile(filename, data):
     with open(filename, "wb") as f:
         f.write(data.encode("utf-8"))
-```
 
+
+def patchFile(filename, original, replacement):
+    contents = readFile(filename)
+    patched = contents.replace(original, replacement)
+    writeFile(filename, patched)
+    
+
+# This is just an example of how to approach using the patchFile function
+if len(sys.argv) != 4:
+    print(f"USAGE: {sys.argv[0]} <filename> <existingString> <replacementString>")
+    sys.exit(1)
+else:
+    filename = sys.argv[1]
+    existing_string = sys.argv[2]
+    replacement_string = sys.argv[3]
+    patchFile(filename, existing_string, replacement_string)
+```
 
 ### Compare Two Lists  
 Identify which strings in list two are not already in list one:  
