@@ -77,6 +77,10 @@ I usually pipe its output through grep for the code I am trying to understand.  
 * [createRandomStrings](https://github.com/mccright/PythonStuff/blob/main/createRandomStrings.py) is some unfinished experimenting with different ways to create 'unique' strings, a common requirement...  
 
 
+### otherNotes.md  
+* [otherNotes.md](https://github.com/mccright/PythonStuff/blob/main/otherNotes.md) is just a collection of short code fragments that act as reminders for me.  
+
+
 ## AWS Lambdas  
 * Starter project [https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint](https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint)  
 * 25 model projects [https://github.com/serverless/examples](https://github.com/serverless/examples)  
