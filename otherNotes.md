@@ -61,7 +61,7 @@ def patchFile(filename, original, replacement):
 
 # This is just an example of how to approach using the patchFile function
 if len(sys.argv) != 4:
-    print(f"USAGE: {sys.argv[0]} <filename> <existingString> <replacementString>")
+    print(f"USAGE: python3 {sys.argv[0]} <filename> <existingString> <replacementString>")
     sys.exit(1)
 else:
     filename = sys.argv[1]
