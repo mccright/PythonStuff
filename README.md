@@ -110,6 +110,7 @@ and
 * Write inputs and outputs to functions in a comment in the function body. 
 * Debugging has its place, but [don't hesitate to use *print()* statements](https://adamj.eu/tech/2021/10/08/tips-for-debugging-with-print/). 
 (The original *conventions* in this list are from a readme by https://github.com/georgeberry.  Thank you George Berry.)  
+* Use *[better-exceptions](https://github.com/Qix-/better-exceptions)* during local development, and use care to keep it out of your production deployments.  
 * What is the difference between using  "_" and "__" in variable or function names?  The responses get at some Python conventions: [https://old.reddit.com/r/learnpython/comments/s5z0l8/can_someone_explain_and_in_python_clearly_for_me/](https://old.reddit.com/r/learnpython/comments/s5z0l8/can_someone_explain_and_in_python_clearly_for_me/)  
 
 
