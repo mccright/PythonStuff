@@ -70,6 +70,22 @@ else:
     patchFile(filename, existing_string, replacement_string)
 ```
 
+### Read lines in a way that is ready for pipelines  
+Sophisticated or not, this seems like a common and useful idiom.  
+Under many circumstances input/output sanity checking or other *safety* measures will be needed in that while loop.  
+```python
+import sys
+# ...your functions
+if __name__ == "__main__":
+    line = sys.stdin.readline()
+    while line:
+	what_I_need = do_something_useful(line)
+    # do whatever is needed, I'll just print
+	print(f"{what_I_need}")
+        line = sys.stdin.readline()
+```
+
+
 ### Compare Two Lists  
 Identify which strings in list two are not already in list one:  
 ```python
