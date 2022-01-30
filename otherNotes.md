@@ -79,9 +79,10 @@ import sys
 if __name__ == "__main__":
     line = sys.stdin.readline()
     while line:
-	what_I_need = do_something_useful(line)
-    # do whatever is needed, I'll just print
-	print(f"{what_I_need}")
+        what_I_need = do_something_useful(line)
+        # do whatever is needed, I'll just print
+        print(f"{what_I_need}")
+        # re-fill 'line'
         line = sys.stdin.readline()
 ```
 
