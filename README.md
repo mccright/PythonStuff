@@ -77,6 +77,10 @@ I usually pipe its output through grep for the code I am trying to understand.  
 * [createRandomStrings](https://github.com/mccright/PythonStuff/blob/main/createRandomStrings.py) is some unfinished experimenting with different ways to create 'unique' strings, a common requirement...  
 
 
+### encryptstr.py  
+[encryptstr](https://github.com/mccright/PythonStuff/blob/main/encryptTest/encryptstr.py) is a sketal set of AES-CBC string encryption/decryption functions.  
+
+
 ### otherNotes.md  
 * [otherNotes.md](https://github.com/mccright/PythonStuff/blob/main/otherNotes.md) is just a collection of short code fragments that act as reminders for me.  
 

@@ -93,18 +93,18 @@ def normalize_tainted_string(questionablestring):
 
 
 # Ref: https://github.com/shpala/pybuild_utils/blob/master/base/utils.py
-def read_file_line_by_line_to_list(file) -> list:
+def read_file_line_by_line_to_list(text_file) -> list:
     """
     Read file into an array
     :param file: input file
     :return: file lines in an array
     """
-    if not os.path.exists(file):
-        raise BuildError('file path: {0} not exists'.format(file))
+    if not os.path.exists(text_file):
+        raise Exception('file path: {0} not exists'.format(text_file))
 
     file_array = []
-    with open(file, "r") as ins:
-        for line in ins:
+    with open(text_file, "r") as text_file_input:
+        for line in text_file_input:
             file_array.append(line.strip())
 
     return file_array
@@ -126,6 +126,23 @@ def read_file_line_by_line_to_set(file) -> set:
             file_set.add(line.strip())
 
     return file_set
+
+
+# Read lines in a way that is ready for pipelines  
+# Though unsophisticated, this seems like a common 
+# and useful idiom.  
+# Under many circumstances input/output sanity checking 
+# or other *safety* measures will be needed in that while loop.  
+import sys
+# ...your functions
+if __name__ == "__main__":
+    line = sys.stdin.readline()
+    while line:
+        what_I_need = do_something_useful(line)
+        # do whatever is needed, I'll just print
+        print(f"{what_I_need}")
+        # re-fill 'line'
+        line = sys.stdin.readline()
 
 
 # Ref: https://github.com/shpala/pybuild_utils/blob/master/base/utils.py
