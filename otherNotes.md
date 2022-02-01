@@ -201,6 +201,7 @@ def _get_endpoint_response(content, endpoint_url):
 * Another useful collection of examples: [https://github.com/cherkavi/python-utilities](https://github.com/cherkavi/python-utilities)  
 * Reminder to self - Look at these utilities: [https://github.com/karldoenitz/PythonUtils](https://github.com/karldoenitz/PythonUtils)  
 * "Seamless FastAPI Configuration with ConfZ." by Silvan Melchior [https://blog.devgenius.io/seamless-fastapi-configuration-with-confz-90949c14ea12](https://blog.devgenius.io/seamless-fastapi-configuration-with-confz-90949c14ea12) and [https://github.com/silvanmelchior/FastAPI_ConfZ_Demo](https://github.com/silvanmelchior/FastAPI_ConfZ_Demo)  
+* Some example Utility functions [https://github.com/ukncsc/viper/blob/master/viper/common/utils.py](https://github.com/ukncsc/viper/blob/master/viper/common/utils.py)  
 
   
 ### Notes on home cluster project  
