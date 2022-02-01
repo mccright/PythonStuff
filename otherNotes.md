@@ -123,6 +123,28 @@ def compare_lists(list_one_str_file_name, list_two_str_file_name):
     print(f"{report_file_topic} Report Filename: {reportName}")
 ```
 
+
+### Abstract common stuff: http headers reminder  
+```python
+""" Add headers that are commonly required for your operations."""
+def _build_headers():
+    headers = {
+        'Content-Type': 'application/xml',
+        'Accept': 'application/json'
+    }
+    return headers
+```
+Then here is a simplistic example of using them:
+```python
+def _get_endpoint_response(content, endpoint_url):
+    data = content
+    headers = _build_headers()
+    response = requests.post(endpoint_url, data=data, headers=headers)
+    endpoint_response = (json.dumps(response.json(), indent=4))
+    return endpoint_response
+```
+
+
 ### Graph on the terminal when investigating and exploring  
 * asciichart (simplistic) [https://github.com/cashlo/asciichart](https://github.com/cashlo/asciichart)  
 * livechart (maybe) [https://github.com/greyltc-org/livechart](https://github.com/greyltc-org/livechart)  
