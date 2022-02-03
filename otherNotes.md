@@ -2,6 +2,13 @@
 
 ### Use sys.exit(), not exit() or quit()  
 A call to [sys.exit()](https://docs.python.org/3/library/sys.html#sys.exit) is translated into an exception so that clean-up handlers ([finally](https://docs.python.org/3/reference/compound_stmts.html#finally) clauses of [try](https://docs.python.org/3/reference/compound_stmts.html#try) statements) can be executed, and so that a debugger can execute a script without running the risk of losing control. The [os._exit()](https://docs.python.org/3/library/os.html#os._exit) function can be used if it is absolutely positively necessary to exit immediately (for example, in the child process after a call to [os.fork()](https://docs.python.org/3/library/os.html#os.fork)).  
+```python
+    try:
+        something = try_something_wrong(this_fails)
+    except Exception as e:
+        print(f"Handling an exception. Error: {e} -- {sys.exc_info()}")
+        sys.exit()
+```
 
 [exit()](https://docs.python.org/2/library/constants.html#exit) and [quit()](https://docs.python.org/3/library/constants.html#quit) raise the SystemExit exception.  They exist to support interactive Python in the interpreter.  They rely the site module and should only be used in the interpreter and not in production code.  
 
@@ -142,6 +149,18 @@ def _get_endpoint_response(content, endpoint_url):
     response = requests.post(endpoint_url, data=data, headers=headers)
     endpoint_response = (json.dumps(response.json(), indent=4))
     return endpoint_response
+```
+
+
+### Abstract common stuff: json I/O  
+```python
+def decode_json(json_input):
+    return json.loads(json_input)
+```
+and
+```python
+def encode_json(json_input):
+    return json.dumps(json_input, allow_nan = False)
 ```
 
 
