@@ -214,6 +214,13 @@ def encode_json(json_input):
 * Python String Utils - A handy library to validate, manipulate and generate strings: [https://github.com/daveoncode/python-string-utils](https://github.com/daveoncode/python-string-utils)  
 * List AWS and GCP instances: [https://github.com/google/python-cloud-utils/blob/master/cloud_utils/list_instances.py](https://github.com/google/python-cloud-utils/blob/master/cloud_utils/list_instances.py)  
 * Python utilities for AWS: [https://github.com/hseera/aws-python-utilities](https://github.com/hseera/aws-python-utilities)  
+* Check an IP address for *cloud* ownership: [https://github.com/nccgroup/cloud_ip_ranges/](https://github.com/nccgroup/cloud_ip_ranges/)  
+  * Sometimes you need to know how to block or permit IP address source or destination addresses from a given cloud service provider:  
+  * AWS IP Address ranges: [https://ip-ranges.amazonaws.com/ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json)  
+  * Azure IP address ranges: [https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519](https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519) (note: *resists automation*)  
+  * Digital Ocean IP address ranges: [http://digitalocean.com/geo/google.csv](http://digitalocean.com/geo/google.csv)  
+  * Google Cloud IP address ranges: [https://www.gstatic.com/ipranges/cloud.json](https://www.gstatic.com/ipranges/cloud.json)  
+  * Oracle Cloud IP address ranges: [https://docs.cloud.oracle.com/en-us/iaas/tools/public_ip_ranges.json](https://docs.cloud.oracle.com/en-us/iaas/tools/public_ip_ranges.json)  
 * Python utility scripts to help automate mundane/repetitive/specific performance testing tasks: [https://github.com/hseera/python-utilities](https://github.com/hseera/python-utilities)  
 * Get detail about the OS: [https://github.com/hseera/get-System-Information](https://github.com/hseera/get-System-Information)  
 * Broad set of examples [https://github.com/yennanliu/utility_Python/](https://github.com/yennanliu/utility_Python/)  
