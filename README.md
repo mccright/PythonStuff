@@ -120,3 +120,5 @@ and
 
 ## External References  
 * Simple file upload using Flask: [https://roytuts.com/python-flask-file-upload-example/](https://roytuts.com/python-flask-file-upload-example/) and consider enhancing it with [Flask ReUploaded](https://flask-reuploaded.readthedocs.io/en/latest/).  
+* "A Gentle Introduction to AWS Lambda." Matt Bacchi, 2022-02-01 [https://bacchi.org/posts/gentle-intro-lambda/](https://bacchi.org/posts/gentle-intro-lambda/)  
+* Python Graph Gallery: A Collection of Hundreds of Charts Made With Python [https://www.python-graph-gallery.com/](https://www.python-graph-gallery.com/) especially time series graphing [https://www.python-graph-gallery.com/basic-time-series-with-matplotlib](https://www.python-graph-gallery.com/basic-time-series-with-matplotlib)  
