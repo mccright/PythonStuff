@@ -94,6 +94,43 @@ if __name__ == "__main__":
 ```
 
 
+### Simple interactions with CSV files  
+The emphasis here is on "*simple*.  
+You can get a lot done with only the csv module [https://docs.python.org/3/library/csv.html](https://docs.python.org/3/library/csv.html)  
+Also see: [https://www.webcodegeeks.com/python/csv-processing-using-python/](https://www.webcodegeeks.com/python/csv-processing-using-python/) and  
+[https://www.geeksforgeeks.org/working-csv-files-python/](https://www.geeksforgeeks.org/working-csv-files-python/)  
+I find this is a useful idiom.  
+As usual, there are many circumstances input/output sanity checking or other  
+*safety* measures will be needed in the with and loops.  
+```python
+import csv
+from typing import TextIO
+
+csv_data_file = "mydata.csv"
+csv_file: TextIO
+with open(csv_data_file, 'r', newline='') as csv_file:
+    csv_reader = csv.reader(csv_file, quotechar=':', delimiter=';')
+    for row in csv_reader:
+        if csv_reader.line_num != 0:
+            for col in row:
+                print(col, end="\t")
+        print()
+```
+or print only specific columns
+```python
+import csv
+from typing import TextIO
+
+csv_data_file = "mydata.csv"
+csv_file: TextIO
+with open(csv_data_file, 'r', newline='') as csv_file:
+    csv_reader = csv.reader(csv_file, quotechar=':', delimiter=';')
+    for row in csv_reader:
+        if csv_reader.line_num != 1:
+            print(f"{row[0]} is {row[1]} years old")
+```
+
+
 ### Compare Two Lists  
 Identify which strings in list two are not already in list one:  
 ```python
