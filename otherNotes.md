@@ -77,6 +77,35 @@ else:
     patchFile(filename, existing_string, replacement_string)
 ```
 
+### Get values from a config file  
+Find/set config file location and name  
+Then get several values:  
+weather_host, timeout, temp_type, wind_speed_type  
+Use: [https://docs.python.org/3/library/configparser.html](https://docs.python.org/3/library/configparser.html)  
+Assume sample configuration file contents:  
+```terminal
+[weather]
+weather_host: https://openweather.org/api/
+timeout: 16
+temp_type: F
+wind_speed_type: mph
+```
+Here is a *simple* way to use it:  
+```python
+import configparser
+config = configparser.ConfigParser()
+# Probably need a function to safely identify if the 
+# config file exists first...
+config.read('example.ini')
+# create a *weather* object for a specific config file section
+weather = config['weather']
+# now get the values from that object
+weather_provider = weather.get('weather_host')
+request_timeout = weather.getint('timeout')
+temp_value_type = weather.get('temp_type')
+wind_velocity_type = weather.get('wind_speed_type')
+```
+
 ### Read lines in a way that is ready for pipelines  
 Sophisticated or not, this seems like a common and useful idiom.  
 Under many circumstances input/output sanity checking or other *safety* measures will be needed in that while loop.  
@@ -188,6 +217,48 @@ def _get_endpoint_response(content, endpoint_url):
     return endpoint_response
 ```
 
+### Get the default gateway interface  
+Sometimed it is important to use the default gateway interface.  
+Using the *correct* interface is important for some use cases.  
+In some of those use cases, it is also important to know its IP address.  
+Get the default interface:  
+```python
+import netifaces
+def default_interface():
+    """ Get default gateway interface.
+    Some OSes return 127.0.0.1 when using
+    socket.gethostbyname(socket.gethostname()),
+    so we're attempting to get a kind of valid hostname here.
+    FROM: https://github.com/nils-werner/zget/blob/crypto/zget/utils.py
+    """
+    try:
+        return netifaces.gateways()['default'][netifaces.AF_INET][1]
+    except KeyError:
+        # Sometimes 'default' is empty but AF_INET exists alongside it
+        return netifaces.gateways()[netifaces.AF_INET][0][1]
+```
+And then use that interface name to get its IP address:  
+```python
+import netifaces
+def ip_addr(interface):
+    """ Get IP address from interface.
+    FROM: https://github.com/nils-werner/zget/blob/crypto/zget/utils.py
+    """
+    try:
+        return netifaces.ifaddresses(interface)[netifaces.AF_INET][0]['addr']
+    except KeyError:
+        raise InvalidInterface()
+```
+
+
+### Quietly delete a file
+```python
+def silentremove(filename):
+    try:
+        return os.remove(filename)
+    except Exception:
+        pass
+```
 
 ### Abstract common stuff: json I/O  
 ```python
