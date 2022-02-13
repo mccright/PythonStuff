@@ -96,7 +96,13 @@ import configparser
 config = configparser.ConfigParser()
 # Probably need a function to safely identify if the 
 # config file exists first...
-config.read('example.ini')
+# Simplistic: config.read('example.ini')
+# or more realistic:
+config.read([
+        'example.ini',
+        os.path.expanduser('~/example.ini'),
+        os.path.join(os.getenv('APPDATA', ''), 'myApp', 'example.ini'),
+    ])
 # create a *weather* object for a specific config file section
 weather = config['weather']
 # now get the values from that object
