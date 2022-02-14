@@ -266,6 +266,40 @@ def silentremove(filename):
         pass
 ```
 
+### Get a password  
+Sometimes you are gathering the password to pass along  
+to another process that needs to be successful -- as  
+as downstream processes require that success.  
+In that case, one approach is to have the user enter  
+their password twice and match them...  
+```python
+def prompt_for_password(retry=None):
+    """Prompt user for password if not provided so the 
+    password doesn't show up in the bash history.
+    """
+    if not (hasattr(sys.stdin, 'isatty') and sys.stdin.isatty()):
+        # There is no user here, so nothing to do
+        return
+
+    if not retry:
+        while True:
+            try:
+                the_password = getpass.getpass('Password: ')
+                return the_password
+            except EOFError:
+                return
+    else:
+                while True:
+            try:
+                the_password = getpass.getpass('Password: ')
+                rep_passwd = getpass.getpass('Repeat the Password: ')
+                if the_password == rep_passwd:
+                    return the_password
+            except EOFError:
+                return
+
+```
+
 ### Abstract common stuff: json I/O  
 ```python
 def decode_json(json_input):
