@@ -322,6 +322,10 @@ def encode_json(json_input):
 * tplot for creating text-based graphs -- for visualizing data to the terminal or log files. [https://github.com/JeroenDelcour/tplot](https://github.com/JeroenDelcour/tplot)  
 
 
+### Single Sign On (SSO) Support  
+* In a JupyterHub environment, experiment with OAuthenticator [https://github.com/jupyterhub/oauthenticator](https://github.com/jupyterhub/oauthenticator)  
+
+
 ### Notes on Python Types  
 |Type   |  Description  |
 |-------|---------------|
