@@ -352,14 +352,31 @@ def encode_json(json_input):
 ### Notes on Python Object Types  
 |Type   |  Description  |
 |-------|---------------|
-|list| A mutable sequence, in square brackets [] |
-|tuple | An imutable sequence, in parentheses () |
-|dict  | A 'key, value' storage, in curly braces {} |
-|set| A collection of unordered unique elements without duplicates |
-|str| An immutable sequence of characters |
+|list| A sequence type - [mutable sequence, in square brackets](https://www.w3schools.com/python/python_lists.asp) [] |
+|tuple | A sequence type - [imutable sequence, in parentheses](https://www.w3schools.com/python/python_tuples.asp) () |
+|dict  | A mapping type - ['key, value' storage, in curly braces](https://www.w3schools.com/python/python_dictionaries.asp) {} |
+|set| A [collection of unordered unique elements without duplicates](https://www.w3schools.com/python/python_sets.asp) {} |
+|frozenset| |
+|range | |
+|str| A text type -- an [immutable sequence of characters](https://www.w3schools.com/python/python_strings.asp); with [several representations using single, double, or triple quotes](https://www.w3resource.com/python/python-string.php) |
 |unicode| An immutable sequence of Unicode encoded characters |
+|int | A Numeric type - an integer is a whole number, positive or negative, without decimals, of unlimited length |
+|float | A Numeric type - or "floating point number" is a number, positive or negative, containing one or more decimals; or a float can also be scientific numbers with an "e" to indicate the power of 10 |
+|complex | A Numeric type - a complex number is written with a "j" as the imaginary part|
+|bool | A Boolean type - [Booleans represent one of two values: True or False](https://www.w3schools.com/python/python_booleans.asp) |
+|NoneType | 'None' has [a single value 'null' -- used to signify the absence of a value](https://www.w3schools.com/python/ref_keyword_none.asp). The 'None' keyword is not the same as 0, False, or an empty string |
+|bytes | A binary sequence type - an [immutable binary object containing single bytes](https://www.w3resource.com/python/python-bytes.php); from the constructor, bytes(), or from literals use a "b" prefix with normal string syntax: b'python' |
+|bytearray | A binary sequence type - a [mutable binary object containing single bytes](https://www.w3resource.com/python/python-bytes.php); from the constructor, bytearray() |
+|memoryview | A Binary type - |
 
-### Notes on the Python Standard Library resources  
+### Notes on Some Python Standard Library resources  
+
+
+### API Access to Data  
+* One FastAPI approach:  
+  * **sqlacodegen** is a tool that reads the structure of an existing database and generates the appropriate SQLAlchemy model code [https://github.com/agronholm/sqlacodegen](https://github.com/agronholm/sqlacodegen)  
+  * **FastAPIQuickCRUD** is used to generate CRUD methods in FastApi from an SQLAlchemy schema [https://github.com/LuisLuii/FastAPIQuickCRUD](https://github.com/LuisLuii/FastAPIQuickCRUD)  
+  * **FastAPI** is a high-performance web framework for building APIs with Python 3.6+ based on standard Python type hints [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)  
 
 
 ### Utility classes  
