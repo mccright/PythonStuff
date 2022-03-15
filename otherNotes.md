@@ -364,6 +364,7 @@ Built-in Functions: [https://docs.python.org/3/library/functions.html](https://d
 |bytes | A binary sequence type - an [immutable binary object containing single bytes](https://www.w3resource.com/python/python-bytes.php); from the constructor, bytes(), or from literals use a "b" prefix with normal string syntax: b'python' |
 |bytearray | A [binary sequence type](https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview) - a [mutable binary object containing single bytes](https://www.w3resource.com/python/python-bytes.php); from the constructor, bytearray() |
 |memoryview | A Binary type - an [object allowing Python code to access the internal data of an object that supports the buffer protocol without copying](https://docs.python.org/3/library/stdtypes.html#memory-views) |
+
 Built-in Types: [https://docs.python.org/3/library/stdtypes.html](https://docs.python.org/3/library/stdtypes.html)  
 
 
