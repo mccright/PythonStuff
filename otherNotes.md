@@ -326,14 +326,10 @@ def encode_json(json_input):
 * In a JupyterHub environment, experiment with OAuthenticator [https://github.com/jupyterhub/oauthenticator](https://github.com/jupyterhub/oauthenticator)  
 
 
-### Notes on Python Types  
-|Type   |  Description  |
-|-------|---------------|
-|int    |  |
-|long   |  |
-|float  |  |
-|complex|  |
-|boolean|  |
+The Python Language Reference: [https://docs.python.org/3/reference/index.html](https://docs.python.org/3/reference/index.html)  
+The Python Standard Library: [https://docs.python.org/3/library/index.html](https://docs.python.org/3/library/index.html)  
+Built-in Functions: [https://docs.python.org/3/library/functions.html](https://docs.python.org/3/library/functions.html)  
+
 
 ### Notes on Python Conditionals  
 |Keyword      |  Description  |
@@ -366,8 +362,10 @@ def encode_json(json_input):
 |bool | A Boolean type - [Booleans represent one of two values: True or False](https://www.w3schools.com/python/python_booleans.asp) |
 |NoneType | 'None' has [a single value 'null' -- used to signify the absence of a value](https://www.w3schools.com/python/ref_keyword_none.asp). The 'None' keyword is not the same as 0, False, or an empty string |
 |bytes | A binary sequence type - an [immutable binary object containing single bytes](https://www.w3resource.com/python/python-bytes.php); from the constructor, bytes(), or from literals use a "b" prefix with normal string syntax: b'python' |
-|bytearray | A binary sequence type - a [mutable binary object containing single bytes](https://www.w3resource.com/python/python-bytes.php); from the constructor, bytearray() |
-|memoryview | A Binary type - |
+|bytearray | A [binary sequence type](https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview) - a [mutable binary object containing single bytes](https://www.w3resource.com/python/python-bytes.php); from the constructor, bytearray() |
+|memoryview | A Binary type - an [object allowing Python code to access the internal data of an object that supports the buffer protocol without copying](https://docs.python.org/3/library/stdtypes.html#memory-views) |
+Built-in Types: [https://docs.python.org/3/library/stdtypes.html](https://docs.python.org/3/library/stdtypes.html)  
+
 
 ### Notes on Some Python Standard Library resources  
 
