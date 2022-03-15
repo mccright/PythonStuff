@@ -2,7 +2,7 @@ import sys
 
 # See also: https://github.com/saltstack/salt-pylint/blob/master/saltpylint/minpyver.py
 
-class MinPy:
+class MinimumPyVer:
 
     def __init__(self, major_version=3, minor_version=5, dot3_version=0):
         self.MIN_PYTHON_MAJOR_VERSION=major_version
@@ -29,6 +29,6 @@ class MinPy:
 
 
 if __name__ == '__main__':
-    chkpy = MinPy(major_version=3,minor_version=7)
+    chkpy = MinimumPyVer(major_version=3,minor_version=7)
     chkpy.insist_on_python_vthree()
 
