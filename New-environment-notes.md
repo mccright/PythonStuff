@@ -75,7 +75,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install ttf-mscorefonts-installer -y
 # 
 # How to Remove (Uninstall) Microsoft Fonts
-sudo apt autoremove ttf-mscorefonts-installer --purge
+## sudo apt autoremove ttf-mscorefonts-installer --purge
 # 
 # Install/Upgrade cURL
 sudo apt update && sudo apt upgrade -y
@@ -87,7 +87,7 @@ curl --version
 sudo snap install keepassxc
 sync;sync
 # If we need to remove it
-sudo snap remove keepassxc
+## sudo snap remove keepassxc
 # 
 # Install Calibre
 sudo apt update && sudo apt upgrade -y
