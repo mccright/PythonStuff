@@ -109,4 +109,23 @@ sudo ufw enable
 # Get the PC's IP address with ifconfig.
 # Connect to SSH Server:
 # ssh username@ip-address/hostname
+# 
+# Install Docker Desktop
+sudo apt update && sudo apt upgrade -y
+sudo apt install --upgrade ca-certificates gnupg lsb-release
+# Add Docker’s official GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+# Set up the stable Docker repository
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+# Update sources
+sudo apt-get update
+# Confirm by listing docker community editions available
+apt-cache madison docker-ce
+# Download and install the Debian package
+curl https://desktop-stage.docker.com/linux/main/amd64/77103/docker-desktop.deb --output docker-desktop.deb
+sudo apt install ./docker-desktop.deb
+# Search Docker Desktop on the Applications menu, or
+systemctl --user start docker-desktop
+# if you have not already done so, initialize pass
+# http://manpages.ubuntu.com/manpages/trusty/man1/pass.1.html
 ```
