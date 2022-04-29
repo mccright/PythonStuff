@@ -111,6 +111,7 @@ sudo ufw enable
 # ssh username@ip-address/hostname
 # 
 # Install Docker Desktop
+# https://docs.docker.com/desktop/linux/
 sudo apt update && sudo apt upgrade -y
 sudo apt install --upgrade ca-certificates gnupg lsb-release
 # Add Docker’s official GPG key
