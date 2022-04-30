@@ -21,6 +21,9 @@ if sys.version_info < (3, 7):
     raise Exception("Use only with Python 3.7 or higher")
 ```
 
+### Python Logging  
+I have another repo with with some Python logging content [https://github.com/mccright/PythonLoggingExamples/](https://github.com/mccright/PythonLoggingExamples/)  
+
 ### stringSearch  
 * This is a harness for evaluating the contents of files (in a directory and all child directories) using a collection of your own regex's.  If you need specialized secrets-hunting utilities, see [TruffleHog](https://github.com/dxa4481/truffleHog) or Burp Suite Extension [SecretFinder](https://github.com/m4ll0k/SecretFinder/blob/master/BurpSuite-SecretFinder/SecretFinder.py).  I used ideas & code from both of them in this string search utility.  
 
