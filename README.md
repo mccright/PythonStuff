@@ -17,7 +17,7 @@ sudo dnf install python3
 * '[minpyver.py](https://github.com/mccright/PythonStuff/blob/main/minpyver.py)' - In some situations it is important to use a very specific Python version.  
   Yes, it might be better to just add:  
 ```python
-if sys.version_info < (3, 7):
+if sys.version_info < (3, 8):
     raise Exception("Use only with Python 3.7 or higher")
 ```
 
