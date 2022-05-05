@@ -128,3 +128,4 @@ and
 * See the responses to a question about Python type hints (especially the response by 'BerislavLopac') [https://news.ycombinator.com/item?id=30288000](https://news.ycombinator.com/item?id=30288000)  
 * "How to Pickle and Unpickle Objects in Python." [https://stackabuse.com/how-to-pickle-and-unpickle-objects-in-python/](https://stackabuse.com/how-to-pickle-and-unpickle-objects-in-python/)  
 * Fetch a git repository (from GitHub or locally), build a container image based on the specifications found in the repository & optionally launch the container that you can use to explore the repository [https://github.com/jupyterhub/repo2docker](https://github.com/jupyterhub/repo2docker)  
+* A Python exception library to ease handling and displaying exceptions -- *Caution: It may be unsafe for some use cases* [https://github.com/MasoniteFramework/exceptionite](https://github.com/MasoniteFramework/exceptionite)  
