@@ -129,4 +129,16 @@ sudo apt install ./docker-desktop.deb
 systemctl --user start docker-desktop
 # if you have not already done so, initialize pass
 # http://manpages.ubuntu.com/manpages/trusty/man1/pass.1.html
+#
+# OPTIONAL: Install nginx
+# https://phoenixnap.com/kb/how-to-install-nginx-on-ubuntu-20-04
+sudo apt-get install nginx
+nginx -v
+sudo systemctl status nginx
+sudo systemctl enable nginx
+sudo ufw app list
+# Depending on the use case, https may be more appropriate
+sudo ufw allow 'nginx http'
+curl http://127.0.0.1
+#
 ```
