@@ -140,5 +140,16 @@ sudo ufw app list
 # Depending on the use case, https may be more appropriate
 sudo ufw allow 'nginx http'
 curl http://127.0.0.1
-#
+# As needed, install php support
+sudo apt install php-fpm
+# Install additional PHP modules
+# https://www.linode.com/docs/guides/install-php-8-for-apache-and-nginx-on-ubuntu/
+# For example: php-common php-mysql php-cgi php-mbstring php-curl php-gd php-xml php-xmlrpc php-pear
+sudo apt install php-common php-mysql php-cgi php-mbstring php-curl php-gd php-xml php-xmlrpc php-pear
+php -v
+sudo systemctl status php8.1-fpm
+# Edit /etc/nginx/sites-available/default
+# for your use case and then test the configuration
+sudo nginx -t
+sudo systemctl restart nginx
 ```
