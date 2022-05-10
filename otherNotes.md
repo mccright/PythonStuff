@@ -376,6 +376,7 @@ Built-in Types: [https://docs.python.org/3/library/stdtypes.html](https://docs.p
   * **sqlacodegen** is a tool that reads the structure of an existing database and generates the appropriate SQLAlchemy model code [https://github.com/agronholm/sqlacodegen](https://github.com/agronholm/sqlacodegen)  
   * **FastAPIQuickCRUD** is used to generate CRUD methods in FastApi from an SQLAlchemy schema [https://github.com/LuisLuii/FastAPIQuickCRUD](https://github.com/LuisLuii/FastAPIQuickCRUD)  
   * **FastAPI** is a high-performance web framework for building APIs with Python 3.6+ based on standard Python type hints [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)  
+  * "A Guide to Obtaining Time Series Datasets in Python." [How to use the pandas_datareader] By Mehreen Saeed [https://machinelearningmastery.com/a-guide-to-obtaining-time-series-datasets-in-python/](https://machinelearningmastery.com/a-guide-to-obtaining-time-series-datasets-in-python/)  
 
 
 ### Utility classes  
