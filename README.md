@@ -104,7 +104,7 @@ and
 
 ## Python Enhancement Proposal 20 -- PEP-20  
 (available via: ```import this```)  
-The Zen of Python by Tim Peters (1999)  
+The Zen of Python by Tim Peters (1999).  This is often described as the core philosophy of Python.  
 [https://peps.python.org/pep-0020/#the-zen-of-python](https://peps.python.org/pep-0020/#the-zen-of-python)  
 or  
 [https://github.com/python/peps/blob/main/pep-0020.txt](https://github.com/python/peps/blob/main/pep-0020.txt)  
