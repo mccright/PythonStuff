@@ -1,4 +1,5 @@
 # PythonStuff:  
+
 ## Some Python code that I tend to copy & morph  
 
 ### New environment?  Install Python:  
@@ -99,6 +100,14 @@ See: "Python Development in Visual Studio Code." by Jon Fincher
 and
 "Advanced Visual Studio Code for Python Developers." by Anthony Shaw  
 [https://realpython.com/advanced-visual-studio-code-python/](https://realpython.com/advanced-visual-studio-code-python/)  
+
+
+## Python Enhancement Proposal 20 -- PEP-20  
+(available via: ```import this```)  
+The Zen of Python by Tim Peters (1999)  
+[https://peps.python.org/pep-0020/#the-zen-of-python](https://peps.python.org/pep-0020/#the-zen-of-python)  
+or  
+[https://github.com/python/peps/blob/main/pep-0020.txt](https://github.com/python/peps/blob/main/pep-0020.txt)  
 
 
 ## Python conventions  
