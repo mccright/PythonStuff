@@ -299,6 +299,8 @@ def prompt_for_password(retry=None):
                 return
 
 ```
+Also see "Secure Password Handling in Python" by Martin Heinz [https://martinheinz.dev/blog/59](https://martinheinz.dev/blog/59)  
+
 
 ### Abstract common stuff: json I/O  
 ```python
@@ -402,3 +404,4 @@ Built-in Types: [https://docs.python.org/3/library/stdtypes.html](https://docs.p
   
 ### Notes on home cluster project  
 See starter: [https://github.com/orenzp/gitops](https://github.com/orenzp/gitops)  
+* Related, "Blueprint/Boilerplate For Python Projects": [https://github.com/MartinHeinz/python-project-blueprint](https://github.com/MartinHeinz/python-project-blueprint)  
