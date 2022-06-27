@@ -399,7 +399,10 @@ Built-in Types: [https://docs.python.org/3/library/stdtypes.html](https://docs.p
 * Reminder to self - Look at these utilities: [https://github.com/karldoenitz/PythonUtils](https://github.com/karldoenitz/PythonUtils)  
 * "Seamless FastAPI Configuration with ConfZ." by Silvan Melchior [https://blog.devgenius.io/seamless-fastapi-configuration-with-confz-90949c14ea12](https://blog.devgenius.io/seamless-fastapi-configuration-with-confz-90949c14ea12) and [https://github.com/silvanmelchior/FastAPI_ConfZ_Demo](https://github.com/silvanmelchior/FastAPI_ConfZ_Demo)  
 * Some example Utility functions [https://github.com/ukncsc/viper/blob/master/viper/common/utils.py](https://github.com/ukncsc/viper/blob/master/viper/common/utils.py)  
+
+### ToDo  
 * I see a lot of references to 'httpx' - "a fully featured HTTP client library for Python 3" [https://github.com/encode/httpx](https://github.com/encode/httpx).  I need to do some experimenting and see what the advantages might be.  
+* I also will experiment some with Juan-Pablo Scaletti's "[proper CLI](https://github.com/jpsca/proper-cli)"  
 
   
 ### Notes on home cluster project  
