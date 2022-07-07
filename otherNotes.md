@@ -35,8 +35,32 @@ For example, we can explore requests urllib3 & exceptions:
 ['HTTPConnectionPool', 'HTTPResponse', 'HTTPSConnectionPool', 'PoolManager', 'ProxyManager', 'Retry', 'Timeout', '__all__', '__author__', '__builtins__', '__cached__', '__doc__', '__file__', '__license__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', '_collections', 'absolute_import', 'add_stderr_logger', 'connection', 'connection_from_url', 'connectionpool', 'contrib', 'disable_warnings', 'encode_multipart_formdata', 'exceptions', 'fields', 'filepost', 'get_host', 'logging', 'make_headers', 'packages', 'poolmanager', 'proxy_from_url', 'request', 'response', 'util', 'warnings']
 >>> dir(requests.exceptions)
 ['BaseHTTPError', 'ChunkedEncodingError', 'CompatJSONDecodeError', 'ConnectTimeout', 'ConnectionError', 'ContentDecodingError', 'FileModeWarning', 'HTTPError', 'InvalidHeader', 'InvalidJSONError', 'InvalidProxyURL', 'InvalidSchema', 'InvalidURL', 'JSONDecodeError', 'MissingSchema', 'ProxyError', 'ReadTimeout', 'RequestException', 'RequestsDependencyWarning', 'RequestsWarning', 'RetryError', 'SSLError', 'StreamConsumedError', 'Timeout', 'TooManyRedirects', 'URLRequired', 'UnrewindableBodyError', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
-```
+```  
 
+In addition to the ```dir(class_name)``` approach, some classes have *special* features to spill some of their details.  For example, ```pytz``` has ```all_timezones``` and ```common_timezones```
+
+
+### Simple Timezone Handling  
+// The model for this came from 
+// https://medium.com/techtofreedom/5-levels-of-handling-date-and-time-in-python-46b601e47f65
+```python
+import datetime
+import pytz
+
+local = datetime.datetime.now()
+print(local.strftime("%d/%m/%Y, %H:%M:%S"))
+# 06/07/2022, 14:19:50
+
+CHICAGO = pytz.timezone('America/Chicago')
+datetime_CHICAGO = datetime.datetime.now(CHICAGO)
+print(datetime_CHICAGO.strftime("%d/%m/%Y, %H:%M:%S"))
+# 06/07/2022, 14:19:50
+
+std_UTC = pytz.timezone('UTC')
+datetime_UTC = datetime.datetime.now(std_UTC)
+print(datetime_UTC.strftime("%d/%m/%Y, %H:%M:%S"))
+# 06/07/2022, 19:19:50
+```
 
 ### Simple File Read-File Write-File and Patch-File Functions  
 This approach is only a quick hack for problem-solving:  
