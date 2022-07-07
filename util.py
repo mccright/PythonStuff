@@ -211,18 +211,18 @@ def get_content_via_http(url):
 
 # TODO: Build this out into a 'safe' utility function.
 # Add input/output sanity checking and error handling
+import urllib.parse
 def url_encode_parms(url, *kwargs):
     the_parameters = {"name": "nameString大", "age": 30}
-    print '&'.join('%s=%s' % (k, v) for k, v in the_parameters.iteritems())
+    print('&'.join('%s=%s' % (k, v) for k, v in the_parameters.items()))
     # age=30&name=nameString大
-    print '&'.join('%s=%s' % (k, urllib.quote(str(v))) for k, v in the_parameters.iteritems())
-    # age=30&name=nameString%A4%A7
+    print('&'.join('%s=%s' % (k, urllib.parse.quote(str(v))) for k, v in the_parameters.items()))
+    # name=nameString%E5%A4%A7&age=30
 
     base_url = 'null.net/'
-    url = 'http://%s?%s' % (base_url, '&'.join('%s=%s' % (k, urllib.quote(str(v))) for k, v in the_parameters.iteritems()))
-    print url
-    # http://null.net/?age=30&name=nameString%A4%A7
-
+    url = 'http://%s?%s' % (base_url, '&'.join('%s=%s' % (k, urllib.parse.quote(str(v))) for k, v in the_parameters.items()))
+    print(url)
+    # http://null.net/?name=nameString%E5%A4%A7&age=30
 
 
 # TODO: Build this out into a 'safe' utility function.
