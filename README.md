@@ -131,6 +131,7 @@ or
 
 
 ## External References  
+* Python Concepts by CodingAcademy: [https://github.com/Codecademy/docs/tree/main/content/python/concepts](https://github.com/Codecademy/docs/tree/main/content/python/concepts)  
 * Simple file upload using Flask: [https://roytuts.com/python-flask-file-upload-example/](https://roytuts.com/python-flask-file-upload-example/) and consider enhancing it with [Flask ReUploaded](https://flask-reuploaded.readthedocs.io/en/latest/).  
 * Flasgger is a Flask extension to extract OpenAPI-Specification from all Flask views registered in your API. Flasgger also comes with SwaggerUI embedded so you can access http://localhost:5000/apidocs and visualize and interact with your API resources.[https://github.com/flasgger/flasgger](https://github.com/flasgger/flasgger)  
 * Some example Flask methods [https://github.com/MartinHeinz/LifestyleTracker/blob/master/app/__init__.py](https://github.com/MartinHeinz/LifestyleTracker/blob/master/app/__init__.py)  
@@ -140,3 +141,12 @@ or
 * "How to Pickle and Unpickle Objects in Python." [https://stackabuse.com/how-to-pickle-and-unpickle-objects-in-python/](https://stackabuse.com/how-to-pickle-and-unpickle-objects-in-python/)  
 * Fetch a git repository (from GitHub or locally), build a container image based on the specifications found in the repository & optionally launch the container that you can use to explore the repository [https://github.com/jupyterhub/repo2docker](https://github.com/jupyterhub/repo2docker)  
 * A Python exception library to ease handling and displaying exceptions -- *Caution: It may be unsafe for some use cases* [https://github.com/MasoniteFramework/exceptionite](https://github.com/MasoniteFramework/exceptionite)  
+* Python Concepts by CodingAcademy: [https://github.com/Codecademy/docs/tree/main/content/python/concepts](https://github.com/Codecademy/docs/tree/main/content/python/concepts)  
+* Coding Docs by CodingAcademy: [https://github.com/Codecademy/docs](https://github.com/Codecademy/docs)  
+* "Learn Python 3." by  Sonny Li, David Patlut and Tim Liedtke, [https://www.codecademy.com/learn/learn-python-3](https://www.codecademy.com/learn/learn-python-3) with supporting materials at https://github.com/Codecademy/learn-python[https://github.com/Codecademy/learn-python](https://github.com/Codecademy/learn-python)  
+* Python CheatSheet: [https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/python-cheat-sheet-v1.pdf](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/python-cheat-sheet-v1.pdf)  
+* Grokking the Coding Interview Patterns for Coding Questions (*Python code in 16 problem categories*):  [https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions](https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)  
+* Python code for ~1000 situations: [https://github.com/cl2333/Leetcode/tree/master/Python](https://github.com/cl2333/Leetcode/tree/master/Python)  
+* 11 Approaches to File Handling in Python: [https://github.com/balapriyac/File-Handling-in-Python/tree/main/Code](https://github.com/balapriyac/File-Handling-in-Python/tree/main/Code) or look at what GitHub returns on this topic: [https://github.com/topics/file-handling-in-python?l=python](https://github.com/topics/file-handling-in-python?l=python)  
+* Coding Interview Python Language Essentials: [https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/Coding%20Interview%20Python%20Language%20Essentials.pdf](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/Coding%20Interview%20Python%20Language%20Essentials.pdf)  
+
