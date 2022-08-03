@@ -153,3 +153,9 @@ sudo systemctl status php8.1-fpm
 sudo nginx -t
 sudo systemctl restart nginx
 ```
+
+
+### Your Python Coding Environment on Windows: Setup Guide  
+By by Ian Currie, RealPython. [https://realpython.com/python-coding-setup-windows/](https://realpython.com/python-coding-setup-windows/)  
+This is an opinionated guide to setting up a basic, fully featured and flexible setup for Python coding on Windows.  This article takes you from a fresh install to ready to code.  It includes a PowerShell script to automate much of the process.  
+
