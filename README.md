@@ -12,6 +12,7 @@ RedHat/Fedora-based Linux:
 ```bash
 sudo dnf install python3
 ```
+Or check out a more comprehensive description of setting up a new environment at [https://github.com/mccright/PythonStuff/blob/main/New-environment-notes.md](https://github.com/mccright/PythonStuff/blob/main/New-environment-notes.md)  
 
 
 ### minpyver  
