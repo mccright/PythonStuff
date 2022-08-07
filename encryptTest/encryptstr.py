@@ -7,6 +7,10 @@ from Crypto.Hash import SHA256
 from Crypto import Random
 
 
+# Also take a look at:
+# https://cryptography.io/en/latest/fernet/
+# But know that is depends on OpenSSL: https://cryptography.io/en/latest/openssl/
+
 # The following is a 64-character clear-text secret.  
 # It is not useful code as-is.
 # Under many circumstances you might be able to pull the secret
