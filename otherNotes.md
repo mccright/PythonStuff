@@ -348,6 +348,11 @@ def encode_json(json_input):
 * tplot for creating text-based graphs -- for visualizing data to the terminal or log files. [https://github.com/JeroenDelcour/tplot](https://github.com/JeroenDelcour/tplot)  
 
 
+### Graphing in general when investigating and exploring  
+* "#04 | Data Visualization in Python." Using matplotlib, seaborn and plotly. [https://blog.resolvingpython.com/04-data-visualization-in-python](https://blog.resolvingpython.com/04-data-visualization-in-python)  
+* "Three Solutions to ScatterPlot." [https://blog.resolvingpython.com/you-need-to-have-flexible-thinking-when-programming](https://blog.resolvingpython.com/you-need-to-have-flexible-thinking-when-programming)  
+* "How to Analyze Data through Visualization -- Understand how Data Visualization can help to analyse patterns that may result in a Linear Regression model." [https://blog.resolvingpython.com/how-to-analyze-data-through-visualization](https://blog.resolvingpython.com/how-to-analyze-data-through-visualization)  
+
 ### Single Sign On (SSO) Support  
 * In a JupyterHub environment, experiment with OAuthenticator [https://github.com/jupyterhub/oauthenticator](https://github.com/jupyterhub/oauthenticator)  
 
