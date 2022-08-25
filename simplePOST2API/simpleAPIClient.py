@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # This model is one way to POST data to a simple API
+# ToDo: Try rewriting another version of this using HTTPie
+#       Examples in: https://kracekumar.com/post/print_http_request/
 
 import mutils
 import argparse
