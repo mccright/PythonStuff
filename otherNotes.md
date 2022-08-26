@@ -437,6 +437,8 @@ Built-in Types: [https://docs.python.org/3/library/stdtypes.html](https://docs.p
 * Build Your Python Project Documentation With MkDocs. By Martin Breuss, 2022-06-15 [https://realpython.com/python-project-documentation-with-mkdocs/](https://realpython.com/python-project-documentation-with-mkdocs/)  
 * Build a starter/skeleton class for interacting with an SQLite database:
   * [https://jcristharif.com/ibis-datasette.html](https://jcristharif.com/ibis-datasette.html)  
+  * See if this will help: [https://abstractkitchen.com/blog/flask-backbone/#section7](https://abstractkitchen.com/blog/flask-backbone/#section7)  
+  * "Data and System Visualization Tools That Will Boost Your Productivity" [https://martinheinz.dev/blog/75](https://martinheinz.dev/blog/75) and Jailer [https://wisser.github.io/Jailer/home.htm](https://wisser.github.io/Jailer/home.htm)  
   * []()  
   
 ### Notes on home cluster project  
