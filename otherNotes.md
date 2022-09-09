@@ -439,7 +439,11 @@ Built-in Types: [https://docs.python.org/3/library/stdtypes.html](https://docs.p
   * [https://jcristharif.com/ibis-datasette.html](https://jcristharif.com/ibis-datasette.html)  
   * See if this will help: [https://abstractkitchen.com/blog/flask-backbone/#section7](https://abstractkitchen.com/blog/flask-backbone/#section7)  
   * "Data and System Visualization Tools That Will Boost Your Productivity" [https://martinheinz.dev/blog/75](https://martinheinz.dev/blog/75) and Jailer [https://wisser.github.io/Jailer/home.htm](https://wisser.github.io/Jailer/home.htm)  
-  * []()  
+* Review these interesting server projects:  
+  * [https://github.com/illBeRoy/tldr-of-the-world-server](https://github.com/illBeRoy/tldr-of-the-world-server)  
+  * [https://github.com/flask-restful/flask-restful](https://github.com/flask-restful/flask-restful)  
+
+
   
 ### Notes on home cluster project  
 See starter: [https://github.com/orenzp/gitops](https://github.com/orenzp/gitops)  
