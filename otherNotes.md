@@ -385,7 +385,7 @@ Built-in Functions: [https://docs.python.org/3/library/functions.html](https://d
 |set| A [collection of unordered unique elements without duplicates](https://www.w3schools.com/python/python_sets.asp) {} |
 |frozenset| |
 |range | |
-|str| A text type -- an [immutable sequence of characters](https://www.w3schools.com/python/python_strings.asp); with [several representations using single, double, or triple quotes](https://www.w3resource.com/python/python-string.php) |
+|str| A text type -- an [immutable sequence of characters](https://www.w3schools.com/python/python_strings.asp); with [several representations using single, double, or triple quotes](https://www.w3resource.com/python/python-string.php). Today, [Python's strings have 47 methods](https://www.pythonmorsels.com/string-methods/). |
 |unicode| An immutable sequence of Unicode encoded characters |
 |int | A Numeric type - an integer is a whole number, positive or negative, without decimals, of unlimited length |
 |float | A Numeric type - or "floating point number" is a number, positive or negative, containing one or more decimals; or a float can also be scientific numbers with an "e" to indicate the power of 10 |
@@ -397,6 +397,8 @@ Built-in Functions: [https://docs.python.org/3/library/functions.html](https://d
 |memoryview | A Binary type - an [object allowing Python code to access the internal data of an object that supports the buffer protocol without copying](https://docs.python.org/3/library/stdtypes.html#memory-views) |
 
 Built-in Types: [https://docs.python.org/3/library/stdtypes.html](https://docs.python.org/3/library/stdtypes.html)  
+
+Date/Time Formatting: [https://www.foragoodstrftime.com/](https://www.foragoodstrftime.com/)  
 
 
 ### Notes on Some Python Standard Library resources  
