@@ -1,5 +1,14 @@
 # PythonStuff:  
 
+## Some Free Python App Hosting Options  
+*from a longer list by Nik Tomazic at: [https://testdriven.io/blog/heroku-alternatives/](https://testdriven.io/blog/heroku-alternatives/)*  
+* **PythonAnywhere** [https://www.pythonanywhere.com/](https://www.pythonanywhere.com/)  
+* **Render** [https://render.com/](https://render.com/), and  [https://render.com/docs/free](https://render.com/docs/free)  
+* **Fly.io** [https://fly.io/](https://fly.io/), and [https://community.fly.io/t/i-dont-understand-free-tier/5145/2](https://community.fly.io/t/i-dont-understand-free-tier/5145/2)  
+* **Vercel** [https://vercel.com/](https://vercel.com/), Python can only be used as serverless functions [https://vercel.com/guides/does-vercel-offer-free-trial](https://vercel.com/guides/does-vercel-offer-free-trial)  
+* **Netlify**: Python can only be used as serverless functions [https://www.netlify.com/](https://www.netlify.com/)  
+
+
 ## Some Python code that I tend to copy & morph  
 
 ### New environment?  Install Python:  
