@@ -24,6 +24,8 @@ sudo dnf install python3
 Or check out a more comprehensive description of setting up a new environment at [https://github.com/mccright/PythonStuff/blob/main/New-environment-notes.md](https://github.com/mccright/PythonStuff/blob/main/New-environment-notes.md)  
 
 
+Get the Python Launcher for Unix: [https://github.com/brettcannon/python-launcher](https://github.com/brettcannon/python-launcher)  
+
 ### minpyver  
 * '[minpyver.py](https://github.com/mccright/PythonStuff/blob/main/minpyver.py)' - In some situations it is important to use a very specific Python version.  
   Yes, it might be better to just add:  
