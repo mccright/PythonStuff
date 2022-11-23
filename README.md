@@ -157,6 +157,7 @@ or
 * Python Concepts by CodingAcademy: [https://github.com/Codecademy/docs/tree/main/content/python/concepts](https://github.com/Codecademy/docs/tree/main/content/python/concepts)  
 * Coding Docs by CodingAcademy: [https://github.com/Codecademy/docs](https://github.com/Codecademy/docs)  
 * "Learn Python 3." by  Sonny Li, David Patlut and Tim Liedtke, [https://www.codecademy.com/learn/learn-python-3](https://www.codecademy.com/learn/learn-python-3) with supporting materials at https://github.com/Codecademy/learn-python[https://github.com/Codecademy/learn-python](https://github.com/Codecademy/learn-python)  
+* Python CheatSheets: [https://github.com/afizs/python-notes/blob/main/resources/cheatsheets.md](https://github.com/afizs/python-notes/blob/main/resources/cheatsheets.md)  
 * Python CheatSheet: [https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/python-cheat-sheet-v1.pdf](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/python-cheat-sheet-v1.pdf)  
 * Grokking the Coding Interview Patterns for Coding Questions (*Python code in 16 problem categories*):  [https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions](https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)  
 * Python code for ~1000 situations: [https://github.com/cl2333/Leetcode/tree/master/Python](https://github.com/cl2333/Leetcode/tree/master/Python)  
