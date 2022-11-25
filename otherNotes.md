@@ -423,6 +423,7 @@ Date/Time Formatting: [https://www.foragoodstrftime.com/](https://www.foragoodst
   * Digital Ocean IP address ranges: [http://digitalocean.com/geo/google.csv](http://digitalocean.com/geo/google.csv)  
   * Google Cloud IP address ranges: [https://www.gstatic.com/ipranges/cloud.json](https://www.gstatic.com/ipranges/cloud.json)  
   * Oracle Cloud IP address ranges: [https://docs.cloud.oracle.com/en-us/iaas/tools/public_ip_ranges.json](https://docs.cloud.oracle.com/en-us/iaas/tools/public_ip_ranges.json)  
+* A collection of Python scripts: [https://github.com/metafy-social/python-scripts](https://github.com/metafy-social/python-scripts)  
 * Python utility scripts to help automate mundane/repetitive/specific performance testing tasks: [https://github.com/hseera/python-utilities](https://github.com/hseera/python-utilities)  
 * Get detail about the OS: [https://github.com/hseera/get-System-Information](https://github.com/hseera/get-System-Information)  
 * Broad set of examples [https://github.com/yennanliu/utility_Python/](https://github.com/yennanliu/utility_Python/)  
@@ -432,11 +433,13 @@ Date/Time Formatting: [https://www.foragoodstrftime.com/](https://www.foragoodst
 * Some example Utility functions [https://github.com/ukncsc/viper/blob/master/viper/common/utils.py](https://github.com/ukncsc/viper/blob/master/viper/common/utils.py)  
 
 ### ToDo  
+* Try refactoring a couple scripts with **[typer](https://github.com/tiangolo/typer)**, a library for building CLI applications [https://github.com/tiangolo/typer](https://github.com/tiangolo/typer)  
 * I see a lot of references to 'httpx' - "a fully featured HTTP client library for Python 3" [https://github.com/encode/httpx](https://github.com/encode/httpx).  I need to do some experimenting and see what the advantages might be.  
 * Similarly, I see references to 'HTTPie' - [https://kracekumar.com/post/print_http_request/](https://kracekumar.com/post/print_http_request/)  
-* Also, I need to get more literate with 'async' - [https://www.b-list.org/weblog/2022/aug/16/async/](https://www.b-list.org/weblog/2022/aug/16/async/)  
+* Also, I need to get more literate with 'async' - [https://www.b-list.org/weblog/2022/aug/16/async/](https://www.b-list.org/weblog/2022/aug/16/async/) and also see [https://superfastpython.com/python-asyncio/](https://superfastpython.com/python-asyncio/)  
 * I also will experiment some with Juan-Pablo Scaletti's "[proper CLI](https://github.com/jpsca/proper-cli)"  
 * Build Your Python Project Documentation With MkDocs. By Martin Breuss, 2022-06-15 [https://realpython.com/python-project-documentation-with-mkdocs/](https://realpython.com/python-project-documentation-with-mkdocs/)  
+* Tools for Rewriting Python Code [https://lukeplant.me.uk/blog/posts/tools-for-rewriting-python-code/](https://lukeplant.me.uk/blog/posts/tools-for-rewriting-python-code/)  
 * Build a starter/skeleton class for interacting with an SQLite database:
   * [https://jcristharif.com/ibis-datasette.html](https://jcristharif.com/ibis-datasette.html)  
   * See if this will help: [https://abstractkitchen.com/blog/flask-backbone/#section7](https://abstractkitchen.com/blog/flask-backbone/#section7)  
