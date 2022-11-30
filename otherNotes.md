@@ -450,6 +450,7 @@ Date/Time Formatting: [https://www.foragoodstrftime.com/](https://www.foragoodst
   * [https://github.com/flask-restful/flask-restful](https://github.com/flask-restful/flask-restful)  
 * Experiment "[Using a Raspberry Pi as a Bluetooth speaker with PipeWire](https://www.collabora.com/news-and-blog/blog/2022/09/02/using-a-raspberry-pi-as-a-bluetooth-speaker-with-pipewire-wireplumber/)"  
 * Wherever possible, use PIP_REQUIRE_VIRTUALENV [https://discuss.python.org/t/pip-make-pip-require-virtualenv-the-default/3776](https://discuss.python.org/t/pip-make-pip-require-virtualenv-the-default/3776)  
+* Experiment with Refurb, a tool for refurbishing and modernizing Python codebases [https://github.com/dosisod/refurb](https://github.com/dosisod/refurb)  
  
 ### Notes on home cluster project  
 See starter: [https://github.com/orenzp/gitops](https://github.com/orenzp/gitops)  
