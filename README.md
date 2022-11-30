@@ -37,6 +37,11 @@ if sys.version_info < (3, 8):
 ### Python Logging  
 I have another repo with with some Python logging content [https://github.com/mccright/PythonLoggingExamples/](https://github.com/mccright/PythonLoggingExamples/)  
 
+### Python Regex Cheatsheet  
+From [Debuggex](https://www.debuggex.com/): [https://www.debuggex.com/cheatsheet/regex/python](https://www.debuggex.com/cheatsheet/regex/python)  
+### Python re(gex) -- a magical tool for text processing  
+By Sundeep Agarwal [https://learnbyexample.github.io/py_regular_expressions/](https://learnbyexample.github.io/py_regular_expressions/) or the entire book in a single markdown file at [https://github.com/learnbyexample/py_regular_expressions/blob/master/py_regex.md](https://github.com/learnbyexample/py_regular_expressions/blob/master/py_regex.md) with supporting code at [https://github.com/learnbyexample/py_regular_expressions](https://github.com/learnbyexample/py_regular_expressions)  
+
 ### stringSearch  
 * This is a harness for evaluating the contents of files (in a directory and all child directories) using a collection of your own regex's.  If you need specialized secrets-hunting utilities, see [TruffleHog](https://github.com/dxa4481/truffleHog) or Burp Suite Extension [SecretFinder](https://github.com/m4ll0k/SecretFinder/blob/master/BurpSuite-SecretFinder/SecretFinder.py).  I used ideas & code from both of them in this string search utility.  
 
@@ -105,6 +110,8 @@ I usually pipe its output through grep for the code I am trying to understand.  
 * Starter project [https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint](https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint)  
 * 25 model projects [https://github.com/serverless/examples](https://github.com/serverless/examples)  
 
+## Minify HTML
+* There is a Python module [minify-html](https://pypi.org/project/minify-html) with source at [https://github.com/wilsonzlin/minify-html](https://github.com/wilsonzlin/minify-html)  
 
 ## Python and Visual Studio Code (VSCode)  
 See: "Python Development in Visual Studio Code." by Jon Fincher  
