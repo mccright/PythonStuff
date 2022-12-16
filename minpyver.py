@@ -2,9 +2,13 @@ import sys
 
 # See also: https://github.com/saltstack/salt-pylint/blob/master/saltpylint/minpyver.py
 
+# Python 3.7 will stop getting security updates in June 2023. 
+# 3.8, 3.9, 3.10, and 3.11 are available and you should
+# upgrade if you are using 3.7 or below.
+
 class MinimumPyVer:
 
-    def __init__(self, major_version=3, minor_version=5, dot3_version=0):
+    def __init__(self, major_version=3, minor_version=10, dot3_version=0):
         self.MIN_PYTHON_MAJOR_VERSION=major_version
         self.MIN_PYTHON_MINOR_VERSION=minor_version
         self.MIN_PYTHON_DOT3_VERSION=dot3_version
