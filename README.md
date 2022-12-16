@@ -30,8 +30,8 @@ Get the Python Launcher for Unix: [https://github.com/brettcannon/python-launche
 * '[minpyver.py](https://github.com/mccright/PythonStuff/blob/main/minpyver.py)' - In some situations it is important to use a very specific Python version.  
   Yes, it might be better to just add:  
 ```python
-if sys.version_info < (3, 8):
-    raise Exception("Use only with Python 3.7 or higher")
+if sys.version_info < (3, 10):
+    raise Exception("Use only with Python 3.10 or higher")
 ```
 
 ### Python Logging  
