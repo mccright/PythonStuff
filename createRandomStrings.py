@@ -12,9 +12,9 @@ n = 14
 def build_string_with_secrets():
     # Use secrets module for strong cross-platform entropy
     # https://docs.python.org/3/library/secrets.html#recipes-and-best-practices
-    # Python 3.6 or above for 'secrets' support
-    if sys.version_info < (3, 6):
-        raise Exception("Use only with Python 3.6 or higher")
+    # Python 3.10 or above for 'secrets' support
+    if sys.version_info < (3, 10):
+        raise Exception("Use only with Python 3.10 or higher")
     my_alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits + "_" + "-"
     secret_string = ''.join(secrets.choice(my_alphabet) for i in range(n))
 
