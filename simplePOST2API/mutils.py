@@ -27,8 +27,8 @@ def deal_with_cert_issues():
 
 def checkpyver():
     import sys
-    if sys.version_info < (3, 7):
-        raise Exception("Use only with Python 3.7 or higher")
+    if sys.version_info < (3, 10):
+        raise Exception("Use only with Python 3.10 or higher")
     else:
         return True
 
