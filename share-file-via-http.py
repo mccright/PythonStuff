@@ -22,7 +22,10 @@ TCP_PORT = '18765'
 print("On the server hosting the data, 'cd' into the directory where the file is located.")
 print("and run the web server only long enough to copy the needed file.") 
 print("Use this command:  ")
-if os.sys.version_info > (3, 1):
+# Python 3.7 will stop getting security updates in June 2023. 
+# 3.8, 3.9, 3.10, and 3.11 are available and you should
+# upgrade if you are using 3.7 or below.
+if os.sys.version_info > (3, 9):
     print(f"\npython3 -m http.server <TCP_PORT> --bind <IP_ADDRESS>")
     print("For example, port 18765 on localhost: ")
     print(f"python3 -m http.server {TCP_PORT} --bind {IP_ADDRESS}")
