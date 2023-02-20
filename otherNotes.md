@@ -291,6 +291,26 @@ def silentremove(filename):
 ```
 
 ### Get a password  
+If you need to fetch a password from a live user  
+```pwinput``` seems better than ```getpass```.  
+```python
+import pwinput
+def getuserpassword():
+    # Prompt the user for a password without echoing input 
+    # while pushing a mask character in stead.  
+    # Reference https://github.com/asweigart/pwinput
+    try:
+        password = pwinput.pwinput(mask='*', prompt='Enter your password: ')
+    except Exception as error:
+        print('getuserpassword() failed with: ', error)
+    else:
+        return password
+
+# testing...
+print(f"pw: {getuserpassword()}")
+```
+
+### Get a password - Edge Case  
 Sometimes you are gathering the password to pass along  
 to another process that needs to be successful -- as  
 as downstream processes require that success.  
