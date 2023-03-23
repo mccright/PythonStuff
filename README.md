@@ -151,6 +151,7 @@ or
 
 
 ## External References  
+* A package that can save you some typing whenever you will be accepting command line arguments. Just run *duckargs* with the arguments your program will accept along with example values for options, and duckargs will generate the python code for a program that uses argparse to handle those arguments. [https://github.com/eriknyquist/duckargs](https://github.com/eriknyquist/duckargs)  
 * Python Concepts by CodingAcademy: [https://github.com/Codecademy/docs/tree/main/content/python/concepts](https://github.com/Codecademy/docs/tree/main/content/python/concepts)  
 * Simple file upload using Flask: [https://roytuts.com/python-flask-file-upload-example/](https://roytuts.com/python-flask-file-upload-example/) and consider enhancing it with [Flask ReUploaded](https://flask-reuploaded.readthedocs.io/en/latest/).  
 * Flasgger is a Flask extension to extract OpenAPI-Specification from all Flask views registered in your API. Flasgger also comes with SwaggerUI embedded so you can access http://localhost:5000/apidocs and visualize and interact with your API resources.[https://github.com/flasgger/flasgger](https://github.com/flasgger/flasgger)  
