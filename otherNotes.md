@@ -251,7 +251,7 @@ def _get_endpoint_response(content, endpoint_url):
 ```
 
 ### Get the default gateway interface  
-Sometimed it is important to use the default gateway interface.  
+Sometimes it is important to use the default gateway interface.  
 Using the *correct* interface is important for some use cases.  
 In some of those use cases, it is also important to know its IP address.  
 Get the default interface:  
@@ -422,6 +422,12 @@ Built-in Functions: [https://docs.python.org/3/library/functions.html](https://d
 Built-in Types: [https://docs.python.org/3/library/stdtypes.html](https://docs.python.org/3/library/stdtypes.html)  
 
 Date/Time Formatting: [https://www.foragoodstrftime.com/](https://www.foragoodstrftime.com/)  
+
+timeago -- A very simple python lib, used to format datetime with *** time ago statement.  
+https://github.com/hustcc/timeago  
+
+Date/Time Tools Plugin -- The QGIS Date/Time Tools plugin provides tools to manipulate date, time, time zones, and times of the sun.  
+https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin  
 
 
 ### Notes on Some Python Standard Library resources  
