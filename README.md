@@ -7,6 +7,7 @@
 * **Fly.io** [https://fly.io/](https://fly.io/), and [https://community.fly.io/t/i-dont-understand-free-tier/5145/2](https://community.fly.io/t/i-dont-understand-free-tier/5145/2)  
 * **Vercel** [https://vercel.com/](https://vercel.com/), Python can only be used as serverless functions [https://vercel.com/guides/does-vercel-offer-free-trial](https://vercel.com/guides/does-vercel-offer-free-trial)  
 * **Netlify**: Python can only be used as serverless functions [https://www.netlify.com/](https://www.netlify.com/)  
+* **Binder**:[https://mybinder.org/](https://mybinder.org/) for hosting/sharing Jupyter notebooks  
 
 
 ## Some Python code that I tend to copy & morph  
@@ -151,6 +152,7 @@ or
 
 
 ## External References  
+* "Python Data Science Handbook." By Jake VanderPlas. [https://github.com/jakevdp/PythonDataScienceHandbook](https://github.com/jakevdp/PythonDataScienceHandbook) and [https://jakevdp.github.io/PythonDataScienceHandbook/](https://jakevdp.github.io/PythonDataScienceHandbook/)  
 * A package that can save you some typing whenever you will be accepting command line arguments. Just run *duckargs* with the arguments your program will accept along with example values for options, and duckargs will generate the python code for a program that uses argparse to handle those arguments. [https://github.com/eriknyquist/duckargs](https://github.com/eriknyquist/duckargs)  
 * Python Concepts by CodingAcademy: [https://github.com/Codecademy/docs/tree/main/content/python/concepts](https://github.com/Codecademy/docs/tree/main/content/python/concepts)  
 * Simple file upload using Flask: [https://roytuts.com/python-flask-file-upload-example/](https://roytuts.com/python-flask-file-upload-example/) and consider enhancing it with [Flask ReUploaded](https://flask-reuploaded.readthedocs.io/en/latest/).  
@@ -159,6 +161,7 @@ or
 * "Flask-Backbone -- Your Next Flask Boilerplate..." [https://abstractkitchen.com/blog/flask-backbone/](https://abstractkitchen.com/blog/flask-backbone/) and the code at [https://github.com/abstractkitchen/flask-backbone](https://github.com/abstractkitchen/flask-backbone)  
 * "A Gentle Introduction to AWS Lambda." Matt Bacchi, 2022-02-01 [https://bacchi.org/posts/gentle-intro-lambda/](https://bacchi.org/posts/gentle-intro-lambda/)  
 * Python Graph Gallery: A Collection of Hundreds of Charts Made With Python [https://www.python-graph-gallery.com/](https://www.python-graph-gallery.com/) especially time series graphing [https://www.python-graph-gallery.com/basic-time-series-with-matplotlib](https://www.python-graph-gallery.com/basic-time-series-with-matplotlib)  
+* Six books about Python and data science (PDFs hosted by [Riccardo Rigon](https://orcid.org/0000-0002-7668-5806)): https://osf.io/fmkwy/  
 * See the responses to a question about Python type hints (especially the response by 'BerislavLopac') [https://news.ycombinator.com/item?id=30288000](https://news.ycombinator.com/item?id=30288000)  
 * "How to Pickle and Unpickle Objects in Python." [https://stackabuse.com/how-to-pickle-and-unpickle-objects-in-python/](https://stackabuse.com/how-to-pickle-and-unpickle-objects-in-python/)  
 * Fetch a git repository (from GitHub or locally), build a container image based on the specifications found in the repository & optionally launch the container that you can use to explore the repository [https://github.com/jupyterhub/repo2docker](https://github.com/jupyterhub/repo2docker)  
