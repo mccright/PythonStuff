@@ -464,7 +464,7 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 ### ToDo  
 * Try refactoring a couple scripts with **[typer](https://github.com/tiangolo/typer)**, a library for building CLI applications [https://github.com/tiangolo/typer](https://github.com/tiangolo/typer)  
 * Try rewriting some GPS code from C.  For example: https://github.com/DFRobotdl/USB_GPS_EN/blob/main/gps.h  
-* Or just try making use of some other GPS code on Github: https://github.com/search?q=GPS+language%3APython+Ublox+&type=repositories&l=Python  
+* Or just try making use of some other GPS code on Github: https://github.com/search?q=GPS+language%3APython+Ublox+&type=repositories&l=Python (Ublox comes from: https://thepihut.com/products/usb-gps-receiver-with-2m-extension-cable-compatible-with-raspberry-pi-lattepanda-jetson-nano#product-reviews)  
 * I see a lot of references to 'httpx' - "a fully featured HTTP client library for Python 3" [https://github.com/encode/httpx](https://github.com/encode/httpx).  I need to do some experimenting and see what the advantages might be.  
 * Similarly, I see references to 'HTTPie' - [https://kracekumar.com/post/print_http_request/](https://kracekumar.com/post/print_http_request/)  
 * Also, I need to get more literate with 'async' - [https://www.b-list.org/weblog/2022/aug/16/async/](https://www.b-list.org/weblog/2022/aug/16/async/) and also see [https://superfastpython.com/python-asyncio/](https://superfastpython.com/python-asyncio/)  
