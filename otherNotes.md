@@ -463,12 +463,14 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 
 ### ToDo  
 * Try refactoring a couple scripts with **[typer](https://github.com/tiangolo/typer)**, a library for building CLI applications [https://github.com/tiangolo/typer](https://github.com/tiangolo/typer)  
+* Do the same refactoring exercise with **[arguably](https://github.com/treykeown/arguably)**, a library for converting functions into command line interfaces (CLIs)  
+* See if this tool works: [EPUB Crush](https://github.com/jncraton/epubcrush) compresses EPUB files to reduce size. By default, all images, fonts, scipts, and styles will be removed from the EPUB.  
+* I also will experiment some with Juan-Pablo Scaletti's "[proper CLI](https://github.com/jpsca/proper-cli)"  
 * Try rewriting some GPS code from C.  For example: https://github.com/DFRobotdl/USB_GPS_EN/blob/main/gps.h  
 * Or just try making use of some other GPS code on Github: https://github.com/search?q=GPS+language%3APython+Ublox+&type=repositories&l=Python (Ublox comes from: https://thepihut.com/products/usb-gps-receiver-with-2m-extension-cable-compatible-with-raspberry-pi-lattepanda-jetson-nano#product-reviews)  
 * I see a lot of references to 'httpx' - "a fully featured HTTP client library for Python 3" [https://github.com/encode/httpx](https://github.com/encode/httpx).  I need to do some experimenting and see what the advantages might be.  
 * Similarly, I see references to 'HTTPie' - [https://kracekumar.com/post/print_http_request/](https://kracekumar.com/post/print_http_request/)  
 * Also, I need to get more literate with 'async' - [https://www.b-list.org/weblog/2022/aug/16/async/](https://www.b-list.org/weblog/2022/aug/16/async/) and also see [https://superfastpython.com/python-asyncio/](https://superfastpython.com/python-asyncio/)  
-* I also will experiment some with Juan-Pablo Scaletti's "[proper CLI](https://github.com/jpsca/proper-cli)"  
 * Build Your Python Project Documentation With MkDocs. By Martin Breuss, 2022-06-15 [https://realpython.com/python-project-documentation-with-mkdocs/](https://realpython.com/python-project-documentation-with-mkdocs/)  
 * Tools for Rewriting Python Code [https://lukeplant.me.uk/blog/posts/tools-for-rewriting-python-code/](https://lukeplant.me.uk/blog/posts/tools-for-rewriting-python-code/)  
 * Build a starter/skeleton class for interacting with an SQLite database:
