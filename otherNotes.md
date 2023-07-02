@@ -43,7 +43,7 @@ For example, we can explore requests urllib3 & exceptions:
 In addition to the ```dir(class_name)``` approach, some classes have *special* features to spill some of their details.  For example, ```pytz``` has ```all_timezones``` and ```common_timezones```
 
 
-### Simple Timezone Handling  
+### Simple/Abbreviated Timezone Handling  
 // The model for this came from 
 // https://medium.com/techtofreedom/5-levels-of-handling-date-and-time-in-python-46b601e47f65
 ```python
@@ -64,6 +64,21 @@ datetime_UTC = datetime.datetime.now(std_UTC)
 print(datetime_UTC.strftime("%d/%m/%Y, %H:%M:%S"))
 # 06/07/2022, 19:19:50
 ```
+or another approach for the same experiment:  
+```python
+from time import gmtime, localtime, strftime, tzset
+
+myDateTime = strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
+syslogGmtime = strftime("%b %d %H:%M:%S", gmtime())
+myLocalTime = strftime("%a, %d %b %Y %H:%M:%S %Z", localtime())
+syslogLocaltime = strftime("%b %d %H:%M:%S %Z", localtime())
+# Display the results for this experiment
+print(f"gmtime function says:              {myDateTime}, GMT")
+print(f"localtime function says:           {myLocalTime}")
+print(f"syslog time format from gmtime:    {syslogGmtime}")
+print(f"syslog time format from localtime: {syslogLocaltime}")
+```
+
 
 ### Simple File Read-File Write-File and Patch-File Functions  
 This approach is only a quick hack for problem-solving:  
