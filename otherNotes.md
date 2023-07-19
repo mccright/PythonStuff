@@ -479,6 +479,8 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 ### ToDo  
 * Try refactoring a couple scripts with **[typer](https://github.com/tiangolo/typer)**, a library for building CLI applications [https://github.com/tiangolo/typer](https://github.com/tiangolo/typer)  
 * Do the same refactoring exercise with **[arguably](https://github.com/treykeown/arguably)**, a library for converting functions into command line interfaces (CLIs)  
+* Experiment with [Quart](https://github.com/pallets/quart), an async Python web microframework -- an asyncio reimplementation of the popular Flask microframework API.  
+* Figure out what [ChatSQL]() is. It is described as "plain text that it is given by the user is converted to mysql queries using ChatGPT" [https://github.com/ademakdogan/ChatSQL](https://github.com/ademakdogan/ChatSQL)  
 * See if this tool works: [EPUB Crush](https://github.com/jncraton/epubcrush) compresses EPUB files to reduce size. By default, all images, fonts, scipts, and styles will be removed from the EPUB.  
 * I also will experiment some with Juan-Pablo Scaletti's "[proper CLI](https://github.com/jpsca/proper-cli)"  
 * Try rewriting some GPS code from C.  For example: https://github.com/DFRobotdl/USB_GPS_EN/blob/main/gps.h  
