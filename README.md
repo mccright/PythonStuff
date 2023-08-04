@@ -152,6 +152,8 @@ or
 
 
 ## External References  
+* "Python Quirks." [https://writing.peercy.net/p/python-quirks](https://writing.peercy.net/p/python-quirks)  
+* "WTF Python!-- Exploring and understanding Python through surprising snippets."  [https://github.com/satwikkansal/wtfpython](https://github.com/satwikkansal/wtfpython)  
 * "Python Data Science Handbook." By Jake VanderPlas. [https://github.com/jakevdp/PythonDataScienceHandbook](https://github.com/jakevdp/PythonDataScienceHandbook) and [https://jakevdp.github.io/PythonDataScienceHandbook/](https://jakevdp.github.io/PythonDataScienceHandbook/)  
 * A package that can save you some typing whenever you will be accepting command line arguments. Just run *duckargs* with the arguments your program will accept along with example values for options, and duckargs will generate the python code for a program that uses argparse to handle those arguments. [https://github.com/eriknyquist/duckargs](https://github.com/eriknyquist/duckargs)  
 * Python Concepts by CodingAcademy: [https://github.com/Codecademy/docs/tree/main/content/python/concepts](https://github.com/Codecademy/docs/tree/main/content/python/concepts)  
