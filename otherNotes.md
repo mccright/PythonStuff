@@ -390,6 +390,7 @@ def encode_json(json_input):
 * "#04 | Data Visualization in Python." Using matplotlib, seaborn and plotly. [https://blog.resolvingpython.com/04-data-visualization-in-python](https://blog.resolvingpython.com/04-data-visualization-in-python)  
 * "Three Solutions to ScatterPlot." [https://blog.resolvingpython.com/you-need-to-have-flexible-thinking-when-programming](https://blog.resolvingpython.com/you-need-to-have-flexible-thinking-when-programming)  
 * "How to Analyze Data through Visualization -- Understand how Data Visualization can help to analyse patterns that may result in a Linear Regression model." [https://blog.resolvingpython.com/how-to-analyze-data-through-visualization](https://blog.resolvingpython.com/how-to-analyze-data-through-visualization)  
+* "PyGWalker: A Python Library for Exploratory Data Analysis with Visualization." "PyGWalker can simplify your Jupyter Notebook data analysis and data visualization workflow, by turning your pandas dataframe (and polars dataframe) into a Tableau-style User Interface for visual exploration." [https://github.com/Kanaries/pygwalker](https://github.com/Kanaries/pygwalker)  
 
 ### Single Sign On (SSO) Support  
 * In a JupyterHub environment, experiment with OAuthenticator [https://github.com/jupyterhub/oauthenticator](https://github.com/jupyterhub/oauthenticator)  
@@ -456,6 +457,7 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
   * "What Is a Time-Series Plot, and How Can You Create One?" [https://www.timescale.com/blog/what-is-a-time-series-plot-and-how-can-you-create-one/](https://www.timescale.com/blog/what-is-a-time-series-plot-and-how-can-you-create-one/)  
   * "How to Work With Time Series in Python?" [https://www.timescale.com/blog/how-to-work-with-tim/](https://www.timescale.com/blog/how-to-work-with-tim/)  
   * "Tools for Working With Time-Series Analysis in Python" [https://www.timescale.com/blog/tools-for-working-with-time-series-analysis-in-python/](https://www.timescale.com/blog/tools-for-working-with-time-series-analysis-in-python/)  
+  * functime is a Python library for production-ready global forecasting and time-series feature engineering (*comes with time-series preprocessing (box-cox, differencing etc), cross-validation splitters (expanding and sliding window), and forecast metrics (MASE, SMAPE etc)*) [https://github.com/descendant-ai/functime](https://github.com/descendant-ai/functime)  
   * "A Guide to Obtaining Time Series Datasets in Python." [How to use the pandas_datareader] By Mehreen Saeed [https://machinelearningmastery.com/a-guide-to-obtaining-time-series-datasets-in-python/](https://machinelearningmastery.com/a-guide-to-obtaining-time-series-datasets-in-python/)  
 
 
