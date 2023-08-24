@@ -114,6 +114,9 @@ I usually pipe its output through grep for the code I am trying to understand.  
 ## Minify HTML
 * There is a Python module [minify-html](https://pypi.org/project/minify-html) with source at [https://github.com/wilsonzlin/minify-html](https://github.com/wilsonzlin/minify-html)  
 
+## Scrape some text on the Web  
+* A Python package & command-line tool to gather text on the Web: [https://github.com/adbar/trafilatura](https://github.com/adbar/trafilatura)  
+
 ## Python and Visual Studio Code (VSCode)  
 See: "Python Development in Visual Studio Code." by Jon Fincher  
 [https://realpython.com/python-development-visual-studio-code/](https://realpython.com/python-development-visual-studio-code/)  
@@ -152,6 +155,7 @@ or
 
 
 ## External References  
+* "Avoiding Silent Failures in Python: Best Practices for Error Handling." By Bob Belderbos, 2023-08-07 [https://pybit.es/articles/python-errors-should-not-pass-silently](https://pybit.es/articles/python-errors-should-not-pass-silently/)  
 * "Python Quirks." [https://writing.peercy.net/p/python-quirks](https://writing.peercy.net/p/python-quirks)  
 * "WTF Python!-- Exploring and understanding Python through surprising snippets."  [https://github.com/satwikkansal/wtfpython](https://github.com/satwikkansal/wtfpython)  
 * "Python Data Science Handbook." By Jake VanderPlas. [https://github.com/jakevdp/PythonDataScienceHandbook](https://github.com/jakevdp/PythonDataScienceHandbook) and [https://jakevdp.github.io/PythonDataScienceHandbook/](https://jakevdp.github.io/PythonDataScienceHandbook/)  
