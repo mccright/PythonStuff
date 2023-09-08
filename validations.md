@@ -20,4 +20,13 @@ import re
 re.compile("\d{4}-\d{2}-\d{2}", re.DEBUG)
 ```
 
+or only *slightly* better: 
+
+```python
+import re
+
+re.compile("(0?[\d]{1}|0?[\d]{2}|0?[\d]{3}|1[\d]{3}|2[\d]{3})(\/|-|\.)(0?[1-9]|1[0-2])(\/|-|\.)(0[1-9]|1[0-9]|2[0-9]|30|31)", re.DEBUG)
+```
+
+Caution! Both of the examples above will accept some invalid dates.  See [https://regexlib.com/Search.aspx?k=date&c=5&m=4&ps=100](https://regexlib.com/Search.aspx?k=date&c=5&m=4&ps=100) for other date validation regex examples.  
 
