@@ -454,6 +454,8 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
   * **sqlacodegen** is a tool that reads the structure of an existing database and generates the appropriate SQLAlchemy model code [https://github.com/agronholm/sqlacodegen](https://github.com/agronholm/sqlacodegen)  
   * **FastAPIQuickCRUD** is used to generate CRUD methods in FastApi from an SQLAlchemy schema [https://github.com/LuisLuii/FastAPIQuickCRUD](https://github.com/LuisLuii/FastAPIQuickCRUD)  
   * **FastAPI** is a high-performance web framework for building APIs with Python 3.6+ based on standard Python type hints [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)  
+* There are other frameworks for building APIs:  
+  * View: "Lightning fast, modern web framework" still in early release stages... [https://github.com/ZeroIntensity/view.py](https://github.com/ZeroIntensity/view.py)  
 * Time-Series data notes:  
   * "What Is a Time-Series Plot, and How Can You Create One?" [https://www.timescale.com/blog/what-is-a-time-series-plot-and-how-can-you-create-one/](https://www.timescale.com/blog/what-is-a-time-series-plot-and-how-can-you-create-one/)  
   * "How to Work With Time Series in Python?" [https://www.timescale.com/blog/how-to-work-with-tim/](https://www.timescale.com/blog/how-to-work-with-tim/)  
@@ -486,6 +488,7 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 * Try refactoring a couple scripts with **[typer](https://github.com/tiangolo/typer)**, a library for building CLI applications [https://github.com/tiangolo/typer](https://github.com/tiangolo/typer)  
 * Do the same refactoring exercise with **[arguably](https://github.com/treykeown/arguably)**, a library for converting functions into command line interfaces (CLIs)  
 * Experiment with [Quart](https://github.com/pallets/quart), an async Python web microframework -- an asyncio reimplementation of the popular Flask microframework API.  
+* Experiment with [view](https://github.com/ZeroIntensity/view.py), an async Python web microframework -- includes a range of features, not limited to: "Seamless" compilation of Python to JavaScript code, JSX-like syntax (<h1>"Hello, world"</h1>), and Database ORM's/DRM's. ...view.py is currently (Sept 2023) in a high alpha state.  
 * Figure out what [ChatSQL]() is. It is described as "plain text that it is given by the user is converted to mysql queries using ChatGPT" [https://github.com/ademakdogan/ChatSQL](https://github.com/ademakdogan/ChatSQL)  
 * See if this tool works: [EPUB Crush](https://github.com/jncraton/epubcrush) compresses EPUB files to reduce size. By default, all images, fonts, scipts, and styles will be removed from the EPUB.  
 * I also will experiment some with Juan-Pablo Scaletti's "[proper CLI](https://github.com/jpsca/proper-cli)"  
