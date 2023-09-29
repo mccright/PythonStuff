@@ -8,6 +8,9 @@ from time import sleep
 # This is just a reminder for me.  I did not create this idea.
 # This is an idiom from ipinfo and in example code all over the Internet.
 
+# another approach to the multiple-prints used in main() below 
+# is to concatenate them using an approach like this:
+# print(f"City: {jsonstr['city']}, Country: {jsonstr['country']}, Location: {jsonstr['loc']}")
 def main():
     #os.system('cls' if os.name == 'nt' else 'clear')
     try:
