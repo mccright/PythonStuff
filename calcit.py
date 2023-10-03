@@ -4,13 +4,27 @@ from math import *
 
 try:
     # Put quotes around your expression on the command line
-	inputs = (sys.argv)
-    # Remove the executing script name from the input list (array)
-	expression = inputs[1:]
-    # Convert the input list to a string
-	expression = " ".join(str(x) for x in expression)
+    inputs = (sys.argv)
+    # Remove the executing script name from the input dict (array)
+    expression = inputs[1:]
+    # Convert the input dict to a string
+    expression = " ".join(str(x) for x in expression)
+
+    if not isinstance(expression, str):
+        raise TypeError('The expression must be a string.')
+    if not expression:
+        raise ValueError('The expression cannot be empty.')
+    # return eval(expression, namespace)
     # Print that to the terminal without a newline char
-	print(f"{expression} =", end=" ")
+    print(f"{expression} =", end=" ")
+except Exception as err:
+    raise RuntimeError("Evaluating expression '%s' failed: %s"
+            % (expression, err))
+
+try:
+    # Print that to the terminal without a newline char
+    print(f"{expression} =", end=" ")
+
 
 	# this dict started with a honeybot plugin by Abdur-Rahmaan Janhangeer
 	# https://github.com/pyhoneybot/honeybot/blob/master/src/honeybot/plugins/downloaded/calc/main.py
