@@ -30,3 +30,5 @@ re.compile("(0?[\d]{1}|0?[\d]{2}|0?[\d]{3}|1[\d]{3}|2[\d]{3})(\/|-|\.)(0?[1-9]|1
 
 Caution! Both of the examples above will accept some invalid dates.  See [https://regexlib.com/Search.aspx?k=date&c=5&m=4&ps=100](https://regexlib.com/Search.aspx?k=date&c=5&m=4&ps=100) for other date validation regex examples.  
 
+* Test your regex on line: [https://regex101.com/](https://regex101.com/) or  
+* test your regex with: [https://pythex.org/](https://pythex.org/)  
