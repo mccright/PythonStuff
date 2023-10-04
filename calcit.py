@@ -16,16 +16,12 @@ try:
         raise ValueError('The expression cannot be empty.')
     # return eval(expression, namespace)
     # Print that to the terminal without a newline char
-    print(f"{expression} =", end=" ")
+    print(f"{expression} =", end=" ", file=sys.stdout, flush=True)
 except Exception as err:
     raise RuntimeError("Evaluating expression '%s' failed: %s"
             % (expression, err))
 
 try:
-    # Print that to the terminal without a newline char
-    print(f"{expression} =", end=" ")
-
-
 	# this dict started with a honeybot plugin by Abdur-Rahmaan Janhangeer
 	# https://github.com/pyhoneybot/honeybot/blob/master/src/honeybot/plugins/downloaded/calc/main.py
     # I added a few more functions from: https://www.w3schools.com/python/module_math.asp
