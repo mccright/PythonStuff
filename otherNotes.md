@@ -504,6 +504,9 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 * Build a starter/skeleton class for interacting with an SQLite database:
   * [https://jcristharif.com/ibis-datasette.html](https://jcristharif.com/ibis-datasette.html)  
   * See if this will help: [https://abstractkitchen.com/blog/flask-backbone/#section7](https://abstractkitchen.com/blog/flask-backbone/#section7)  
+  * and this tutorial seems useful: [https://www.sqlitetutorial.net/](https://www.sqlitetutorial.net/)  
+  * as well as this tutorial from DigitalOcean -- "How To Use the sqlite3 Module in Python 3." [https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3](https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3)  
+* If not SQLite, you might try [TinyDB](https://pypi.org/project/tinydb/), a lightweight document oriented database "optimized for your happiness :)."  It's written in pure Python and has no external dependencies. "The target are small apps that would be blown away by a SQL-DB or an external database server." [https://github.com/msiemens/tinydb](https://github.com/msiemens/tinydb)  
 * Visual Python Tkinter GUI Creator [https://visualtk.com/](https://visualtk.com/)  
   * "Data and System Visualization Tools That Will Boost Your Productivity" [https://martinheinz.dev/blog/75](https://martinheinz.dev/blog/75) and Jailer [https://wisser.github.io/Jailer/home.htm](https://wisser.github.io/Jailer/home.htm)  
 * Review these interesting server projects:  
