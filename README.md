@@ -117,6 +117,9 @@ I usually pipe its output through grep for the code I am trying to understand.  
 ## Scrape some text on the Web  
 * A Python package & command-line tool to gather text on the Web: [https://github.com/adbar/trafilatura](https://github.com/adbar/trafilatura)  
 
+## Run your Jupyter notebook on the command line  
+[https://github.com/jsvine/nbexec](https://github.com/jsvine/nbexec)  
+
 ## Python and Visual Studio Code (VSCode)  
 See: "Python Development in Visual Studio Code." by Jon Fincher  
 [https://realpython.com/python-development-visual-studio-code/](https://realpython.com/python-development-visual-studio-code/)  
