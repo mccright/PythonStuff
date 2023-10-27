@@ -207,6 +207,25 @@ with open(csv_data_file, 'r', newline='') as csv_file:
             print(f"{row[0]} is {row[1]} years old")
 ```
 
+### Distinguish Between 64-bit and 32-bit OS Architecture
+If you have 64 and 32-bit code or images and execute them using Python, 
+```
+#!/usr/bin/env python3
+import platform
+import os
+import sys
+
+oscheck = platform.architecture()[0]
+if oscheck == '64bit':
+    print("This is a 64-bit architecture platform.")
+    # Do something 64-bit specific here
+elif oscheck == '32bit':
+    print("This is a 32-bit architecture platform.")
+    # Do something 32-bit specific here
+else: 
+    print("I don't understand the architecture of this platform.")
+    # Do something appropriate here
+```
 
 ### Compare Two Lists  
 Identify which strings in list two are not already in list one:  
