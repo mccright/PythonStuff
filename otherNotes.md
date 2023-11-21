@@ -414,7 +414,33 @@ def encode_json(json_input):
 ### Single Sign On (SSO) Support  
 * In a JupyterHub environment, experiment with OAuthenticator [https://github.com/jupyterhub/oauthenticator](https://github.com/jupyterhub/oauthenticator)  
 
+### Setting up your Jupyter Environment  
+You don't want your [Jupyter](https://jupyter.org/) environment work to interfere with any other Python projects or environments you may already use.  One of the easiest ways to do this on an endpoint is to use [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) in a [virtual environment](https://realpython.com/python-virtual-environments-a-primer/).  That is instead of using [Jupyter Notebooks](https://en.wikipedia.org/wiki/Project_Jupyter). [Installing JupyterHub](https://jupyter.org/install#jupyterlab) is simple:  
 
+On Linux:  
+```terminal
+$ mkdir jupyterlab_dev
+$ cd jupyterlab_dev
+$ python3 -m venv env
+$ source env/bin/activate
+(env) $ python3 -m pip install jupyterlab
+``` 
+
+On Windows:  
+```terminal
+PS> mkdir jupyterlab_dev
+PS> cd jupyterlab_dev
+PS> python -m venv env
+PS> env\Scripts\activate
+(env) PS> python -m pip install jupyterlab
+
+``` 
+
+Then create individual subdirectories for each project.
+Thank you RealPython for the [reminder](https://realpython.com/using-jupyterlab/).
+
+
+### The Python Language Reference  
 The Python Language Reference: [https://docs.python.org/3/reference/index.html](https://docs.python.org/3/reference/index.html)  
 The Python Standard Library: [https://docs.python.org/3/library/index.html](https://docs.python.org/3/library/index.html)  
 Built-in Functions: [https://docs.python.org/3/library/functions.html](https://docs.python.org/3/library/functions.html)  
