@@ -7,7 +7,8 @@ import configparser
 import json
 import requests
 
-# This is an experiment with flask-restful
+# This is an unsafe experiment with flask-restful
+# intended for a local, isolated learning environment.
 # It can fetch current weather data from OpenWeatherMap
 # I started with the example code from:  
 # https://github.com/flask-restful/flask-restful/blob/master/examples/todo.py
@@ -60,6 +61,12 @@ class CityName(Resource):
         # Start the weather code
         try:
             # Get your OpenWeatherMap token from your config file.
+            # This is just experimental code for use at home.  It would not 
+            # be risk-appropriate for Internet access.  At a minimum, it would 
+            # need some sort of "governor" to resist excess traffic abuse.
+            # That MIGHT be a caching mechanism, where calls to a given city 
+            # would be cached and "re-used" for 10-minutes or so before making 
+            # another API call to OpenWeatherMap.
             owmtoken = get_config('weather.ini', 'weather', 'owmtokenA')
             cityname = LOCATIONS[location_id]['city']
             # Assuming the USA for now. Easy change for international
