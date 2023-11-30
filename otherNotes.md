@@ -26,6 +26,8 @@ python3 -m virtualenv --python="$(command -v python3)" .env &&
   python3 -m pip install --upgrade setuptools wheel && 
   python3 -m pip install -r requirements.txt 
 ```
+NOTE: `virtualenv` is not the only option.  
+  * `[fades](https://github.com/PyAr/fades)` is a system that automatically handles the virtualenvs in the cases normally found when writing scripts and simple programs, and even helps to administer big projects. `fades` will automagically create a new virtualenv (or reuse a previous created one), installing the necessary dependencies, and execute your script inside that virtualenv, with the only requirement of executing the script with fades and also marking the required dependencies.  
 
 ### Exploring Python Classes Without IDE Magic  
 If you are attempting to hack a change in an existing script in a remote server having a bare bones install, autocompletion and built in reflection are generally missing.  Don't forget about simple dir() to explore features in available classes.  It can save you a lot of time and frustration if you do not use a given component or builtin very often.  A simple listing of its features can help jog your memory.  
@@ -549,6 +551,7 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 * Build a starter/skeleton class for interacting with an SQLite database:
   * [https://jcristharif.com/ibis-datasette.html](https://jcristharif.com/ibis-datasette.html)  
   * See if this will help: [https://abstractkitchen.com/blog/flask-backbone/#section7](https://abstractkitchen.com/blog/flask-backbone/#section7)  
+  * or this tutorial [https://flask.palletsprojects.com/en/3.0.x/patterns/sqlite3/](https://flask.palletsprojects.com/en/3.0.x/patterns/sqlite3/)  
   * and this tutorial seems useful: [https://www.sqlitetutorial.net/](https://www.sqlitetutorial.net/)  
   * as well as this tutorial from DigitalOcean -- "How To Use the sqlite3 Module in Python 3." [https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3](https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3)  
 * If not SQLite, you might try [TinyDB](https://pypi.org/project/tinydb/), a lightweight document oriented database "optimized for your happiness :)."  It's written in pure Python and has no external dependencies. "The target are small apps that would be blown away by a SQL-DB or an external database server." [https://github.com/msiemens/tinydb](https://github.com/msiemens/tinydb)  
