@@ -501,6 +501,13 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
   * **sqlacodegen** is a tool that reads the structure of an existing database and generates the appropriate SQLAlchemy model code [https://github.com/agronholm/sqlacodegen](https://github.com/agronholm/sqlacodegen)  
   * **FastAPIQuickCRUD** is used to generate CRUD methods in FastApi from an SQLAlchemy schema [https://github.com/LuisLuii/FastAPIQuickCRUD](https://github.com/LuisLuii/FastAPIQuickCRUD)  
   * **FastAPI** is a high-performance web framework for building APIs with Python 3.6+ based on standard Python type hints [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)  
+* **Flask-Muck**  With Flask-Muck you don't have to worry about the CRUD. Flask-Muck is a batteries-included framework for automatically generating RESTful APIs with Create, Read, Update and Delete (CRUD) endpoints in a Flask/SqlAlchemy application stack in as little as 9 lines of code. [https://github.com/dtiesling/flask-muck](https://github.com/dtiesling/flask-muck)  
+* Build a starter/skeleton class for interacting with an SQLite database:
+  * [https://jcristharif.com/ibis-datasette.html](https://jcristharif.com/ibis-datasette.html)  
+  * See if this will help: [https://abstractkitchen.com/blog/flask-backbone/#section7](https://abstractkitchen.com/blog/flask-backbone/#section7)  
+  * or this tutorial [https://flask.palletsprojects.com/en/3.0.x/patterns/sqlite3/](https://flask.palletsprojects.com/en/3.0.x/patterns/sqlite3/)  
+  * and this tutorial seems useful: [https://www.sqlitetutorial.net/](https://www.sqlitetutorial.net/)  
+  * as well as this tutorial from DigitalOcean -- "How To Use the sqlite3 Module in Python 3." [https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3](https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3)  
 * There are other frameworks for building APIs:  
   * View: "Lightning fast, modern web framework" still in early release stages... [https://github.com/ZeroIntensity/view.py](https://github.com/ZeroIntensity/view.py)  
 * Time-Series data notes:  
@@ -548,12 +555,6 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 * Also, I need to get more literate with 'async' - [https://www.b-list.org/weblog/2022/aug/16/async/](https://www.b-list.org/weblog/2022/aug/16/async/) and also see [https://superfastpython.com/python-asyncio/](https://superfastpython.com/python-asyncio/)  
 * Build Your Python Project Documentation With MkDocs. By Martin Breuss, 2022-06-15 [https://realpython.com/python-project-documentation-with-mkdocs/](https://realpython.com/python-project-documentation-with-mkdocs/)  
 * Tools for Rewriting Python Code [https://lukeplant.me.uk/blog/posts/tools-for-rewriting-python-code/](https://lukeplant.me.uk/blog/posts/tools-for-rewriting-python-code/)  
-* Build a starter/skeleton class for interacting with an SQLite database:
-  * [https://jcristharif.com/ibis-datasette.html](https://jcristharif.com/ibis-datasette.html)  
-  * See if this will help: [https://abstractkitchen.com/blog/flask-backbone/#section7](https://abstractkitchen.com/blog/flask-backbone/#section7)  
-  * or this tutorial [https://flask.palletsprojects.com/en/3.0.x/patterns/sqlite3/](https://flask.palletsprojects.com/en/3.0.x/patterns/sqlite3/)  
-  * and this tutorial seems useful: [https://www.sqlitetutorial.net/](https://www.sqlitetutorial.net/)  
-  * as well as this tutorial from DigitalOcean -- "How To Use the sqlite3 Module in Python 3." [https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3](https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3)  
 * If not SQLite, you might try [TinyDB](https://pypi.org/project/tinydb/), a lightweight document oriented database "optimized for your happiness :)."  It's written in pure Python and has no external dependencies. "The target are small apps that would be blown away by a SQL-DB or an external database server." [https://github.com/msiemens/tinydb](https://github.com/msiemens/tinydb)  
 * Visual Python Tkinter GUI Creator [https://visualtk.com/](https://visualtk.com/)  
   * "Data and System Visualization Tools That Will Boost Your Productivity" [https://martinheinz.dev/blog/75](https://martinheinz.dev/blog/75) and Jailer [https://wisser.github.io/Jailer/home.htm](https://wisser.github.io/Jailer/home.htm)  
