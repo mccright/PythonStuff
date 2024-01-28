@@ -17,14 +17,15 @@ import sys
 import time
 
 
-def openpdf(filename: str) -> bytes:
+def open_pdf(filename: str) -> bytes:
     try:
         if not os.path.exists(filename):
             raise Exception(f"File path \"{filename}\" does not \
 appear to exist, or there may be a permission issue.")
         pdfreader = pypdf.PdfReader(filename)
     except Exception as e:
-        print(f"Problem with PdfReader. Did you specify a valid filename? {e}")
+        print(f"Problem with PdfReader and \"{filename}\". \
+Did you specify a valid PDF file? {e}")
         sys.exit()
     return pdfreader
 
@@ -89,21 +90,22 @@ def print_separator(msgstring: str):
     print(f"# {separator}")
 
 
-def main():
-    if len(sys.argv) != 2:
-        print(f"USAGE: python3 {sys.argv[0]} <input_pdf_filename>")
+def main(num_args: int, usage: str):
+    if len(sys.argv) != num_args:
+        this_script = sys.argv[0]
+        usage_message = usage.replace("script_name", str(this_script))
+        print(usage_message)
         sys.exit(1)
-
     filename = sys.argv[1]
     if filename != None:
-        reader = openpdf(filename)
+        reader = open_pdf(filename)
         print_separator(f"Start \"{filename}\" text.\r\n# Extracted on: {current_local_time()}")
         extracted_text = get_text_from_pdfreader(reader)
-        # Add any post-processing functions here 
+        # Add post-processing function(s) here 
         print(f"{replace_ligatures(extracted_text)}")
         print_separator(f"End \"{filename}\" text.\r\n# Extracted on: {current_local_time()}")
         sys.exit()
 
 
 if __name__ == '__main__':
-    main()
+    main(2, 'USAGE: python3 script_name <input_pdf_filename>')
