@@ -103,6 +103,10 @@ I usually pipe its output through grep for the code I am trying to understand.  
 [encryptstr](https://github.com/mccright/PythonStuff/blob/main/encryptTest/encryptstr.py) is a sketal set of AES-CBC string encryption/decryption functions.  
 
 
+### get-pdf-text.py  
+[get-pdf-text](https://github.com/mccright/PythonStuff/blob/main/extract-pdf-text/get-pdf-text.py) is an informal approach to using 'pypdf' to extract text from PDF files that often works well-enough for me. It is constructed from examples in the [pypdf docs](https://pypdf.readthedocs.io/en/stable/user/extract-text.html).  `pypdf` can [extract a range of PDF components](https://pypdf2.readthedocs.io/en/3.0.0/_modules/PyPDF2/_reader.html).  
+
+
 ### otherNotes.md  
 * [otherNotes.md](https://github.com/mccright/PythonStuff/blob/main/otherNotes.md) is just a collection of short code fragments that act as reminders for me.  
 
