@@ -3,6 +3,11 @@
 # This is just some problem-solving for an unrelated project.
 # This code started with https://github.com/veebch/clock/blob/main/webtime.py.
 # Thank you veebch (https://fosstodon.org/@veeb)
+#
+# Look into how we might help simplify this exercise:
+# Read: "Ten Python datetime pitfalls, and what libraries are \
+# (not) doing about it." By Arie Bovenberg
+# https://dev.arie.bovenberg.net/blog/python-datetime-pitfalls/
 
 import time
 import requests
