@@ -320,6 +320,38 @@ def ip_addr(interface):
 ```
 
 
+### Ensure an Executable Component is Available on the Path  
+Original from the [screwdriver project](https://raw.githubusercontent.com/screwdriver-cd/in-a-box/master/package/screwdriver_cd_setup/__init__.py?1)  
+https://screwdriver.cd/  and 
+https://github.com/screwdriver-cd/in-a-box/
+```python
+import sys
+import distutils.spawn
+
+def check_component(component):
+    """
+    Search for a component executable and exit if not found
+    """
+    if distutils.spawn.find_executable(component) is None:
+        print(f"💀   Could not find {component}, please install and set path to {component}.")
+        sys.exit(1)
+    # this 'else:' is just for testing, not for normal use.
+    else:
+        print(f"\n👍   Found {component}")
+
+def main():
+    """
+    Main code function
+    """
+    check_component('<needed_executable_file>')
+    # do something useful...
+
+if __name__ == "__main__":
+    sys.stdin.flush()
+    main()
+```
+
+
 ### Quietly delete a file
 ```python
 def silentremove(filename):
