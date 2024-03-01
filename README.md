@@ -28,6 +28,7 @@ Or check out a more comprehensive description of setting up a new environment at
 Get the Python Launcher for Unix: [https://github.com/brettcannon/python-launcher](https://github.com/brettcannon/python-launcher)  
 
 ### minpyver  
+Sometimes it is important to enforce a minimum Python version.  See Nicholas Hairs' "[Summary of Major Changes Between Python Versions](https://www.nicholashairs.com/posts/major-changes-between-python-versions/)" for a history of some reasons why that is...  
 * '[minpyver.py](https://github.com/mccright/PythonStuff/blob/main/minpyver.py)' - In some situations it is important to use a very specific Python version.  
   Yes, it might be better to just add:  
 ```python
