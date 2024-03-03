@@ -2,6 +2,7 @@
 
 ## Some Free Python App Hosting Options  
 *from a longer list by Nik Tomazic at: [https://testdriven.io/blog/heroku-alternatives/](https://testdriven.io/blog/heroku-alternatives/)*  
+
 * **PythonAnywhere** [https://www.pythonanywhere.com/](https://www.pythonanywhere.com/)  
 * **Render** [https://render.com/](https://render.com/), and  [https://render.com/docs/free](https://render.com/docs/free)  
 * **Fly.io** [https://fly.io/](https://fly.io/), and [https://community.fly.io/t/i-dont-understand-free-tier/5145/2](https://community.fly.io/t/i-dont-understand-free-tier/5145/2)  
@@ -14,14 +15,18 @@
 
 ### New environment?  Install Python:  
 Debian-based Linux, for example, Ubuntu or one of its variants:  
+
 ```bash
 sudo apt-get update
 sudo apt-get install python3 python3-venv python3-pip
 ```
+
 RedHat/Fedora-based Linux:  
+
 ```bash
 sudo dnf install python3
 ```
+
 Or check out a more comprehensive description of setting up a new environment at [https://github.com/mccright/PythonStuff/blob/main/New-environment-notes.md](https://github.com/mccright/PythonStuff/blob/main/New-environment-notes.md)  
 
 
@@ -31,6 +36,7 @@ Get the Python Launcher for Unix: [https://github.com/brettcannon/python-launche
 Sometimes it is important to enforce a minimum Python version.  See Nicholas Hairs' "[Summary of Major Changes Between Python Versions](https://www.nicholashairs.com/posts/major-changes-between-python-versions/)" for a history of some reasons why that is...  
 * '[minpyver.py](https://github.com/mccright/PythonStuff/blob/main/minpyver.py)' - In some situations it is important to use a very specific Python version.  
   Yes, it might be better to just add:  
+
 ```python
 if sys.version_info < (3, 10):
     raise Exception("Use only with Python 3.10 or higher")
@@ -49,6 +55,7 @@ By Sundeep Agarwal [https://learnbyexample.github.io/py_regular_expressions/](ht
 
 ### simpleAPIClient [REST]  
 * [Postman](https://www.postman.com/downloads/) is great for most use cases, but I still sometimes need to poke at a simple API that accepts a POST with a secret in the POST data when my code is not working as expected.  Here is a simple model for starting this kind of work in: [https://github.com/mccright/PythonStuff/tree/main/simplePOST2API](https://github.com/mccright/PythonStuff/tree/main/simplePOST2API)  
+
 ```python
 (env) C:\temp\prob>python simpleAPIClient.py --help
 usage: sampleAPIClient [-h] [-d] [-t] [-s] [-p] [-x PROXY_URL] -u API_URL
@@ -69,12 +76,13 @@ optional arguments:
 
 (env) C:\temp\prob>
 ```
+
   * *This is not a point-and-shoot utility.*  
   * At a minimum, you need to modify the code: Replace the "HEADER_PARAMS" and " POST_DATA" dicts with content relevant to your problem/target.  
   * Don't assume that I know what I am doing.  This served its purpose on some weekend work.  It has not seen many different use cases yet and may have serious limitations.  
   * This is not an attempt to deal with APIs that are protected by one or another OAuth implementation or other *session*-related interface.  Its target are those simple POST-and-done APIs that ought to be simple to use, but sometimes are not.  
 
-* Sometimes you need to know what types of files are in a github repo along with their layout in order to prepare for a risk-reasonable static analysis.  
+Sometimes you need to know what types of files are in a github repo along with their layout in order to prepare for a risk-reasonable static analysis.  
   * [getGHtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHtree.py) is a model for extracting a list of files in tree format from user repositories.  
   * [getGHorgtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHorgtree.py) is a model for extracting a list of files in tree format from non-public organization repositories.  
 
@@ -116,7 +124,7 @@ I usually pipe its output through grep for the code I am trying to understand.  
 * Starter project [https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint](https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint)  
 * 25 model projects [https://github.com/serverless/examples](https://github.com/serverless/examples)  
 
-## Minify HTML
+## Minify HTML  
 * There is a Python module [minify-html](https://pypi.org/project/minify-html) with source at [https://github.com/wilsonzlin/minify-html](https://github.com/wilsonzlin/minify-html)  
 
 ## Scrape some text on the Web  
@@ -142,7 +150,6 @@ or
 
 
 ## Python conventions  
-
 * Put a space before a comment: `# This is a comment`  
 * Don't make lines longer than ~80 characters  
 * Constants in all-caps: `MY_CONSTANT`  
@@ -154,16 +161,17 @@ or
 * When importing modules, don't import specific functions. Import the whole module, and use the module name and function together. Right: `import time; time.sleep(1)`. Wrong: `from time import sleep; sleep(1)`.  (Are there exceptions to this *rule*?)  
 * When you find yourself checking if items are in a `list`, use a `set`  
 * Write a snippet of documentation at the top of your file to help you remember what the file does.  
-* Write inputs and outputs to functions in a comment in the function body. 
-* Debugging has its place, but [don't hesitate to use *print()* statements](https://adamj.eu/tech/2021/10/08/tips-for-debugging-with-print/). 
+* Write inputs and outputs to functions in a comment in the function body.  
+* Debugging has its place, but [don't hesitate to use *print()* statements](https://adamj.eu/tech/2021/10/08/tips-for-debugging-with-print/).  
 (The original *conventions* in this list are from a readme by https://github.com/georgeberry.  Thank you George Berry.)  
- * And use [Python f-strings](https://fstring.help/) to make your work easier. 
+  * And use [Python f-strings](https://fstring.help/) to make your work easier.  
 * Use *[better-exceptions](https://github.com/Qix-/better-exceptions)* during local development, and use care to keep it out of your production deployments.  
 * Another approach would be to use [pymg](https://github.com/mimseyedi/pymg), a CLI tool that can interpret Python files by the Python interpreter and display the error message in a more readable way if an exception occurs [https://github.com/mimseyedi/pymg](https://github.com/mimseyedi/pymg)  
 * What is the difference between using  "_" and "__" in variable or function names?  The responses get at some Python conventions: [https://old.reddit.com/r/learnpython/comments/s5z0l8/can_someone_explain_and_in_python_clearly_for_me/](https://old.reddit.com/r/learnpython/comments/s5z0l8/can_someone_explain_and_in_python_clearly_for_me/)  
 
 
 ## External References  
+
 * "Avoiding Silent Failures in Python: Best Practices for Error Handling." By Bob Belderbos, 2023-08-07 [https://pybit.es/articles/python-errors-should-not-pass-silently](https://pybit.es/articles/python-errors-should-not-pass-silently/)  
 * "Python Quirks." [https://writing.peercy.net/p/python-quirks](https://writing.peercy.net/p/python-quirks)  
 * "WTF Python!-- Exploring and understanding Python through surprising snippets."  [https://github.com/satwikkansal/wtfpython](https://github.com/satwikkansal/wtfpython)  
