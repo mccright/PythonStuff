@@ -81,6 +81,9 @@ print(f"syslog time format from gmtime:    {syslogGmtime}")
 print(f"syslog time format from localtime: {syslogLocaltime}")
 ```
 
+See: Whenever: "Strict, predictable, and typed datetimes:" [https://github.com/ariebovenberg/whenever](https://github.com/ariebovenberg/whenever)  
+See another resource for using timezones with datetime objects: [https://majornetwork.net/2024/02/datetimes-with-timezones-in-python/](https://majornetwork.net/2024/02/datetimes-with-timezones-in-python/)  
+
 
 ### Simple File Read-File Write-File and Patch-File Functions  
 This approach is only a quick hack for problem-solving:  
@@ -571,6 +574,7 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 * Some example Utility functions [https://github.com/ukncsc/viper/blob/master/viper/common/utils.py](https://github.com/ukncsc/viper/blob/master/viper/common/utils.py)  
 
 ### ToDo  
+* Review: "[The Ultimate Guide to Data Wrangling with Python - Rust Polars Data Frame.pdf](https://github.com/AmitXShukla/RPA/blob/main/SampleData/The%20Ultimate%20Guide%20to%20Data%20Wrangling%20with%20Python%20-%20Rust%20Polars%20Data%20Frame.pdf)" (97 pages)  
 * Try refactoring a couple scripts with **[typer](https://github.com/tiangolo/typer)**, a library for building CLI applications [https://github.com/tiangolo/typer](https://github.com/tiangolo/typer)  
 * Do the same refactoring exercise with **[arguably](https://github.com/treykeown/arguably)**, a library for converting functions into command line interfaces (CLIs)  
 * Experiment with [Quart](https://github.com/pallets/quart), an async Python web microframework -- an asyncio reimplementation of the popular Flask microframework API.  
