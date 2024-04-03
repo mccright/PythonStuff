@@ -12,6 +12,17 @@ maximum entropy (think 'random') then used to assemble each play.
 No need to think about your numbers, nor worry about the Lottery empire 
 or someone else generating your numbers for you.  
 
+## Some of the programming challenges in this exercise  
+* Accepting user's command line input specifying the number of plays (default to one).  
+* Set a *sane* maximum number of plays to help protect system resources (e.g., using the script to generate 2 billion plays would, under most circumstances, be unproductive and should be resisted).  
+* Specify the universe of candidate integers for each grouping that makes up a Powerball or Mega-Millions game play.  
+* With a *reasonable* level of [entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)), "randomly" select numbers from the "universes" specified above for each Powerball or Mega-Millions game play.  
+* Ensure that there are no duplicates in the "first five" grouping.  
+* Sort the "first five" grouping low to high.  
+* Present the final Powerball or Mega-Millions game play on the terminal.  
+* "Catch" and handle exceptions where *needed*.
+
+### Example Output  
 ```terminal
 user@LT01:/mnt/dev/lottery_numbers$ python3 PowerBall-MegaMillions.py --help
 usage: PowerBall-MegaMillions.py [-h] [-n NUM_PLAYS]
@@ -45,6 +56,7 @@ See [Powerball](https://www.usamega.com/powerball/faq) and
 
 Each play is $2.00  
 
-REMEMBER: **The odds are not in your favor**.  
+## Caution  
+REMEMBER: **The odds are not in your favor**. You are gambling when you buy tickets and there is no guarantee you'll win any money. Playing the lottery is only entertainment.  
 https://en.wikipedia.org/wiki/Powerball#Power_Play  
 https://en.wikipedia.org/wiki/Mega_Millions#Winning_and_probability  
