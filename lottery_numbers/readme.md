@@ -5,8 +5,8 @@ This script was just an exercise in response to a query by a relative.
 It is not unique. There are other scripts available on Github and elsewhere.  
 If you want something like this, maybe try writing your own.  
 
-This script spits out sets of numbers matching the rules for Powerball and 
-Mega-Millions games.  
+This script spits out sets of numbers matching the rules for [Powerball](https://en.wikipedia.org/wiki/Powerball) and 
+[Mega-Millions](https://en.wikipedia.org/wiki/Mega_Millions) games.  
 It uses the Python module ```secrets``` to generate values having 
 maximum entropy (think 'random') then used to assemble each play.  
 No need to think about your numbers, nor worry about the Lottery empire 
@@ -51,10 +51,10 @@ Powerball and Mega-Millions are played by selecting six numbers.
 Powerball:     Five numbers between 1-69 and one “Powerball” number between 1-26.  
 Mega-Millions: Five numbers between 1-70 and one “Mega Ball” number between 1-25.  
 
-See [Powerball](https://www.usamega.com/powerball/faq) and  
-[Mega-Millions](https://www.usamega.com/mega-millions/faq)  
+See [Powerball](https://www.usamega.com/powerball/faq) and 
+[Mega-Millions](https://www.usamega.com/mega-millions/faq) FAQs for more information.  
 
-Each play is $2.00  
+Each play is $2.00 (*and have options that have their own additional costs*)  
 
 ## Caution  
 REMEMBER: **The odds are not in your favor**. You are gambling when you buy tickets and there is no guarantee you'll win any money. Playing the lottery is only entertainment.  
