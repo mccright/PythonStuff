@@ -8,7 +8,7 @@ If you want something like this, maybe try writing your own.
 This script spits out sets of numbers matching the rules for [Powerball](https://en.wikipedia.org/wiki/Powerball) and 
 [Mega-Millions](https://en.wikipedia.org/wiki/Mega_Millions) games.  
 It uses the Python module ```secrets``` to generate values having 
-maximum entropy (think 'random') then used to assemble each play.  
+maximum entropy (think '*random*') which are then used to assemble each play.  
 No need to think about your numbers, nor worry about the Lottery empire 
 or someone else generating your numbers for you.  
 
