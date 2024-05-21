@@ -5,6 +5,6 @@ idna==3.7
 Naked==0.1.31
 pycryptodome==3.19.1
 PyYAML==6.0
-requests==2.31.0
+requests==2.32.0
 shellescape==3.8.1
 urllib3==1.26.18
