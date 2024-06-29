@@ -66,6 +66,25 @@ def linux_get_dist():
         return "DEBIAN"
     raise NotImplemented("Unknown platform '%s'" % dist_name)
 
+# Work on a cross-OS safe 'fetch environment var' function.
+# It needs to fail/recover sanely.
+# This is still only the most spare skeleton
+import os
+import pathlib
+def get_env_var(str: environment_variable) -> str:
+    env_var = os.environ.get(environment_variable)
+    # print(f"{env_var}")
+    return env_var
+
+# Work on a cross-OS safe 'fetch path from environment var' function.
+# It needs to fail/recover sanely.
+# This is still only the most spare skeleton
+import os
+import pathlib
+def get_path_from_env_var(str: environment_variable) -> object:
+    path_from_env_var = pathlib.Path(os.environ.get(environment_variable, pathlib.Path.cwd()))
+    # print(f"{path_from_env_var}")
+    return path_from_env_var
 
 # Work on a cross-OS safe directory/file test and create function
 # This is still only the most spare skeleton
