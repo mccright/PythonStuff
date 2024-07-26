@@ -11,6 +11,9 @@
 # as a community recipie that can be used as a best-practice 
 # general purpose post processing step.
 # https://pypdf.readthedocs.io/en/stable/user/post-processing-in-text-extraction.html
+# 
+# or adopt a more full featured toolkit for PDF Content Extraction:  
+# https://github.com/opendatalab/PDF-Extract-Kit
 import pypdf
 import os
 import sys
