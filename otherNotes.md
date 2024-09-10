@@ -212,6 +212,7 @@ with open(csv_data_file, 'r', newline='') as csv_file:
         if csv_reader.line_num != 1:
             print(f"{row[0]} is {row[1]} years old")
 ```
+Also look at: [CSV Trimming](https://github.com/LucaCappelletti94/csv_trimming) for interacting with CSV files.  
 
 ### Distinguish Between 64-bit and 32-bit OS Architecture
 If you have 64 and 32-bit code or images and execute them using Python, 
