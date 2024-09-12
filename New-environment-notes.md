@@ -123,6 +123,9 @@ sudo apt-get update
 # Confirm by listing docker community editions available
 apt-cache madison docker-ce
 # Download and install the Debian package
+# The Docker Desktop app continues to evolve.  See the docs for the latest installation details:  
+# https://docs.docker.com/desktop/install/linux-install/  
+# on a slightly old Ubuntu this approach still worked on my last Linux PC
 curl https://desktop-stage.docker.com/linux/main/amd64/77103/docker-desktop.deb --output docker-desktop.deb
 sudo apt install ./docker-desktop.deb
 # Search Docker Desktop on the Applications menu, or
@@ -140,7 +143,7 @@ sudo ufw app list
 # Depending on the use case, https may be more appropriate
 sudo ufw allow 'nginx http'
 curl http://127.0.0.1
-# As needed, install php support
+# As needed, install php support (I haven't needed PHP for quite a while)  
 sudo apt install php-fpm
 # Install additional PHP modules
 # https://www.linode.com/docs/guides/install-php-8-for-apache-and-nginx-on-ubuntu/
