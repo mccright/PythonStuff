@@ -590,6 +590,7 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 * I see a lot of references to 'httpx' - "a fully featured HTTP client library for Python 3" [https://github.com/encode/httpx](https://github.com/encode/httpx).  I need to do some experimenting and see what the advantages might be.  
 * Lately, I've see references to 'hrequests' - [https://github.com/daijro/hrequests](https://github.com/daijro/hrequests)  
 * Similarly, I see references to 'HTTPie' - [https://kracekumar.com/post/print_http_request/](https://kracekumar.com/post/print_http_request/)  
+* See an article "about the differences between Requests, HTTPX, and AIOHTTP, and when to use each library for your Python projects." [https://www.speakeasy.com/post/python-http-clients-requests-vs-httpx-vs-aiohttp](https://www.speakeasy.com/post/python-http-clients-requests-vs-httpx-vs-aiohttp)  
 * Also, I need to get more literate with 'async' - [https://www.b-list.org/weblog/2022/aug/16/async/](https://www.b-list.org/weblog/2022/aug/16/async/) and also see [https://superfastpython.com/python-asyncio/](https://superfastpython.com/python-asyncio/)  
 * Build Your Python Project Documentation With MkDocs. By Martin Breuss, 2022-06-15 [https://realpython.com/python-project-documentation-with-mkdocs/](https://realpython.com/python-project-documentation-with-mkdocs/)  
 * Tools for Rewriting Python Code [https://lukeplant.me.uk/blog/posts/tools-for-rewriting-python-code/](https://lukeplant.me.uk/blog/posts/tools-for-rewriting-python-code/)  
