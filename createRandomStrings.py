@@ -5,6 +5,8 @@ import secrets
 import sys
 import os.path
 from os import path
+from uuid import uuid4
+
 
 n = 14
 
@@ -60,6 +62,13 @@ def build_string_with_srandom_samplev2():
     return srandom_string.join(srandom_list)
 
 
+def build_string_with_uuid():
+    # This approach absolutely does NOT generate random strings
+    # Rather, it generates unique strings that can be used for a variety of purposes 
+    # that some might think of as "random."
+    UUID = str(uuid4()),  # Unique-enough identifier
+    return UUID
+
 if __name__ == '__main__':
     # Unfinished experimenting with different ways to 
     # create 'unique' strings, a common requirement
@@ -67,6 +76,7 @@ if __name__ == '__main__':
     print(f"Using random.SystemRandomShuffle:  {build_string_with_srandom()}")
     print(f"Using random.SystemRandomSample:   {build_string_with_srandom_sample()}")
     print(f"Using random.SystemRandomSamplev2: {build_string_with_srandom_samplev2()}")
+    print(f"NOT random, but unique using uuid.uuid4: {build_string_with_uuid()}")
 
 
 
