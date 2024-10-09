@@ -195,6 +195,7 @@ or
 * "An introduction to Python for non-programmers using inflammation data." by Software-Carpentry [https://github.com/swcarpentry/python-novice-inflammation](https://github.com/swcarpentry/python-novice-inflammation)  
 * "Introduction to Python for non-programmers with a focus on plotting and data analysis." by Software-Carpentry [https://github.com/swcarpentry/python-novice-gapminder](https://github.com/swcarpentry/python-novice-gapminder)  
 * Python CheatSheets: [https://github.com/afizs/python-notes/blob/main/resources/cheatsheets.md](https://github.com/afizs/python-notes/blob/main/resources/cheatsheets.md)  
+* Local hosting of a Python CheatSheet from gto76: [https://github.com/mccright/python-cheatsheet/blob/main/README.md](https://github.com/mccright/python-cheatsheet/blob/main/README.md)  
 * 'A Dense' Python CheatSheet: [https://github.com/kieranholland/best-python-cheat-sheet](https://github.com/kieranholland/best-python-cheat-sheet)  
 * Python CheatSheet: [https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/python-cheat-sheet-v1.pdf](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/python-cheat-sheet-v1.pdf)  
 * Grokking the Coding Interview Patterns for Coding Questions (*Python code in 16 problem categories*):  [https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions](https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)  
