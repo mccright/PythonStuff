@@ -357,7 +357,7 @@ if __name__ == "__main__":
 ```
 
 
-### Quietly delete a file
+### Quietly delete a file (or not)  
 ```python
 def silentremove(filename):
     try:
@@ -576,6 +576,10 @@ https://github.com/NationalSecurityAgency/qgis-datetimetools-plugin
 * Some example Utility functions [https://github.com/ukncsc/viper/blob/master/viper/common/utils.py](https://github.com/ukncsc/viper/blob/master/viper/common/utils.py)  
 
 ### ToDo  
+* Review: "[The Ultimate Guide to Error Handling in Python](https://blog.miguelgrinberg.com/post/the-ultimate-guide-to-error-handling-in-python)" by Miguel Grindberg.  
+* Review: functions [flat() and flatten()](https://github.com/thyeem/foc?tab=readme-ov-file#utilities)  
+* Review: "[TypedDicts are better than you think.](https://blog.changs.co.uk/typeddicts-are-better-than-you-think.html)" by Jamie Chang.  
+* [spiderweb](https://github.com/itsthejoker/spiderweb/) "is a small web framework, just big enough to hold a spider. Getting started is easy..."  
 * Review: "[The Ultimate Guide to Data Wrangling with Python - Rust Polars Data Frame.pdf](https://github.com/AmitXShukla/RPA/blob/main/SampleData/The%20Ultimate%20Guide%20to%20Data%20Wrangling%20with%20Python%20-%20Rust%20Polars%20Data%20Frame.pdf)" (97 pages)  
 * Try refactoring a couple scripts with **[typer](https://github.com/tiangolo/typer)**, a library for building CLI applications [https://github.com/tiangolo/typer](https://github.com/tiangolo/typer)  
 * Do the same refactoring exercise with **[arguably](https://github.com/treykeown/arguably)**, a library for converting functions into command line interfaces (CLIs)  
