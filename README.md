@@ -111,6 +111,8 @@ I usually pipe its output through grep for the code I am trying to understand.  
 ### encryptstr.py  
 [encryptstr](https://github.com/mccright/PythonStuff/blob/main/encryptTest/encryptstr.py) is a sketal set of AES-CBC string encryption/decryption functions.  
 
+### temp-file-in-mem.py  
+[temp-file-in-mem.py](https://github.com/mccright/PythonStuff/blob/main/temp-file-in-mem.py) illustrates how to create and use an in-memory tmp file.  Native Python provides a range of objects for data storage, so this is likely only needed for odd, one-off use cases that require a *fast and lean* queue/buffer, building a stream, holding text for # processing *later*, etc. and something like a Python list won't do.  
 
 ### get-pdf-text.py  
 [get-pdf-text](https://github.com/mccright/PythonStuff/blob/main/extract-pdf-text/get-pdf-text.py) is an informal approach to using 'pypdf' to extract text from PDF files that often works well-enough for me. It is constructed from examples in the [pypdf docs](https://pypdf.readthedocs.io/en/stable/user/extract-text.html).  `pypdf` can [extract a range of PDF components](https://pypdf2.readthedocs.io/en/3.0.0/_modules/PyPDF2/_reader.html).  
