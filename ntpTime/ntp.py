@@ -1,9 +1,10 @@
 import ntplib
 from time import ctime
 client = ntplib.NTPClient()
-# Use inside your organization pool.ntp.org may be inappropriate or inaccessible.
-# Your organization may have an "internal" NTP server.  If so, replace
-# pool.ntp.org with your trusted server.
+# Use of pool.ntp.org from inside your organization may be inappropriate
+# or or it may be inaccessible (NTP may be blocked at your perimeter).
+# Your organization may have an "internal" NTP server. If so, replace
+# "pool.ntp.org" with your trusted server.
 ntpserver = 'pool.ntp.org'
 try:
     response = client.request(ntpserver, version=3)
@@ -26,5 +27,4 @@ else:
 # print('ntp stratum: %s' % response.stratum)
 # print('ntp root_delay: %s' % response.root_delay)
 # print('ntp root_dispersion: %s' % response.root_dispersion)
-# sleep(3)
 # print(ctime(response.tx_time))
