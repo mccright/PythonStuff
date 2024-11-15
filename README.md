@@ -87,6 +87,10 @@ Sometimes you need to know what types of files are in a github repo along with t
   * [getGHorgtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHorgtree.py) is a model for extracting a list of files in tree format from non-public organization repositories.  
 
 
+### Get Accurate time from NTP Servers
+* [ntp.py](https://github.com/mccright/PythonStuff/tree/main/ntpTime/ntp.py] will [fetch accurate time from pool.ntp.org](https://github.com/mccright/PythonStuff/tree/main/ntpTime).  I generally use this idiom for timestamps. Use of pool.ntp.org from inside your organization may be inappropriate or or it may be inaccessible (NTP may be blocked at your perimeter).  Your organization may have an "internal" NTP server.  If so, replace "pool.ntp.org" with your trusted server.  
+
+
 ### getSomeIPInfo  
 * [getSomeIPInfo](https://github.com/mccright/PythonStuff/blob/main/getSomeIPInfo.py) is just a reminder for me about navigating simple json.  First using hard-coded references, and then iterating through every key/value pair.  Both approaches have their place.  There is another example used in [getGHtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHtree.py) and [getGHorgtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHorgtree.py).  
 
