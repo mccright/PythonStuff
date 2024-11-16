@@ -1,11 +1,9 @@
-import base64
-import sys
 # The Crypto module comes from pycryptodome
 # https://pypi.org/project/pycryptodome/
 from Crypto.Cipher import AES
 from Crypto.Hash import SHA256
 from Crypto import Random
-
+import base64
 
 # Also take a look at:
 # https://cryptography.io/en/latest/fernet/
@@ -59,7 +57,7 @@ if __name__ == '__main__':
         print("Generic failure this run. Error: {} -- {}".format(e, (sys.exc_info())))
         exit()
     encrypted_text = encrypt_aes_cbc(clear_text_input)
-    print(f"{encrypted_text}")
+    print(f"Encrypted cyphertext is: {encrypted_text}")
     clear_text_output = decrypt_aes_cbc(encrypted_text)
-    print(f"{clear_text_output}")
+    print(f"Decrypted clear text is: {clear_text_output}")
 
