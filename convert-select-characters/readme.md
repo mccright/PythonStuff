@@ -5,6 +5,8 @@ Using Unicode variants of common characters makes management and search tasks mo
 
 When copying/harvesting data or source code there is a risk that some characters are not what you expect.  When you save or reuse these inputs in your own work, converting some common Unicode characters to their ASCII counterparts can reduce coding, debugging, testing and risk managment investments.  It can also reduce the potential confusion/frustration of those who use your outputs.  
 
+A parallel issue is associated with hostile use of ```alternate``` characters in look-alike domain names.  See: https://github.com/glaubermagal/evilurl by Glauber Magalhães.  
+
 ToDo: Write a couple scripts to identify and convert the Unicode characters in the table below.  Script inputs: One or more files.  A stream passed along in a pipeline. Script outputs: One or more files or a stream (standard out).  
 
 Replacement These Unicode Characters With ASCII Equivalents:
