@@ -1,7 +1,7 @@
 
 ### Replace These Unicode symbols with more common and easy-to-deal-with punctuation marks  
 
-Using Unicode variants of common characters makes management and search tasks more challenging due to the characters looking similar to their common counterparts.  
+Using Unicode variants of common characters may make text more visually pleasing or culturally *accurate*, but for some characters it also makes management and search tasks more challenging due to the characters looking similar to their common counterparts, but failing common search behaviors.  
 
 When copying/harvesting data or source code there is a risk that some characters are not what you expect.  When you save or reuse these inputs in your own work, converting some common Unicode characters to their ASCII counterparts can reduce coding, debugging, testing and risk managment investments.  It can also reduce the potential confusion/frustration of those who use your outputs.  
 
