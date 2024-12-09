@@ -87,8 +87,8 @@ Sometimes you need to know what types of files are in a github repo along with t
   * [getGHorgtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHorgtree.py) is a model for extracting a list of files in tree format from non-public organization repositories.  
 
 
-### Get Accurate time from NTP Servers
-* [ntp.py](https://github.com/mccright/PythonStuff/blob/main/ntpTime/ntp.py) will [fetch accurate time from pool.ntp.org](https://github.com/mccright/PythonStuff/tree/main/ntpTime).  I generally use this idiom for timestamps. Use of pool.ntp.org from inside your organization may be inappropriate or or it may be inaccessible (NTP may be blocked at your perimeter).  Your organization may have an "internal" NTP server.  If so, replace "pool.ntp.org" with your trusted server.  
+### Get Accurate time from NTP Servers  
+* [ntp.py](https://github.com/mccright/PythonStuff/blob/main/ntpTime/ntp.py) will [fetch accurate time from pool.ntp.org](https://github.com/mccright/PythonStuff/tree/main/ntpTime).  I generally use this idiom for timestamps. Use of [pool.ntp.org](https://en.wikipedia.org/wiki/NTP_pool) from inside your organization may be inappropriate or or it may be inaccessible ([NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) may be blocked at your network perimeter).  In that case, your organization may have an "internal" NTP server.  If so, replace "pool.ntp.org" with your trusted server.  
 
 
 ### getSomeIPInfo  
@@ -100,7 +100,7 @@ Sometimes you need to know what types of files are in a github repo along with t
 
 
 ### checkResponseCodes  
-* [checkResponseCodes](https://github.com/mccright/PythonStuff/blob/main/checkResponseCodes.py) is a list of all the http Codes from the IANA Hypertext Transfer Protocol (HTTP) Status Code Registry in the form of a long 'case statement.'  I wanted it around so that I could copy ot the subset that I needed at any given time.  It is not meant to be used as is.  
+* [checkResponseCodes](https://github.com/mccright/PythonStuff/blob/main/checkResponseCodes.py) is a list of all the http Codes from the IANA Hypertext Transfer Protocol (HTTP) Status Code Registry in the form of a long 'case statement.'  I wanted it around so that I could copy out the subset that I needed at any given time.  It is not meant to be used as is.  
 
 
 ### http-response-codes  
@@ -121,6 +121,8 @@ I usually pipe its output through grep for the code I am trying to understand.  
 ### get-pdf-text.py  
 [get-pdf-text](https://github.com/mccright/PythonStuff/blob/main/extract-pdf-text/get-pdf-text.py) is an informal approach to using 'pypdf' to extract text from PDF files that often works well-enough for me. It is constructed from examples in the [pypdf docs](https://pypdf.readthedocs.io/en/stable/user/extract-text.html).  `pypdf` can [extract a range of PDF components](https://pypdf2.readthedocs.io/en/3.0.0/_modules/PyPDF2/_reader.html).  
 
+### c2f.py and f2c.py  
+[c2f.py](https://github.com/mccright/PythonStuff/blob/main/c2f.py) and [f2c.py](https://github.com/mccright/PythonStuff/blob/main/f2c.py) are used to quickly convert Celsius To Fahrenheit and Fahrenheit to Celsius on the command line.  
 
 ### otherNotes.md  
 * [otherNotes.md](https://github.com/mccright/PythonStuff/blob/main/otherNotes.md) is just a collection of short code fragments that act as reminders for me.  
