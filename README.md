@@ -92,7 +92,7 @@ Sometimes you need to know what types of files are in a github repo along with t
 
 
 ### getSomeIPInfo  
-* [getSomeIPInfo](https://github.com/mccright/PythonStuff/blob/main/getSomeIPInfo.py) is just a reminder for me about navigating simple json.  First using hard-coded references, and then iterating through every key/value pair.  Both approaches have their place.  There is another example used in [getGHtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHtree.py) and [getGHorgtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHorgtree.py).  
+* [getSomeIPInfo](https://github.com/mccright/PythonStuff/blob/main/getSomeIPInfo.py) is just a reminder for me about navigating simple json.  First using hard-coded references, and then iterating through every key/value pair.  Both approaches have their place, but this example code will sometimes fail using hard-coded references because ipinfo.io returns only data that it has at any given time -- my testing has shown that some live IP addresses do not return hostnames, so this little script fails with an unhandled error in that hard-coded section.  There is another example used in [getGHtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHtree.py) and [getGHorgtree.py](https://github.com/mccright/FortifyStuff/blob/master/Scripts/getGHorgtree.py).  
 
 
 ### useRandomUserAgent  
