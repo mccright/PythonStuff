@@ -63,7 +63,7 @@ try:
         "tanh": tanh,
         "trunc": trunc
     }
-    # Thie approach immediately below is unsafe in an uncontrolled environment
+    # The approach immediately below is unsafe in an uncontrolled environment
     #     print("{}".format(eval(expression)))
     # The approach below is safer - with sanity-checking/constraining of inputs
     print("{}".format(eval(expression, {"__builtins__": None}, safe_dict)))
