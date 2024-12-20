@@ -165,6 +165,7 @@ or
 * Avoid meaningless variable names. Avoid numbers in variable names. Wrong: `thing1`, `thing2`. Right: `cat_list`, `fluffy_cat_list`.  
 * When ambiguous, put variable type in name: `my_list` or `my_set`. This is particularly important for collections. Is it a `dict` or a `list`?  
 * Document code with triple quotes (multiline comments): `"""My documentation"""`  
+* Use () instead of \ for long lines (when "*wrapping*" long lines into multiple shorter lines)  
 * Write functions when you find yourself repeating code  
 * When importing modules, don't import specific functions. Import the whole module, and use the module name and function together. Right: `import time; time.sleep(1)`. Wrong: `from time import sleep; sleep(1)`.  (Are there exceptions to this *rule*?)  
 * When you find yourself checking if items are in a `list`, use a `set`  
