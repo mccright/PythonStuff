@@ -18,10 +18,12 @@ def build_string_with_uuid():
     # that some might think of as "random."
     # https://docs.python.org/3/library/uuid.html#uuid.UUID.is_safe
     # Python 3.7 or above for UUID.is_safe support
+    # Some code from:
+    # https://github.com/finos/htc-grid/blob/main/source/control_plane/python/lambda/submit_tasks/submit_tasks.py
     if sys.version_info < (3, 7):
         raise Exception("Use only with Python 3.7 or higher")
-    UUID = str(uuid.uuid4()),  # Unique-enough identifier
-    return UUID
+    utility_UUID = uuid.uuid4(),  # Unique-enough identifier
+    return str(utility_UUID)
 
 if __name__ == '__main__':
     # Experimenting with creating a 'unique' uuid strings, a common requirement. 
