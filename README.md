@@ -177,6 +177,7 @@ or
 * Use *[better-exceptions](https://github.com/Qix-/better-exceptions)* during local development, and use care to keep it out of your production deployments.  
 * Another approach would be to use [pymg](https://github.com/mimseyedi/pymg), a CLI tool that can interpret Python files by the Python interpreter and display the error message in a more readable way if an exception occurs [https://github.com/mimseyedi/pymg](https://github.com/mimseyedi/pymg)  
 * What is the difference between using  "_" and "__" in variable or function names?  The responses get at some Python conventions: [https://old.reddit.com/r/learnpython/comments/s5z0l8/can_someone_explain_and_in_python_clearly_for_me/](https://old.reddit.com/r/learnpython/comments/s5z0l8/can_someone_explain_and_in_python_clearly_for_me/)  
+These rules were enhanced by "How the CIA Writes Python." (*practical Python coding rules from the CIA*) By Abdur-Rahmaan Janhangeer. https://compileralchemy.substack.com/p/how-the-cia-writes-python.  
 
 
 ## External References  
