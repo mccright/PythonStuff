@@ -46,6 +46,22 @@ Mega-Ball: 2 4 18 27 52 + 21
 user@LT01:/mnt/dev/lottery_numbers$ 
 ```
 
+### There is also a way to do this on the bash shell command line:  
+[shuf](https://www.mankier.com/1/shuf) does the heavy lifting in our one-liner.  And this old StackOverflow answeer by Dan Fego was also helpful for dealing with shuf output: https://stackoverflow.com/a/8714446  
+```terminal
+$ echo -n "Powerball: " && shuf -i 1-69 -n 5 |  awk -vORS=' ' '{ print $1 }' && echo -n '- ' && shuf -i 1-26 -n 1
+Powerball: 67 17 25 21 68 - 7
+$ echo -n "Mega-Millions: " && shuf -i 1-70 -n 5 |  awk -vORS=' ' '{ print $1 }' && echo -n '- ' && shuf -i 1-25 -n 1
+Mega-Millions: 37 43 58 31 34 - 4
+```
+or simply:  
+```terminal
+echo -n "Powerball: " && shuf -i 1-69 -n 5 |  awk -vORS=' ' '{ print $1 }' && echo -n '- ' && shuf -i 1-26 -n 1 && echo -n "Mega-Millions: " && shuf -i 1-70 -n 5 |  awk -vORS=' ' '{ print $1 }' && echo -n '- ' && shuf -i 1-25 -n 1
+Powerball: 19 27 29 50 30 - 3
+Mega-Millions: 20 61 70 49 38 - 11
+```
+
+
 ## Reference  
 Powerball and Mega-Millions are played by selecting six numbers.  
 Powerball:     Five numbers between 1-69 and one “Powerball” number between 1-26.  
