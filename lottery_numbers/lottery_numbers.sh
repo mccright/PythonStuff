@@ -1,3 +1,2 @@
 #!/bin/bash
-echo -n "Powerball: " && shuf -i 1-69 -n 5 |  awk -vORS=' ' '{ print $1 }' && echo -n '- ' && shuf -i 1-26 -n 1 && echo -n "Mega-Millions: " && shuf -i 1-70 -n 5 |  awk -vORS=' ' '{ print $1 }' && echo -n '- ' && shuf -i 1-25 -n 1
-
+if [ $1 ]; then for ((i=1;i<=$1;i+=1)); do /usr/bin/echo -n "Powerball: " && /usr/bin/shuf -i 1-69 -n 5 |  /usr/bin/awk -vORS=' ' '{ print $1 }' && /usr/bin/echo -n '+ ' && /usr/bin/shuf -i 1-26 -n 1 && /usr/bin/echo -n "Mega-Millions: " && /usr/bin/shuf -i 1-70 -n 5 |  /usr/bin/awk -vORS=' ' '{ print $1 }' && /usr/bin/echo -n '+ ' && /usr/bin/shuf -i 1-25 -n 1 && echo "- - - - - - - - - - - - - - - - - -"; done; else echo "Pass the number of plays that you want, for example for three plays: \"$0 3\""; fi
