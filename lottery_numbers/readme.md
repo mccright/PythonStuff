@@ -60,6 +60,8 @@ echo -n "Powerball: " && shuf -i 1-69 -n 5 |  awk -vORS=' ' '{ print $1 }' && ec
 Powerball: 19 27 29 50 30 - 3
 Mega-Millions: 20 61 70 49 38 - 11
 ```
+Wrap that code in a conditional to ensure we receive user input -- an ```if; then``` and ```for (<a positive integer>)``` and then the one-liner above ```else; tell the user how to use the script```  
+[lottery_numbers.sh](lottery_numbers.sh).  
 
 
 ## Reference  
