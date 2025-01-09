@@ -47,7 +47,7 @@ user@LT01:/mnt/dev/lottery_numbers$
 ```
 
 ### There is also a way to do this on the bash shell command line:  
-[shuf](https://www.mankier.com/1/shuf) does the heavy lifting in our one-liner.  And this old StackOverflow answeer by Dan Fego was also helpful for dealing with shuf output: https://stackoverflow.com/a/8714446  
+[shuf](https://www.mankier.com/1/shuf) does the heavy lifting in our one-liner.  And this old StackOverflow answer by Dan Fego was also helpful for dealing with shuf output: https://stackoverflow.com/a/8714446  
 ```terminal
 $ echo -n "Powerball: " && shuf -i 1-69 -n 5 |  awk -vORS=' ' '{ print $1 }' && echo -n '- ' && shuf -i 1-26 -n 1
 Powerball: 67 17 25 21 68 - 7
