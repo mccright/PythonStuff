@@ -5,18 +5,22 @@
 import sys
 from mpmath import mp
 
-# Only calculate up to 65,536 digits pi
+# Only calculate up to 65,536 digits pi.
+# If you want more, change the number below.
 max_len = 65536
 
 if len(sys.argv) == 1:
-    print(f"Not enough arguments. Need the desired accuracy on the command line.")
+    print(f"Not enough arguments. Need the desired precision on the command line.")
     sys.exit(0)
 if sys.argv[1].isdigit():
     if int(sys.argv[1]) <= max_len:
-        accuracy = sys.argv[1]
+        precision = sys.argv[1]
     else:
-        print(f"Maximum pi length is: {str(max_len)}, you entered {str(sys.argv[1])}")
+        print(f"Maximum pi precision is currently: {str(max_len)}, you entered {str(sys.argv[1])}")
         sys.exit()
-mp.dps = accuracy
+else:
+    print(f"You entered {str(sys.argv[1])}. \nThis script requires a positive number representing your desired precision. \nMaximum pi precision is currently: {str(max_len)}")
+    sys.exit()
+mp.dps = precision
 print(f"{mp.pi}")
 
