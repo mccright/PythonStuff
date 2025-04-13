@@ -18,6 +18,16 @@ import requests
 app = Flask(__name__)
 api = Api(app)
 
+#   "desmoines,us":{"lon":-122.3243,"lat":47.4018}
+#   "urbandale,us":{"lon":-93.7122,"lat":41.6267}
+#      "denver,us":{"lon":-104.9847,"lat":39.7392}
+#      "pueblo,us":{"lon":-104.6091,"lat":38.2545}
+#  "middlebury,us":{"lon":-73.1673,"lat":44.0153}
+# "bella vista,us":{"lon":-94.2316,"lat":36.4295}
+#     "lincoln,us":{"lon":-96.667,"lat":40.8}
+#"philadelphia,us":{"lon":-75.1638,"lat":39.9523}
+#   "amsterdam,nl":{"lon":4.8897,"lat":52.374}
+#        "kofu,jp":{"lon":138.5683,"lat":35.6639}
 LOCATIONS = {
     'urbandale': {'city': 'urbandale'},
     'desmoines': {'city': 'desmoines'},
@@ -25,6 +35,10 @@ LOCATIONS = {
     'denver': {'city': 'denver'},
     'pueblowest': {'city': 'pueblo'},
     'pueblo': {'city': 'pueblo'},
+    'middlebury': {'city': 'middlebury'},
+    'bellavista': {'city': 'bella vista'},
+    'lincoln': {'city': 'lincoln'},
+    'philadelphia': {'city': 'philadelphia'},
 }
 
 def abort_if_location_doesnt_exist(location_id):
