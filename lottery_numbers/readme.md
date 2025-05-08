@@ -78,3 +78,6 @@ Each play is $2.00 (*and have options that have their own additional costs*)
 REMEMBER: **The odds are not in your favor**. You are gambling when you buy tickets and there is no guarantee you'll win any money. Playing the lottery is only entertainment.  
 https://en.wikipedia.org/wiki/Powerball#Power_Play  
 https://en.wikipedia.org/wiki/Mega_Millions#Winning_and_probability  
+This is also true for all commercial gambling.  See:  
+Gambling FAQ: https://yourlifeiowa.org/health-and-wellness-gambling#frequently-asked-questions  
+And the "Payout Wizard" at: https://yourlifeiowa.org/health-and-wellness-gambling#frequently-asked-questions  
