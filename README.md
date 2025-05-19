@@ -128,6 +128,9 @@ I usually pipe its output through grep for the code I am trying to understand.  
 * [otherNotes.md](https://github.com/mccright/PythonStuff/blob/main/otherNotes.md) is just a collection of short code fragments that act as reminders for me.  
 
 
+### Archive/Backup GitHub repos:  
+githubtakeout (by [Corey Goldberg](https://github.com/cgoldberg)) -- Archive and export Git Repos and Gists from GitHub [https://github.com/cgoldberg/githubtakeout](https://github.com/cgoldberg/githubtakeout)  
+
 ## AWS Lambdas  
 * Starter project [https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint](https://github.com/serverless/examples/tree/master/aws-python-simple-http-endpoint)  
 * 25 model projects [https://github.com/serverless/examples](https://github.com/serverless/examples)  
