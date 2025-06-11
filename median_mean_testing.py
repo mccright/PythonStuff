@@ -58,12 +58,15 @@ if __name__ == '__main__':
     # numbers = ["a", 1, 2.2, 3.14, 4, 5, 6, 7]
     # numbers = [1, 4, 3, 2, 1, 3, 7, 1, 4, 1]
     # numbers = [1, 1024, 4, 3, 2, 1, 3, 7, 1, 4, 1]
-    numbers = [1, 61, 2, 127, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1024]
+    #numbers = [1, 61, 2, 127, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1024]
+    # Below is a list representing Western European Countries Tax As Percentage Of GDP below:
+    # FROM: https://www.ceicdata.com/en/indicator/united-states/tax-revenue--of-gdp
+    numbers = [29.8, 28.4, 29.2, 21.6, 28.7, 26.1, 18.8, 43, 23.3, 25.8, 31.7, 16.4, 24.3, 23.7, 17.6, 28.3, 24.8, 23.8, 19.4, 29.4, 24.5, 24.9, 26.6, 31.4, 14.8, 21.9, 35.3, 14.9, 21.7, 21.2, 26.7, 25.6, 27.3]
     # numbers = [55251, 59, 18, 63, 34, 17, 17, 48, 26, 16, 38, 21, 22, 50, 45, 12, 10, 8, 58, 15, 3, 56, 33, 4, 47, 36, 26, 51, 65, 8, 33, 70, 39, 34, 35, 2, 44, 1, 55, 31, 61, 3, 19, 45, 39, 28, 35, 23, 18, 6, 61, 5, 4, 14, 26, 57, 41, 22, 4, 18, 24, 28, 58, 52, 61, 6, 49, 57, 51, 10, 19, 6, 34, 40, 19, 55, 32, 14, 67, 47, 6, 25, 32, 21, 419, 228, 47, 186, 245, 284, 583, 522, 611, 60, 499, 578, 517, 106, 195, 64, 343, 402, 191, 155, 332]
     # numbers = ["a", "b", "c", "d", "e", "f"]
     if (are_list_elements_numbers(numbers)) == True:
         us_central_dt = datetime.datetime.now(tz=ZoneInfo("America/Chicago")).strftime('%Y-%m-%d %I:%M:%S%P %Z')
-        print(f"Test run at: {us_central_dt}")
+        print(f"Calculations run at: {us_central_dt}")
         # print(f"{datetime.datetime.today().strftime('%Y-%m-%d %I:%M:%S%P %Z')}")
         average = get_average_with_code(numbers)
         print(f"list = {numbers}")
