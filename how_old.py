@@ -22,12 +22,12 @@ def youragenow(birthyear: int, birthmonth: int, birthday: int):
 
 
 if len(sys.argv) != 4:
-    print(f"Not enough arguments.\n Need <birthyear> <birthmonth> <birthday> on the command line.")
+    print(f"Not enough arguments.\n Need <birthmonth> <birthday> <birthyear> on the command line.")
     sys.exit(0)
 
-birthyear = sys.argv[3]
-birthmonth = sys.argv[1]
-birthday = sys.argv[2]
+birthyear: int = sys.argv[3]
+birthmonth: int = sys.argv[1]
+birthday: int = sys.argv[2]
 # birthhour = sys.argv[4]
 print(f"                    ---------------------------")
 print(f"Given that input -> {youragenow(int(birthyear), int(birthmonth), int(birthday))} old.")
