@@ -5,6 +5,12 @@ import os
 # This approach is only useful when you have tight controls over the local time.
 # For shared code, use the approach outlined in the ntpTime/ directory.
 
+# Consider the following for edge cases: 
+# strpdatetime: https://github.com/RhetTbull/strpdatetime
+# A replacement for datetime.datetime.strptime with super powers. 
+# strpdatetime is a drop-in replacement for datetime.datetime.strptime 
+# that adds a simplified regex-like syntax for finding and extracting date and time information from strings.
+
 def myDateTime(): return (strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime()))
 def syslogGmtime(): return (strftime("%b %d %H:%M:%S", gmtime()))
 def myLocalTime(): return (strftime("%a, %d %b %Y %H:%M:%S %Z", localtime()))
