@@ -8,8 +8,9 @@ When copying/harvesting data or source code there is a risk that some characters
 A parallel issue is associated with hostile use of ```alternate``` characters in look-alike domain names.  See: https://github.com/glaubermagal/evilurl by Glauber Magalhães.  
 
 ToDo: Write a couple scripts to identify and convert the Unicode characters in the table below along with some ASCII look-alikes.  Script inputs: One or more files.  A stream passed along in a pipeline. Script outputs: One or more files or a stream (standard out).  
-Example script using replacement (*a tough challenge*): [prep_text.py](prep_text.py)  
-Example script using unidecode module (*simple, but limited*): [text_2_ascii.py](text_2_ascii.py)  
+Example script using replacement (*a tough challenge, better to use a safelist*): [prep_text.py](prep_text.py)  
+Example script using replacement with a broader net (*still a bad idea and risk-rich, but sometimes you don't yet know what you are dealing with, but also need to do some safe-enough exploring*): [replace_lookalike_characters.py](replace_lookalike_characters.py)  
+Example script using unidecode module (*simple, generally safer, but limited*): [text_2_ascii.py](text_2_ascii.py)  
 
 Replace These Unicode Characters With ASCII Equivalents:  
 
