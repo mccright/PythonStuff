@@ -51,7 +51,7 @@ MAX_RUNS: int = 30
 
 def print_powerball_candidate(powerball_first_group: int, powerball_length: int):
     todays_powerball_bet: [] = select_some(PB_FIRST_FIVE_UNIVERSE, powerball_first_group)
-    print(f"PowerBall: ", end="")
+    print(f"PowerBall:     ", end="")
     print_items_sorted(todays_powerball_bet)
     print(f"+", end=" ")
     powerball_number: [] = select_some(PB_POWERBALL_UNIVERSE, powerball_length)
@@ -61,7 +61,7 @@ def print_powerball_candidate(powerball_first_group: int, powerball_length: int)
 
 def print_megamil_candidate(mega_ball_first_group: int, mega_ball_length: int):
     todays_mega_ball_bet: [] = select_some(MM_FIRST_FIVE_UNIVERSE, mega_ball_first_group)
-    print(f"Mega-Ball: ", end="")
+    print(f"Mega-Millions: ", end="")
     print_items_sorted(todays_mega_ball_bet)
     print(f"+", end=" ")
     mega_ball_number: [] = select_some(MM_MEGABALL_UNIVERSE, mega_ball_length)
