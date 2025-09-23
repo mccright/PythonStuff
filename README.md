@@ -186,6 +186,7 @@ These rules were enhanced by "How the CIA Writes Python." (*practical Python cod
 
 ## External References  
 
+* Some Free [Python IDEs](https://www.geeksforgeeks.org/python/top-python-ide/)  
 * "Avoiding Silent Failures in Python: Best Practices for Error Handling." By Bob Belderbos, 2023-08-07 [https://pybit.es/articles/python-errors-should-not-pass-silently](https://pybit.es/articles/python-errors-should-not-pass-silently/)  
 * "Python Quirks." [https://writing.peercy.net/p/python-quirks](https://writing.peercy.net/p/python-quirks)  
 * "WTF Python!-- Exploring and understanding Python through surprising snippets."  [https://github.com/satwikkansal/wtfpython](https://github.com/satwikkansal/wtfpython)  
