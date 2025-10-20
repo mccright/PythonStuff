@@ -7,9 +7,9 @@ import sys
 # Liters = cups / 4.226753
 # cups = liters * 4.226753
 
-def c2l(f_value):
+def c2l(f_value) -> float:
     cups = float(f_value)
-    liters = (cups / 4.226753)
+    liters: float = (cups / 4.226753)
     return liters
 
 
