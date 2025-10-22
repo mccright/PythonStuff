@@ -81,9 +81,11 @@ Output:
 Comma separated: 1,234,567.89123
 Rounded to 2 decimals: 1234567.89
 Scientific notation: 1.23e+06
-Binary: 1234568 -> 100101011010000001000
-Hexadecimal: 12d6808
+f strings can print() integers in hex or binary format, not floats.
+Hexadecimal: 1234567 -> 12d687
+Binary: 1234567 -> 100101101011010000111
 ```
+<small>(*Code correction updates on "Formatting Numbers" section, 2025-10-21 McCright*)</small>
 
 ---
 
@@ -291,7 +293,7 @@ Use { and } to display curly braces.
 ### 16. Lambda Functions Inside F-strings
 
 ```python
-square = lambda x: x  2
+square = lambda x: x ** 2
 print(f"5 squared is {square(5)}")
 ```
 
@@ -300,6 +302,7 @@ Output:
 ```
 5 squared is 25
 ```
+<small>(*Code correction updates on "Lambda Functions Inside F-strings" section, 2025-10-22 McCright*)</small>
 
 ---
 
