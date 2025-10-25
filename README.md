@@ -178,6 +178,7 @@ or
 (The original *conventions* in this list are from a readme by https://github.com/georgeberry.  Thank you George Berry.)  
   * And use [Python f-strings](https://fstring.help/) to make your work easier.  
   * [Python f-strings Quiz](https://fstrings.wtf/). And [the quiz questions & answers](https://github.com/mitsuhiko/fstrings-wtf/blob/main/questions.js)  
+  * "Strings Cheat Sheet." [https://www.cse.msu.edu/.../stringsCheatSheet.pdf](https://www.cse.msu.edu/~ldillon/cse-ctl/Spring2019/Meeting03/stringsCheatSheet.pdf)  
 * Use *[better-exceptions](https://github.com/Qix-/better-exceptions)* during local development, and use care to keep it out of your production deployments.  
 * Another approach would be to use [pymg](https://github.com/mimseyedi/pymg), a CLI tool that can interpret Python files by the Python interpreter and display the error message in a more readable way if an exception occurs [https://github.com/mimseyedi/pymg](https://github.com/mimseyedi/pymg)  
 * What is the difference between using  "_" and "__" in variable or function names?  The responses get at some Python conventions: [https://old.reddit.com/r/learnpython/comments/s5z0l8/can_someone_explain_and_in_python_clearly_for_me/](https://old.reddit.com/r/learnpython/comments/s5z0l8/can_someone_explain_and_in_python_clearly_for_me/)  
@@ -188,6 +189,7 @@ These rules were enhanced by "How the CIA Writes Python." (*practical Python cod
 
 * Some Free [Python IDEs](https://www.geeksforgeeks.org/python/top-python-ide/)  
 * "Avoiding Silent Failures in Python: Best Practices for Error Handling." By Bob Belderbos, 2023-08-07 [https://pybit.es/articles/python-errors-should-not-pass-silently](https://pybit.es/articles/python-errors-should-not-pass-silently/)  
+* "Tossing around exceptions." [https://www.cse.msu.edu/.../index.html#week14](https://www.cse.msu.edu/~ldillon/cse-ctl/Spring2019/index.html#week14)  
 * "Python Quirks." [https://writing.peercy.net/p/python-quirks](https://writing.peercy.net/p/python-quirks)  
 * "WTF Python!-- Exploring and understanding Python through surprising snippets."  [https://github.com/satwikkansal/wtfpython](https://github.com/satwikkansal/wtfpython)  
 * "Python Data Science Handbook." By Jake VanderPlas. [https://github.com/jakevdp/PythonDataScienceHandbook](https://github.com/jakevdp/PythonDataScienceHandbook) and [https://jakevdp.github.io/PythonDataScienceHandbook/](https://jakevdp.github.io/PythonDataScienceHandbook/)  
