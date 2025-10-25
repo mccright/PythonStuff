@@ -436,6 +436,9 @@ def encode_json(json_input):
 
 ### Graph on the terminal when investigating and exploring  
 * asciichart (simplistic) [https://github.com/cashlo/asciichart](https://github.com/cashlo/asciichart)  
+* seaborn:  
+  * [AWS Seaborn CheatSheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf)  
+  * [DataCamp's Seaborn CheatSheet](https://www.datacamp.com/cheat-sheet/python-seaborn-cheat-sheet)  
 * livechart (maybe) [https://github.com/greyltc-org/livechart](https://github.com/greyltc-org/livechart)  
 * plotext [https://github.com/piccolomo/plotext](https://github.com/piccolomo/plotext)  
 * plotille [https://github.com/tammoippen/plotille](https://github.com/tammoippen/plotille)  
@@ -502,10 +505,10 @@ Built-in Functions: [https://docs.python.org/3/library/functions.html](https://d
 ### Notes on Python Object Types  
 |Type   |  Description  |
 |-------|---------------|
-|list| A sequence type - [mutable sequence, in square brackets](https://www.w3schools.com/python/python_lists.asp) [] |
+|list| A sequence type - [mutable sequence, in square brackets](https://www.w3schools.com/python/python_lists.asp) [], and "[Cheat sheet for lists and tuples](https://www.cse.msu.edu/~ldillon/cse-ctl/Spring2019/Meeting06/listAndTuplesCheatSheet.pdf)" |
 |tuple | A sequence type - [imutable sequence, in parentheses](https://www.w3schools.com/python/python_tuples.asp) () |
-|dict  | A mapping type - ['key, value' storage, in curly braces](https://www.w3schools.com/python/python_dictionaries.asp) {} |
-|set| A [collection of unordered unique elements without duplicates](https://www.w3schools.com/python/python_sets.asp) {} |
+|dict  | A mapping type - ['key, value' storage, in curly braces](https://www.w3schools.com/python/python_dictionaries.asp) {}, and "[Dictionaries Cheat Sheet](https://www.cse.msu.edu/~ldillon/cse-ctl/Spring2019/Meeting08/cheatSheet.pdf)" |
+|set| A [collection of unordered unique elements without duplicates](https://www.w3schools.com/python/python_sets.asp) {}, and "[Sets Cheat Sheet](https://www.cse.msu.edu/~ldillon/cse-ctl/Spring2019/Meeting09/Sets%20Cheat%20Sheet.pdf)" |
 |frozenset| |
 |range | |
 |str| A text type -- an [immutable sequence of characters](https://www.w3schools.com/python/python_strings.asp); with [several representations using single, double, or triple quotes](https://www.w3resource.com/python/python-string.php). Today, [Python's strings have 47 methods](https://www.pythonmorsels.com/string-methods/). |
