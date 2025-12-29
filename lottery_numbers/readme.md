@@ -2,13 +2,13 @@
 
 
 This script was just an exercise in response to a query by a relative.  
-It is not unique. There are other scripts available on Github and elsewhere.  
+It is not unique. There are other scripts available for the same purposes on Github and elsewhere.  
 If you want something like this, maybe try writing your own.  
 
 This script spits out sets of numbers matching the rules for [Powerball](https://en.wikipedia.org/wiki/Powerball) and 
 [Mega-Millions](https://en.wikipedia.org/wiki/Mega_Millions) games.  
 It uses the Python module ```secrets``` to generate values having 
-maximum entropy (think '*random*') which are then used to assemble each play.  
+*maximum* entropy (think '*random*') which are then used to assemble each play.  
 No need to think about your numbers, nor worry about the Lottery empire 
 or someone else generating your numbers for you.  
 
@@ -66,18 +66,38 @@ Wrap that code in a conditional to ensure we receive user input -- an ```if; the
 
 ## Reference  
 Powerball and Mega-Millions are played by selecting six numbers.  
-Powerball:     Five numbers between 1-69 and one “Powerball” number between 1-26.  
-Mega-Millions: Five numbers between 1-70 and one “Mega Ball” number between 1-25.  
+Powerball:     Five numbers between 1-69 and one “Powerball” number between 1-26.  (*Approximate odds of a jackpot are [1 in 292,201,338](https://www.usamega.com/powerball/faq)*)  
+Mega-Millions: Five numbers between 1-70 and one “Mega Ball” number between 1-25.  (*Approximate odds of a jackpot are [1 in 290,472,336](https://www.usamega.com/mega-millions/faq)*)  
 
 See [Powerball](https://www.usamega.com/powerball/faq) and 
 [Mega-Millions](https://www.usamega.com/mega-millions/faq) FAQs for more information.  
 
-Each play is $2.00 (*and have options that have their own additional costs*)  
+Each Powerball play is $2.00 and each Mega-Millions play is $5.00 (*and have options that have their own additional costs*)  
 
 ## Caution  
-REMEMBER: **The odds are not in your favor**. You are gambling when you buy tickets and there is no guarantee you'll win any money. Playing the lottery is only entertainment.  
+REMEMBER: **The odds are not in your favor**. You are gambling when you buy tickets and there is no guarantee you'll win any money. Playing the lottery is only entertainment. It is described by [Salil Mehta](https://statisticalideas.blogspot.com/2012/11/statistical-ideas-website.html) as "[a tax on people who may not really understand what they’re doing](https://www.nytimes.com/2024/03/29/business/lottery-jackpot-megamillions-powerball.html)" followed by "Unquestionably, if you need the money, don’t waste it on a lottery ticket. Use it to pay the bills, or save it and invest it."  
+
 https://en.wikipedia.org/wiki/Powerball#Power_Play  
 https://en.wikipedia.org/wiki/Mega_Millions#Winning_and_probability  
 This is also true for all commercial gambling.  See:  
 Gambling FAQ: https://yourlifeiowa.org/health-and-wellness-gambling#frequently-asked-questions  
 And the "Payout Wizard" at: https://yourlifeiowa.org/health-and-wellness-gambling#frequently-asked-questions  
+
+But...  
+### Some of the Biggest Jackpots in the U.S.  
+* $2.04 billion: Powerball Won Nov. 7, 2022, in California  
+* $1.817 billion: Powerball Won Dec. 24, 2025 in Arkansas  
+* $1.787 billion: Powerball Won Sept. 6, 2025, in Missouri and Texas  
+* $1.765 billion: Powerball Won Oct. 11, 2023, in California  
+* $1.602 billion: Mega Millions, Aug. 8, 2023, Florida  
+* $1.6   billion: Powerball No winner yet  
+* $1.586 billion: Powerball Won Jan. 13, 2016, in California, Florida and Tennessee  
+* $1.537 billion: Mega Millions,Oct. 23, 2018, South Carolina  
+* $1.348 billion: Mega Millions Jan. 13, 2023, Maine  
+* $1.337 billion: Mega Millions July 29, 2022, in Illinois  
+* $1.326 billion: Powerball Won April 6, 2024, in Oregon  
+* $1.269 billion: Mega Millions Dec. 27, 2024, California  
+* $1.08 billion: Powerball Won July 19, 2023, in California  
+* $842.4 million: Powerball Won Jan. 1, 2024, in Michigan  
+* $768.4 million: Powerball Won March 27, 2019, in Wisconsin  
+* $758.7 million: Powerball Won Aug. 23, 2017, in Massachusetts  
