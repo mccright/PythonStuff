@@ -111,7 +111,7 @@ def normalize_tainted_string(questionablestring):
     return re.sub('\s+', ' ', re.sub('[\W_]+', ' ', questionablestring.lower()))
 
 
-# Ref: https://github.com/shpala/pybuild_utils/blob/master/base/utils.py
+# Ref: Started with https://github.com/shpala/pybuild_utils/blob/master/base/utils.py
 def read_file_line_by_line_to_list(text_file) -> list:
     """
     Read file into an array
@@ -119,7 +119,7 @@ def read_file_line_by_line_to_list(text_file) -> list:
     :return: file lines in an array
     """
     if not os.path.exists(text_file):
-        raise Exception('file path: {0} not exists'.format(text_file))
+        raise Exception('file path: {0} does not exist'.format(text_file))
 
     file_array = []
     with open(text_file, "r") as text_file_input:
@@ -129,7 +129,7 @@ def read_file_line_by_line_to_list(text_file) -> list:
     return file_array
 
 
-# Ref: https://github.com/shpala/pybuild_utils/blob/master/base/utils.py
+# Ref: Started with https://github.com/shpala/pybuild_utils/blob/master/base/utils.py
 def read_file_line_by_line_to_set(file) -> set:
     """
     Read file into a set
@@ -137,11 +137,11 @@ def read_file_line_by_line_to_set(file) -> set:
     :return: file lines in a set
     """
     if not os.path.exists(file):
-        raise BuildError('file path: {0} not exists'.format(file))
+        raise Exception('file path: {0} does not exist'.format(file))
 
     file_set = set()
-    with open(file, "r") as ins:
-        for line in ins:
+    with open(file, "r") as text_file:
+        for line in text_file:
             file_set.add(line.strip())
 
     return file_set
@@ -162,6 +162,47 @@ if __name__ == "__main__":
         print(f"{what_I_need}")
         # re-fill 'line'
         line = sys.stdin.readline()
+
+
+
+def remove_commas(string_input: str) -> str:
+    import re
+    # Input: A collection of "strings" that may be comma separated.
+    # Output: A collection of "strings" that are now space separated.
+    no_commas = re.sub(r",", " ", string_input)
+    return no_commas
+
+
+def convert_strings_to_floats(strings: str) -> list:
+    import statistics
+    # Input: The "strings" must be a list of "numbers" in string format,
+    # Output: A Python `list` of floats composed of the numbers in the Input.
+    #
+    # Depends upon: remove_commas(string_input: str)
+    #
+    # Remove commas - because it receives lists...
+    strings_no_commas: str = remove_commas(strings)
+    # Convert string input to a list of floats.
+    # My original use case was receiving a list on the command line.
+    # This approach was outlined at:
+    # https://www.geeksforgeeks.org/python/python-converting-all-strings-in-list-to-integers/
+    list_integers: list = list(map(float, strings_no_commas.split()))
+    return list_integers
+
+
+def get_median(list_items: list) -> float:
+    import statistics
+    # Input: A Python list of numbers ("strings").
+    # Output: A float.
+    median_number = statistics.median(list_items)
+    return median_number
+
+def get_mean(list_items: list) -> float:
+    import statistics
+    # Input: A Python list of numbers ("strings").
+    # Output: A float.
+    mean_number = statistics.mean(list_items)
+    return mean_number
 
 
 # Ref: https://github.com/shpala/pybuild_utils/blob/master/base/utils.py
@@ -335,3 +376,4 @@ def is_role_based_email(email: str) -> bool:
             return True
 
     return False
+
