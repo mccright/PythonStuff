@@ -3,6 +3,14 @@
 import sys
 import getopt
 
+
+"""
+Example usage:
+user@host:~/dev/PythonStuff$ python3 calc_compound_interest.py -p 10000 -r .035 -t 12 -y 5
+$10,000.00 at an interest rate of 0.035 compounded 12 times per year for 5 years = $11,909.43
+$11,909.43 - $10,000.00 = $1,909.43 interest.
+"""
+
 # Think about using argparse instead of getopts:
 # For example:  
 # https://github.com/mccright/PythonStuff/blob/main/lottery_numbers/PowerBall-MegaMillions.py
