@@ -3,6 +3,9 @@
 import sys
 import getopt
 
+# Think about using argparse instead of getopts:
+# For example:  
+# https://github.com/mccright/PythonStuff/blob/main/lottery_numbers/PowerBall-MegaMillions.py
 
 
 # Source resources:
@@ -31,22 +34,16 @@ def main(argv):
     if sys.version_info < (3, 10):
         raise Exception("Use only with Python 3.10 or higher")
     
-    principal: float = ''
-    interest_rate: float = ''
-    times_compounded: int = ''
-    years_duration: int = ''
-    
 
     if not (sys.argv[1:]):
         print('Calculate future value of an investment or loan, including interest.')
         print('Inputs required: -p <principal> -r <interest_rate> -t <times_compounded> -y <years_duration>')
-        """
-        principal = the initial deposit or loan amount
-        interest_rate = annual interest rate in decimal form
-        times_compounded = number of compounding periods per year
-        years_duration = number of years the money is invested or borrowed')
-        """
         sys.exit(2)
+    
+    principal: float = ''       # the initial deposit or loan amount
+    interest_rate: float = ''   # annual interest rate in decimal form
+    times_compounded: int = ''  # number of compounding periods per year
+    years_duration: int = ''    # number of years the money is invested or borrowed
 
     try:
         opts, args = getopt.getopt(argv, 'hp:r:t:y:', ['principal=','rate=','times=','years='])
@@ -76,29 +73,12 @@ def main(argv):
         print(f'{sys.argv[0] } -p <principal> -r <interest_rate> -t <times_compounded> -y <years_duration>\n')
         sys.exit(2)
 
-
-    """
-    principal: float = ''
-    interest_rate: float = ''
-    times_compounded: int = ''
-    years_duration: int = ''
-    """
-    
     total_amount = calculate_compound_interest(principal, interest_rate, times_compounded, years_duration)
     print(f"${principal:,.2f} at an interest rate of {interest_rate} compounded {times_compounded} times per year for {years_duration} years = ${total_amount:,.2f}")
     interest_earned = total_amount - principal
     print(f"${total_amount:,.2f} - ${principal:,.2f} = ${interest_earned:,.2f} interest.\n")
 
+
 if __name__ == '__main__':
     main(sys.argv[1:])
     
-
-    """
-    Think about using argparse instead of getopts:
-    For example:  
-        https://github.com/mccright/PythonStuff/blob/main/lottery_numbers/PowerBall-MegaMillions.py
-      
-    python get user input from command line
-    https://duckduckgo.com/?ia=web&origin=funnel_home_website&t=h_&q=python+get+user+input+from+command+line&chip-select=search
-
-    """
