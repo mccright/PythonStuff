@@ -11,6 +11,8 @@ import random_user_agent
 from random_user_agent.user_agent import UserAgent
 from random_user_agent.params import SoftwareName, OperatingSystem
 
+# CAUTION: This script uses an OLD useragent library.
+# https://github.com/Luqman-Ud-Din/random_user_agent
 
 # This is example code, waste no time here:
 # 'url' below is the target url:
