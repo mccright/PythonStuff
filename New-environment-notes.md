@@ -4,12 +4,34 @@
 # Install net-tools for ifconfig
 sudo apt install net-tools
 #
-# Install Python pip
+# Install Python tooling for development (this section is only tested on Ubuntu and Ubuntu spins)  
+# FROM: Joshua Mutua Matiku https://computingforgeeks.com/install-python-ubuntu-2604/
+sudo apt update && sudo apt upgrade -y
 sudo apt install --upgrade build-essential python3-pip libffi-dev python3-dev python3-setuptools libssl-dev -y
 # or the short command: sudo apt install python3-pip
 # Install the virtual environment to 
 # isolate and run Python apps
-sudo apt install python3-venv -y
+sudo apt install -y python3-pip python3-venv python3-dev
+# Install pyenv for Multiple Python Versions
+# Start with build dependencies first
+sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev git
+# Only now install pyenv using the official installer
+curl -fsSL https://pyenv.run | bash
+# Add pyenv to your shell by adding these lines to ~/.bashrc:
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
+source ~/.bashrc
+# Install pipx for CLI tools
+sudo apt install -y pipx
+# Install black for quality checking
+pipx install black
+# Install uv (a drop-in replacement for pip and venv, written in Rust.)
+# Install uv with the official installer:
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# Load the new path:
+source $HOME/.local/bin/env
+# End section from https://computingforgeeks.com/install-python-ubuntu-2604/
 # Clear buffers to disk
 sudo sync
 sync;sync
@@ -143,6 +165,7 @@ sudo ufw app list
 # Depending on the use case, https may be more appropriate
 sudo ufw allow 'nginx http'
 curl http://127.0.0.1
+#
 # As needed, install php support (I haven't needed PHP for quite a while)  
 sudo apt install php-fpm
 # Install additional PHP modules
@@ -157,6 +180,8 @@ sudo nginx -t
 sudo systemctl restart nginx
 ```
 
+
+I updated
 
 ### Your Python Coding Environment on Windows: Setup Guide  
 By by Ian Currie, RealPython. [https://realpython.com/python-coding-setup-windows/](https://realpython.com/python-coding-setup-windows/)  
