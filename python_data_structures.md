@@ -1,11 +1,17 @@
 ## Data Structures  
 (*Original version copied from https://github.com/blutterfly/python/blob/main/docs/examples/data_structures.md on 2025-10-21 - thank you "`Butterfly`"*, then edited over time...)  
 
-Introduction of (a few) python data structures: lists, dictionaries, and dataframes.  
+Introduction of (a few) python data structures:  
+* [List](#list_data_type)  
+* [Dictionary](#dictionary_data_type)  
+* [Set](#set_data_type)  
+* [DataFrame](#dataframe_data_type)  
+* [Tuple](#tuple_data_type)  
+* [Comparisons of these data structures](#comparisons_data_type)  
+* [Additional resources](#additional_resources_data_type)  
 
 ---
-
-
+<a name="list_data_type"></a>
 ### 1. Lists  
 
 Lists are used to store multiple items in a single variable.  
@@ -68,8 +74,9 @@ Exercise:
 ### Additional Resources:  
 * Python List Cheat Sheet. [https://www.cse.msu.edu/.../listAndTuplesCheatSheet.pdf](https://www.cse.msu.edu/~ldillon/cse-ctl/Spring2019/Meeting06/listAndTuplesCheatSheet.pdf)  
 * Python Lists. [w3schools.com/python/python_lists.asp](https://www.w3schools.com/python/python_lists.asp)  
----
 
+---
+<a name="dictionary_data_type"></a>
 ### 2. Dictionaries  
 
 Dictionaries store data in key-value pairs.  
@@ -122,7 +129,7 @@ for key, value in student.items():
 * Python Dictionaries. [w3schools.com/python/python_dictionaries.asp](https://www.w3schools.com/python/python_dictionaries.asp)
 
 ---
-
+<a name="set_data_type"></a>
 ### 3. Sets 
 
 Sets are used to store multiple items in a single variable.  
@@ -166,7 +173,8 @@ print("apple" not in thisset)  # returns False
 * Python Sets. [w3schools.com/python/python_sets.asp](https://www.w3schools.com/python/python_sets.asp)  
 ...Start at: https://www.w3schools.com/python/python_sets_access.asp  
 
-
+---
+<a name="dataframe_data_type"></a>
 ### 4. DataFrames (Using pandas)  
 
  What is a DataFrame?  
@@ -228,7 +236,7 @@ for index, row in df.iterrows():
 3. Filter the movies to show only those released after 2010.  
 
 ---
-
+<a name="tuple_data_type"></a>
 ### 5. Tuples  
 
 Tuples are used to store multiple items in a single variable.  
@@ -297,7 +305,7 @@ index()	# Searches the tuple for a specified value and returns the position of w
 
 
 ---
-
+<a name="comparisons_data_type"></a>
 ### Comparing Lists, Dictionaries, DataFrames Sets and Tuples  
 
 |Feature           |List                    |Dictionary            |DataFrame        | Set              | Tuple           |
@@ -340,7 +348,7 @@ print(df[df["Grade"] >= "A"])
 ```
 
 
-
+<a name="additional_resources_data_type"></a>
 #### Additional Resources:  
 * Python Collections: [docs.python.org/3/library/collections.html#module-collections](https://docs.python.org/3/library/collections.html#module-collections)  
 * Python Sequences: [python.org/3/reference/datamodel.html#sequences](https://docs.python.org/3/reference/datamodel.html#sequences)  
@@ -351,3 +359,4 @@ print(df[df["Grade"] >= "A"])
 * More on Lists: [python.org/3/tutorial/datastructures.html#more-on-lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)  
 * Dictionaries: [python.org/3/tutorial/datastructures.html#dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)  
 * Dictionaries: [python.org/3/reference/datamodel.html#dictionaries](https://docs.python.org/3/reference/datamodel.html#dictionaries)  
+* Python Data Types: [wikibooks.org/wiki/Python_Programming/Data_Types](https://en.wikibooks.org/wiki/Python_Programming/Data_Types)  
