@@ -41,6 +41,10 @@ Here are the names of some of the targeted characters:
 | `FULLWIDTH LESS-THAN SIGN`              | `＜` | `<`   |
 | `FULLWIDTH GREATER-THAN SIGN`           | `＞` | `>`   |
 """
+
+# I used this collection of replacements on some OCR'd
+# text to help in a clean-up effort.  That seems like
+# a common use case.  
 def replace_problematic_characters(text: str) -> str:
     prob_chars = {
         "◌": " ",
