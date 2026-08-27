@@ -4,6 +4,18 @@ import os
 # Thank you Yennan (Yen) Liu.
 # 
 # CAUTION:
+```
+ ██▓ ███▄    █   ██████ ▓█████  ▄████▄   █    ██  ██▀███  ▓█████     ▄████▄   ▒█████  ▓█████▄ ▓█████
+▓██▒ ██ ▀█   █ ▒██    ▒ ▓█   ▀ ▒██▀ ▀█   ██  ▓██▒▓██ ▒ ██▒▓█   ▀    ▒██▀ ▀█  ▒██▒  ██▒▒██▀ ██▌▓█   ▀
+▒██▒▓██  ▀█ ██▒░ ▓██▄   ▒███   ▒▓█    ▄ ▓██  ▒██░▓██ ░▄█ ▒▒███      ▒▓█    ▄ ▒██░  ██▒░██   █▌▒███
+░██░▓██▒  ▐▌██▒  ▒   ██▒▒▓█  ▄ ▒▓▓▄ ▄██▒▓▓█  ░██░▒██▀▀█▄  ▒▓█  ▄    ▒▓▓▄ ▄██▒▒██   ██░░▓█▄   ▌▒▓█  ▄
+░██░▒██░   ▓██░▒██████▒▒░▒████▒▒ ▓███▀ ░▒▒█████▓ ░██▓ ▒██▒░▒████▒   ▒ ▓███▀ ░░ ████▓▒░░▒████▓ ░▒████▒
+░▓  ░ ▒░   ▒ ▒ ▒ ▒▓▒ ▒ ░░░ ▒░ ░░ ░▒ ▒  ░░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░░ ▒░ ░   ░ ░▒ ▒  ░░ ▒░▒░▒░  ▒▒▓  ▒ ░░ ▒░ ░
+ ▒ ░░ ░░   ░ ▒░░ ░▒  ░ ░ ░ ░  ░  ░  ▒   ░░▒░ ░ ░   ░▒ ░ ▒░ ░ ░  ░     ░  ▒     ░ ▒ ▒░  ░ ▒  ▒  ░ ░  ░
+ ▒ ░   ░   ░ ░ ░  ░  ░     ░   ░         ░░░ ░ ░   ░░   ░    ░      ░        ░ ░ ░ ▒   ░ ░  ░    ░
+ ░           ░       ░     ░  ░░ ░         ░        ░        ░  ░   ░ ░          ░ ░     ░       ░  ░
+                               ░                                    ░                  ░
+```
 # Everything about this approach makes your data temporarily insecure and it needs to be 
 # risk appropriate for your use case.  Your data communications will be in clear text, 
 # and any party or automation could download your file(s) while your http server is running. 
