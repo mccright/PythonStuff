@@ -1,21 +1,36 @@
 #!/usr/bin/env python3
 
 """
-Powerball and Mega-Millions are played by selecting six numbers.  
-Powerball:     Five numbers between 1-69 and one “Powerball” number between 1-26.  
-Mega-Millions: Five numbers between 1-70 and one “Mega Ball” number between 1-25.  
+Powerball™ and Mega-Millions™ are played by selecting six numbers.  
+Powerball™:     Five numbers between 1-69 and one “Powerball™” number between 1-26.  
+Mega-Millions™: Five numbers between 1-70 and one “Mega Ball™” number between 1-25.  
+Millionaire for Life™: Five numbers between 1-70 and one “Millionaire Ball™” number between 1-5  
 
-See [Powerball](https://www.usamega.com/powerball/faq) and 
-[Mega-Millions](https://www.usamega.com/mega-millions/faq)  
+See [Powerball™](https://www.usamega.com/powerball/faq) 
+Each play is $2.00and + 
+    * For an additional $1.00 you can add the [Power Play option](https://ialottery.com/Pages/Games-Online/Powerball.aspx) to your Powerball ticket for the chance to multiply most prizes by up to 10 times.  
+    * For an additional $1.00 you can add the [Double Play feature](https://ialottery.com/Pages/Games-Online/Powerball.aspx) to your Powerball ticket for your numbers entered into a separate Double Play drawing with a top cash prize of $10 million. 
+    
+[Mega-Millions™](https://www.usamega.com/mega-millions/faq)  
+Each play is $5.00 
 
-Each play is $2.00
+Update 2026-08-25: 
+Added: "Millionaire for Life™" outputs  
+Millionaire for Life™ is a multi-state daily draw game.  
+Choose Five numbers between 1-58 for the "white balls" and one Millionaire Ball™ number from 1 to 5. 
+See [Millionaire for Life™](https://www.powerball.com/millionaire-for-life)  
+Each play is $5.00  
+
+For Latest Winning Numbers: https://ialottery.com/Pages/WinningNumbers/WinningNumbers_main.aspx 
+
 REMEMBER: The odds are not in your favor. 
 https://en.wikipedia.org/wiki/Powerball#Power_Play
 https://en.wikipedia.org/wiki/Mega_Millions#Winning_and_probability
+https://en.wikipedia.org/wiki/Millionaire_for_Life#Odds_and_prizes or https://www.powerball.com/millionaire-for-life-prize-chart
 
 This script spits out sets of numbers matching the rules for these games.
-It uses secrets to generate each set to maximize entropy (think 'random').  
-No need to think about your numbers, nor worry about the Lottery empire
+It uses the secrets module to generate each set to maximize entropy (think 'random').  
+No need to think about your numbers, nor worry about the Lottery empire  
 or someone else generating your numbers for you.  
 """
 import argparse
@@ -45,13 +60,22 @@ MM_FIRST_FIVE_UNIVERSE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
                           68, 69, 70]
 MM_MEGABALL_UNIVERSE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
                         17, 18, 19, 20, 21, 22, 23, 24, 25]
+
+MFL_FIRST_FIVE_UNIVERSE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+                          16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
+                          29, 20, 31, 32, 33, 34, 35, 36, 37, 38, 39, 30, 41,
+                          42, 43, 44, 45, 46, 47, 48, 49, 40, 51, 52, 53, 54,
+                          55, 56, 57, 58]
+MFL_MILBALL_UNIVERSE = [1, 2, 3, 4, 5]
+
+
 # Set the MAX_RUNS var to some sane maximum for your use case
 MAX_RUNS: int = 30
 
 
 def print_powerball_candidate(powerball_first_group: int, powerball_length: int):
     todays_powerball_bet: [] = select_some(PB_FIRST_FIVE_UNIVERSE, powerball_first_group)
-    print(f"PowerBall:     ", end="")
+    print(f"PowerBall™:            ", end="")
     print_items_sorted(todays_powerball_bet)
     print(f"+", end=" ")
     powerball_number: [] = select_some(PB_POWERBALL_UNIVERSE, powerball_length)
@@ -61,11 +85,21 @@ def print_powerball_candidate(powerball_first_group: int, powerball_length: int)
 
 def print_megamil_candidate(mega_ball_first_group: int, mega_ball_length: int):
     todays_mega_ball_bet: [] = select_some(MM_FIRST_FIVE_UNIVERSE, mega_ball_first_group)
-    print(f"Mega-Millions: ", end="")
+    print(f"Mega-Millions™:        ", end="")
     print_items_sorted(todays_mega_ball_bet)
     print(f"+", end=" ")
     mega_ball_number: [] = select_some(MM_MEGABALL_UNIVERSE, mega_ball_length)
     print_items_sorted(mega_ball_number)
+    print("")
+
+
+def print_milforlife_candidate(milforlife_ball_first_group: int, milforlife_ball_length: int):
+    todays_milforlife_ball_bet: [] = select_some(MFL_FIRST_FIVE_UNIVERSE, milforlife_ball_first_group)
+    print(f"Millionaire for Life™: ", end="")
+    print_items_sorted(todays_milforlife_ball_bet)
+    print(f"+", end=" ")
+    milforlife_ball_number: [] = select_some(MFL_MILBALL_UNIVERSE, milforlife_ball_length)
+    print_items_sorted(milforlife_ball_number)
     print("")
 
 
@@ -117,9 +151,9 @@ def main():
     # Thank you 'marshki' for this argparse idea/model 
     # https://github.com/marshki/PowerballPy/
     parser = argparse.ArgumentParser(description="Generate candidate \
-    Powerball and Mega-Millions plays")
+    Powerball™, Mega-Millions™ and Millionaire for Life™ plays")
     parser.add_argument("-n", "--num_plays", type=int, default=1, \
-    help="Generate this many candidate Powerball and Mega-Millions plays")
+    help="Generate this many candidate Powerball™, Mega-Millions™ and Millionaire for Life™ plays")
 
     args = parser.parse_args()
 
@@ -136,12 +170,15 @@ must be a positive integer less than {MAX_RUNS}.")
     powerball_length = 1
     mega_ball_first_group = 5
     mega_ball_length = 1
+    milforlife_ball_first_group = 5
+    milforlife_ball_length = 1
     while num_candidate_plays >= counter:
         # This approach is taken from the Python documentation on "secrets"
         # https://docs.python.org/3/library/secrets.html
 
         print_powerball_candidate(powerball_first_group, powerball_length)
         print_megamil_candidate(mega_ball_first_group, mega_ball_length)
+        print_milforlife_candidate(milforlife_ball_first_group, milforlife_ball_length)
         print_separator()
         counter = counter + 1
 
